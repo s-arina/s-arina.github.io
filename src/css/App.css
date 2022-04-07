@@ -1,0 +1,89 @@
+.app .banner {
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem;
+  background: #1a1a1a;
+  background-position: top right;
+  background-size: cover;
+}
+
+.app .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0rem 1rem;
+  gap: 9rem;
+  z-index: 1;
+}
+
+.app .container h1:first-child {
+  font-family: 'Calibre-SB';
+  font-size: 4.8rem;
+  color: red;
+}
+
+.app .container h1:nth-child(2) {
+  font-family: 'Calibre-SB';
+  font-size: 9.6rem;
+}
+
+.app .container h2 {
+  font-size: 2.2rem;
+  color: grey;
+  letter-spacing: 0.4rem;
+}
+
+.app .container .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .container img {
+  width: 15rem;
+  -webkit-animation: logo-spin infinite 20s linear;
+          animation: logo-spin infinite 20s linear;
+}
+
+@-webkit-keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=App.css.map */

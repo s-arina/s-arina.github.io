@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Calibre-SB';
+  src: url('/public/CalibreSemibold.otf');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/public/CalibreRegular.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibre', 'Calibre-SB', san-serif;
+}
+
+html {
+  height: 100vh;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  cursor: crosshair;
+}
+
+/* ================== SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-radius: 20px;
+  background-color: #8b949e;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-clip: padding-box;
+  border-radius: 20px;
+  background-color: #2e363b;
+}
