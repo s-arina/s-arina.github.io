@@ -5,13 +5,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5rem;
+  padding: 0 10rem;
   background: #1a1a1a;
   background-position: top right;
   background-size: cover;
@@ -25,28 +29,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0rem 1rem;
   gap: 9rem;
-  z-index: 1;
 }
 
-.app .container h1:first-child {
-  font-family: 'Calibre-SB';
-  font-size: 4.8rem;
+.app .container h2:first-of-type {
+  font-size: 3.6rem;
   color: red;
+  letter-spacing: 0.1rem;
 }
 
-.app .container h1:nth-child(2) {
-  font-family: 'Calibre-SB';
-  font-size: 9.6rem;
-}
-
-.app .container h2 {
+.app .container h2:nth-of-type(2) {
   font-size: 2.2rem;
   color: grey;
   letter-spacing: 0.4rem;
+  margin-top: 2rem;
 }
 
 .app .container .intro {
@@ -84,6 +86,170 @@
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+.type-box {
+  height: 8.5rem;
+  width: 41rem;
+}
+
+.typed {
+  height: 100%;
+  overflow: hidden;
+  border-right: 0.6em solid grey;
+  white-space: nowrap;
+  -webkit-animation: typing 6s steps(18, end) forwards infinite, blink 1.2s infinite;
+          animation: typing 6s steps(18, end) forwards infinite, blink 1.2s infinite;
+}
+
+.typed h1 {
+  font-family: 'Calibre-SB';
+  font-size: 9.6rem;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: grey;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: grey;
+  }
+}
+
+.chevron-container {
+  bottom: 12rem;
+  position: absolute;
+}
+
+.chevron-container .chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron-container .chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron-container .chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron-container .chevron:before,
+.chevron-container .chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+}
+
+.chevron-container .chevron:before {
+  left: 0;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+}
+
+.chevron-container .chevron:after {
+  right: 0;
+  width: 50%;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+            transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+            transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+            transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+            transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+            transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+            transform: translateY(4.8rem) scale(0.5);
   }
 }
 /*# sourceMappingURL=App.css.map */

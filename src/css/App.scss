@@ -4,51 +4,34 @@
     position: relative;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 0 10rem;
 
     background: #1a1a1a;
     background-position: top right;
     background-size: cover;
-
-    // &:after {
-    //   content: '';
-    //   display: block;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   z-index: 0;
-    //   background-color: #12002f;
-    //   opacity: 0.8;
-    // }
   }
 
   .container {
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0rem 1rem;
     gap: 9rem;
-    z-index: 1;
-    h1:first-child {
-      font-family: 'Calibre-SB';
-      font-size: 4.8rem;
+    h2:first-of-type {
+      font-size: 3.6rem;
       color: red;
+      letter-spacing: 0.1rem;
     }
-
-    h1:nth-child(2) {
-      font-family: 'Calibre-SB';
-      font-size: 9.6rem;
-    }
-
-    h2 {
+    h2:nth-of-type(2) {
       font-size: 2.2rem;
       color: grey;
       letter-spacing: 0.4rem;
+      margin-top: 2rem;
     }
     .intro {
       display: flex;
@@ -67,5 +50,116 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+// ======================== TYPE TEXT
+
+.type-box {
+  height: 8.5rem;
+  width: 41rem;
+}
+
+.typed {
+  h1 {
+    font-family: 'Calibre-SB';
+    font-size: 9.6rem;
+  }
+  height: 100%;
+  overflow: hidden;
+  border-right: 0.6em solid grey;
+  white-space: nowrap;
+  animation: typing 6s steps(18, end) forwards infinite, blink 1.2s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: grey;
+  }
+}
+
+// ======================== SCROLL
+
+$base: 0.6rem;
+
+.chevron-container {
+  bottom: 12rem;
+  position: absolute;
+
+  .chevron {
+    position: absolute;
+    width: $base * 3.5;
+    height: $base * 0.8;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+  }
+
+  .chevron:first-child {
+    animation: move-chevron 3s ease-out 1s infinite;
+  }
+
+  .chevron:nth-child(2) {
+    animation: move-chevron 3s ease-out 2s infinite;
+  }
+
+  .chevron:before,
+  .chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: red;
+  }
+
+  .chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+  }
+
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+  }
+
+  @keyframes move-chevron {
+    25% {
+      opacity: 1;
+    }
+    33.3% {
+      opacity: 1;
+      transform: translateY($base * 3.8);
+    }
+    66.6% {
+      opacity: 1;
+      transform: translateY($base * 5.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY($base * 8) scale(0.5);
+    }
   }
 }

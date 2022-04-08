@@ -34,11 +34,15 @@ code {
     monospace;
 }
 
+:focus-visible {
+  // outline: none;
+}
+
+// ================== LINK & SCROLLBAR
+
 a {
   cursor: crosshair;
 }
-
-/* ================== SCROLLBAR */
 
 ::-webkit-scrollbar {
   width: 0.5rem;

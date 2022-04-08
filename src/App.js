@@ -1,5 +1,6 @@
 import './css/App.css';
-import About from './About.js';
+import About from './components/About';
+import WebProjects from './components/web-projects/WebProjects';
 import Nav from './Nav.js';
 
 function App() {
@@ -12,13 +13,23 @@ function App() {
             <img src='/logo.gif' alt='' />
           </div>
           <div className='intro'>
-            <h1>Hi,</h1>
-            <h1> I'm Sarina.</h1>
+            <h2>Hi,</h2>
+            <div className='type-box'>
+              <div className='typed'>
+                <h1> I'm Sarina.</h1>
+              </div>
+            </div>
             <h2>Web Developer / Graphic Designer / Illustrator</h2>
           </div>
         </div>
+        <div className='chevron-container'>
+          <div className='chevron'></div>
+          <div className='chevron'></div>
+          <div className='chevron'></div>
+        </div>
       </div>
-      <About />
+      <WebProjects />
+      {/* <About /> */}
     </div>
   );
 }

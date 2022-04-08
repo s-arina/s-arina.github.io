@@ -3,7 +3,7 @@
           box-sizing: border-box;
   position: fixed;
   top: 0;
-  padding: 20px;
+  padding: 3rem 3rem;
   width: 100%;
   z-index: 1;
   -webkit-transition-timing-function: ease-in;
@@ -13,7 +13,9 @@
 }
 
 .nav_black {
-  background-color: #111;
+  background-color: #1a1a1a;
+  -webkit-box-shadow: 0 10px 30px -10px rgba(26, 26, 26, 0.7);
+          box-shadow: 0 10px 30px -10px rgba(26, 26, 26, 0.7);
 }
 
 .nav_content {
@@ -26,7 +28,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 45px;
+  height: 4.5rem;
 }
 
 .nav_content a {
@@ -66,11 +68,5 @@
   text-decoration-thickness: 2px;
   -webkit-text-decoration-color: #e50914;
           text-decoration-color: #e50914;
-}
-
-.nav_content .nav_avatar {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=Nav.css.map */

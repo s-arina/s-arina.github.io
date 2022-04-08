@@ -1,0 +1,78 @@
+#projects {
+  padding: 10rem;
+}
+
+.projects-container .projects-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.projects-container .projects-header h1 {
+  font-family: 'Calibre-SB';
+  font-size: 4.8rem;
+}
+
+.projects-container .projects-header p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.projects-container .projects-title-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.projects-container .projects-title-desc .gh {
+  color: green;
+}
+
+.projects-container .projects-title-desc .fsa {
+  color: red;
+}
+
+.projects-container .projects-title-desc span:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: 1px;
+  -webkit-text-decoration-color: inherit;
+          text-decoration-color: inherit;
+}
+
+.projects-container .projects-title-desc a {
+  text-decoration: none;
+}
+
+.projects-container .tagcloud {
+  font-family: 'Calibre', sans-serif;
+  font-size: 2rem;
+  margin: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.projects-container .tagcloud .tagcloud--item:hover {
+  color: red;
+}
+/*# sourceMappingURL=WebProjects.css.map */

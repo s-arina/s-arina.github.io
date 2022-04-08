@@ -20,24 +20,30 @@ function Nav() {
   return (
     <div className={`nav ${show && 'nav_black'}`}>
       <div className='nav_content'>
-        <a href='app'>
+        <a href='/'>
           <img className='nav_logo' src='/logo.png' alt='' />
         </a>
         <div className='nav_links'>
-          <a href='#about'>
+          <a href='#projects'>
             <p>
               <span style={spanStyle}>01.</span> Projects
             </p>
           </a>
-          <p>
-            <span style={spanStyle}>02.</span> Graphic Design
-          </p>
-          <p>
-            <span style={spanStyle}>03.</span> Illustration
-          </p>
-          <p>
-            <span style={spanStyle}>04.</span> About
-          </p>
+          <a href='#about'>
+            <p>
+              <span style={spanStyle}>02.</span> Graphic Design
+            </p>
+          </a>
+          <a href='#about'>
+            <p>
+              <span style={spanStyle}>03.</span> Illustration
+            </p>
+          </a>
+          <a href='#about'>
+            <p>
+              <span style={spanStyle}>04.</span> About
+            </p>
+          </a>
         </div>
       </div>
     </div>
