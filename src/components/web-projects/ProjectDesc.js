@@ -1,14 +1,14 @@
 import React from 'react';
-import '../../css/web-projects/WebProjects.css';
+import '../../css/web-projects/ProjectDesc.css';
 import Cloud from './Cloud';
-import GitStatus from './GitStatus';
 
-function WebProjects() {
+function ProjectDesc() {
   return (
     <div id='projects'>
       <div className='projects-container'>
         <div className='projects-header'>
           <div className='projects-title-desc'>
+            {/* <i class='arrow right'></i> */}
             <h1>Projects.</h1>
             <p>
               As a recent graduate of{' '}
@@ -40,10 +40,9 @@ function WebProjects() {
           </div>
           <Cloud />
         </div>
-        <GitStatus />
       </div>
     </div>
   );
 }
 
-export default WebProjects;
+export default ProjectDesc;

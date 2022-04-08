@@ -13,9 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-top: 10rem;
   gap: 5rem;
-  width: 100%;
 }
 
 .git-status .project-banner {

@@ -1,8 +1,10 @@
 import './css/App.css';
-import About from './components/About';
-import WebProjects from './components/web-projects/WebProjects';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
+import About from './components/About';
+import ProjectDesc from './components/web-projects/ProjectDesc';
+import Projects from './components/web-projects/Projects';
+import Design from './components/graphic-design/Design';
 
 function App() {
   return (
@@ -23,14 +25,17 @@ function App() {
             <h2>Web Developer / Graphic Designer / Illustrator</h2>
           </div>
         </div>
-        <div className='chevron-container'>
-          <div className='chevron'></div>
-          <div className='chevron'></div>
-          <div className='chevron'></div>
-        </div>
+        <a href='#projects'>
+          <div className='chevron-container'>
+            <div className='chevron'></div>
+            <div className='chevron'></div>
+            <div className='chevron'></div>
+          </div>
+        </a>
       </div>
-      <WebProjects />
-      {/* <About /> */}
+      <ProjectDesc />
+      <Projects />
+      <Design />
       <Footer />
     </div>
   );

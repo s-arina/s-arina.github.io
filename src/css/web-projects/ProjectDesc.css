@@ -70,6 +70,19 @@
   text-decoration: none;
 }
 
+.projects-container .arrow {
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 1px;
+}
+
+.projects-container .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 .projects-container .cloud {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,4 +127,4 @@
     width: 100%;
   }
 }
-/*# sourceMappingURL=WebProjects.css.map */
+/*# sourceMappingURL=ProjectDesc.css.map */

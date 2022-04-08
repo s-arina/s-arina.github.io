@@ -19,6 +19,7 @@ function Cloud() {
   const myTags = [
     'JavaScript',
     'CSS',
+    'SCSS',
     'HTML',
     'Node.js',
     'React',
@@ -27,6 +28,7 @@ function Cloud() {
     'Firebase',
     'Sequelize',
     'PostgreSQL',
+    'REST',
     'git',
     'GitHub',
   ];
