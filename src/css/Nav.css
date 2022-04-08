@@ -65,7 +65,7 @@
 .nav_content .nav_links a :hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   -webkit-text-decoration-color: #e50914;
           text-decoration-color: #e50914;
 }

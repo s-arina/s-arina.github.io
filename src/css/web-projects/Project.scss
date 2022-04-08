@@ -1,0 +1,111 @@
+.git-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10rem;
+  gap: 5rem;
+  width: 100%;
+
+  .project-banner {
+    display: flex;
+    align-content: center;
+    img {
+      width: 60rem;
+    }
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      transition: all 1s ease;
+      :hover {
+        color: red;
+      }
+    }
+    p {
+      font-size: 3.2rem;
+      color: black;
+      line-height: 0.1rem;
+    }
+    svg {
+      margin: 0;
+    }
+  }
+
+  .project-body {
+    display: flex;
+    margin-top: 1rem;
+    h2 {
+      font-size: 1.8rem;
+      color: grey;
+    }
+  }
+
+  //   .project-line {
+  //     margin-top: 0.5rem;
+  //     position: relative;
+  //     hr {
+  //       width: 1px;
+  //       top: 4rem;
+  //       height: 100%;
+  //       border: none;
+  //       background-color: grey;
+  //     }
+  //     .circle {
+  //       position: absolute;
+  //       left: -0.3rem;
+  //       top: 0;
+  //       width: 0.6rem;
+  //       height: 0.6rem;
+  //       border-radius: 1rem;
+  //       border: 1px solid grey;
+  //       background-color: #f2f2f2;
+  //     }
+  //     .circle:nth-of-type(2) {
+  //       top: 2.8rem;
+  //     }
+  //     .circle:nth-of-type(3) {
+  //       top: 10.3rem;
+  //     }
+  //   }
+
+  .project-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-details {
+    margin: 1rem 0;
+  }
+
+  .project-desc {
+    margin: 1rem 0;
+    p {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+  }
+
+  .project-team {
+    margin: 1rem 2rem 0 0;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    img {
+      width: 5rem;
+      border-radius: 50px;
+      margin-right: 2rem;
+    }
+  }
+}

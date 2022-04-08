@@ -2,6 +2,7 @@ import './css/App.css';
 import About from './components/About';
 import WebProjects from './components/web-projects/WebProjects';
 import Nav from './Nav.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       </div>
       <WebProjects />
       {/* <About /> */}
+      <Footer />
     </div>
   );
 }

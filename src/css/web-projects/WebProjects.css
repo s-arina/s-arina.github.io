@@ -1,5 +1,16 @@
 #projects {
   padding: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
 }
 
 .projects-container .projects-header {
@@ -12,12 +23,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 3rem;
+  margin: 0 5rem;
 }
 
 .projects-container .projects-header h1 {
   font-family: 'Calibre-SB';
-  font-size: 4.8rem;
+  font-size: 6.4rem;
 }
 
 .projects-container .projects-header p {
@@ -36,7 +47,7 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .projects-container .projects-title-desc .gh {

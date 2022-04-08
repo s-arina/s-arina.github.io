@@ -1,0 +1,124 @@
+.git-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 10rem;
+  gap: 5rem;
+  width: 100%;
+}
+
+.git-status .project-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.git-status .project-banner img {
+  width: 60rem;
+}
+
+.git-status .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60rem;
+}
+
+.git-status .project-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.git-status .project-header a {
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.git-status .project-header a :hover {
+  color: red;
+}
+
+.git-status .project-header p {
+  font-size: 3.2rem;
+  color: black;
+  line-height: 0.1rem;
+}
+
+.git-status .project-header svg {
+  margin: 0;
+}
+
+.git-status .project-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.git-status .project-body h2 {
+  font-size: 1.8rem;
+  color: grey;
+}
+
+.git-status .project-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.git-status .project-details {
+  margin: 1rem 0;
+}
+
+.git-status .project-desc {
+  margin: 1rem 0;
+}
+
+.git-status .project-desc p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.git-status .project-team {
+  margin: 1rem 2rem 0 0;
+}
+
+.git-status .project-team h2 {
+  margin-bottom: 1rem;
+}
+
+.git-status .project-team img {
+  width: 5rem;
+  border-radius: 50px;
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=Project.css.map */

@@ -163,3 +163,33 @@ $base: 0.6rem;
     }
   }
 }
+
+// ======================== FOOTER
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  font-size: 1.2rem;
+  bottom: 0;
+  left: 3.5rem;
+  text-align: center;
+  margin: 3.5rem 0;
+  hr {
+    width: 1px;
+    height: 9rem;
+    border: none;
+    background-color: red;
+  }
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0.5rem;
+  :hover {
+    color: red;
+  }
+}

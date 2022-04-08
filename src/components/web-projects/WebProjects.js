@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/web-projects/WebProjects.css';
 import Cloud from './Cloud';
+import GitStatus from './GitStatus';
 
 function WebProjects() {
   return (
@@ -29,10 +30,17 @@ function WebProjects() {
               , I had the opportunity to learn and experiment with a diverse
               tech stack to create fun and exciting web applications either with
               team members, or by myself.
+              <br />
+              <br />I enjoy working on the <strong>front-end</strong>, as I love
+              to incorporate my design knowledge into the UI / UX.
+              <br />
+              <br />
+              I'm always a work in progress, and hope to only get better!
             </p>
           </div>
           <Cloud />
         </div>
+        <GitStatus />
       </div>
     </div>
   );
