@@ -9,13 +9,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  margin: auto;
+  margin: 0 3rem;
 }
 
 .projects-container .projects-header h1 {
@@ -36,11 +33,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
-  width: 40%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  gap: 2rem;
 }
 
 .projects-container .projects-title-desc .gh {
@@ -63,16 +59,48 @@
   text-decoration: none;
 }
 
-.projects-container .tagcloud {
-  font-family: 'Calibre', sans-serif;
-  font-size: 2rem;
+.projects-container .cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.projects-container .tagcloud .tagcloud--item:hover {
+.tagcloud {
+  font-family: 'Calibre', sans-serif;
+  font-size: 2rem;
+  margin: auto;
+  display: none;
+}
+
+.tagcloud .tagcloud--item:hover {
   color: red;
+}
+
+.tagcloud-small {
+  font-family: 'Calibre', sans-serif;
+  font-size: 2rem;
+  margin: auto;
+  display: none;
+}
+
+.tagcloud-small .tagcloud--item:hover {
+  color: red;
+}
+
+@media (min-width: 905px) {
+  .projects-title-desc {
+    width: 60%;
+  }
+  .tagcloud {
+    display: block;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=WebProjects.css.map */
