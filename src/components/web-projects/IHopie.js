@@ -1,24 +1,24 @@
 import React from 'react';
 import '../../css/web-projects/Project.css';
 
-function GitStatus() {
+function IHopie() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/gitstatus.png' alt='' />
+        <img src='/web-projects/ihopie.png' alt='' />
       </div>
       <div className='project-info'>
         <div className='project-header'>
           <a
-            href={'https://my-git-status.herokuapp.com'}
+            href={'https://ihopie.herokuapp.com'}
             target='_blank'
             rel='noreferrer'
           >
-            <p>git status</p>
+            <p>iHopie</p>
           </a>
           <p>
             <a
-              href={'https://github.com/Team-Mango-Capstone/git-status'}
+              href={'https://github.com/Mars-Grace-Shopper/GraceShopper'}
               target='_blank'
               rel='noreferrer'
             >
@@ -43,39 +43,36 @@ function GitStatus() {
         <div className='project-body'>
           <div className='project-details-container'>
             <div className='project-details'>
-              <h2>Developer | Designer</h2>
+              <h2>Developer / Designer</h2>
               <br />
-              <h2>
-                JavaScript | React.js | Firebase | Chart.js | Bootstrap | GitHub
-                API
-              </h2>
+              <h2>JavaScript / React.js / Redux / Express / Sequelize</h2>
             </div>
             <div className='project-desc'>
               <p>
-                git status is a developer-focused, visualization-driven
-                productivity app that provides personalized insights on GitHub
-                usage and a dashboard for setting and tracking goals.
+                iHopie is a shopping website where a user can create an account,
+                browse through products, add items to their shopping cart and
+                checkout. Authentication is setup with JWT and bcrypt, with a
+                cart that persists through different users.
               </p>
               <br />
               <p>
-                Upon logging in with their GitHub credentials, users can access
-                a wealth of GitHub usage information in one centralized
-                location. Armed with the above insights, users can also set and
-                monitor productivity goals.
+                A CRUD app where users who are administrators can add, edit and
+                delete products. Wireframes and CSS were done and implemented by
+                me.
               </p>
             </div>
             <div className='project-team'>
               <h2>TEAM</h2>
               <img
-                src='https://avatars.githubusercontent.com/u/93007802?v=4'
+                src='https://ca.slack-edge.com/T024FPYBQ-U02SYMP1AEA-68bcf56a00b3-512'
                 alt=''
               />
               <img
-                src='https://media-exp1.licdn.com/dms/image/C4D03AQHuPDeE9PbrkQ/profile-displayphoto-shrink_100_100/0/1618247848050?e=1654732800&v=beta&t=At-xOE2jB1EEt7IJqtWVRsF3xuU5ImU7BiqAv4LCFJ0'
+                src='https://ca.slack-edge.com/T024FPYBQ-U02SQPGSL0P-g186df45de57-512'
                 alt=''
               />
               <img
-                src='https://media-exp1.licdn.com/dms/image/C4D03AQH5np9oC0B2qg/profile-displayphoto-shrink_800_800/0/1516996171075?e=1654732800&v=beta&t=H7V6Aq-aLgh2VD6ZdWCQPze3v2F27CVo4KCozj3qnE8'
+                src='https://media-exp1.licdn.com/dms/image/C4E03AQGyIb49RgzbzQ/profile-displayphoto-shrink_100_100/0/1649191401766?e=1654732800&v=beta&t=UlFQwtNtwjhxg1vb1MInQhvHnmeJADQRfxr0dZPcSvg'
                 alt=''
               />
             </div>
@@ -86,4 +83,4 @@ function GitStatus() {
   );
 }
 
-export default GitStatus;
+export default IHopie;

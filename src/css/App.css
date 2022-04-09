@@ -284,13 +284,13 @@ footer hr {
   background-color: red;
 }
 
+footer a {
+  padding: 0.5rem;
+}
+
 svg {
   width: 20px;
   height: 20px;
-  margin-bottom: 0.5rem;
-}
-
-svg :hover {
-  color: red;
+  fill: transparent;
 }
 /*# sourceMappingURL=App.css.map */

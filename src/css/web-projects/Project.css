@@ -1,4 +1,4 @@
-.git-status {
+.project-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,9 +6,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -16,7 +16,7 @@
   gap: 5rem;
 }
 
-.git-status .project-banner {
+.project-name .project-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,11 +24,14 @@
       align-content: center;
 }
 
-.git-status .project-banner img {
+.project-name .project-banner img {
   width: 60rem;
+  height: 33.5rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.1);
+          box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.1);
 }
 
-.git-status .project-info {
+.project-name .project-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +42,7 @@
   width: 60rem;
 }
 
-.git-status .project-header {
+.project-name .project-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,39 +54,39 @@
           align-items: center;
 }
 
-.git-status .project-header a {
+.project-name .project-header a {
   text-decoration: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
-.git-status .project-header a :hover {
+.project-name .project-header a :hover {
   color: red;
 }
 
-.git-status .project-header p {
+.project-name .project-header p {
   font-size: 3.2rem;
   color: black;
   line-height: 0.1rem;
 }
 
-.git-status .project-header svg {
+.project-name .project-header svg {
   margin: 0;
 }
 
-.git-status .project-body {
+.project-name .project-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
 }
 
-.git-status .project-body h2 {
+.project-name .project-body h2 {
   font-size: 1.8rem;
   color: grey;
 }
 
-.git-status .project-details-container {
+.project-name .project-details-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,28 +96,30 @@
           flex-direction: column;
 }
 
-.git-status .project-details {
+.project-name .project-details {
   margin: 1rem 0;
 }
 
-.git-status .project-desc {
+.project-name .project-desc {
   margin: 1rem 0;
+  min-height: 11.3rem;
 }
 
-.git-status .project-desc p {
+.project-name .project-desc p {
   font-size: 1.6rem;
   line-height: 2rem;
 }
 
-.git-status .project-team {
+.project-name .project-team {
   margin: 1rem 2rem 0 0;
+  min-height: 8.8rem;
 }
 
-.git-status .project-team h2 {
+.project-name .project-team h2 {
   margin-bottom: 1rem;
 }
 
-.git-status .project-team img {
+.project-name .project-team img {
   width: 5rem;
   border-radius: 50px;
   margin-right: 2rem;

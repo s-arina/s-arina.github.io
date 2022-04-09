@@ -185,13 +185,16 @@ footer {
     border: none;
     background-color: red;
   }
+  a {
+    padding: 0.5rem;
+    :hover {
+      // stroke: grey;
+    }
+  }
 }
 
 svg {
   width: 20px;
   height: 20px;
-  margin-bottom: 0.5rem;
-  :hover {
-    color: red;
-  }
+  fill: transparent;
 }

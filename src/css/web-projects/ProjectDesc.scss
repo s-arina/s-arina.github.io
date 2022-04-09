@@ -1,65 +1,53 @@
 #projects {
-  padding: 10rem;
+  padding: 10rem 10rem 0 10rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
-.projects-container {
-  .projects-header {
-    display: flex;
-    justify-content: space-between;
-    // flex-wrap: wrap;
-    align-items: center;
-    margin: 0 5rem;
-    h1 {
-      font-family: 'Calibre-SB';
-      font-size: 6.4rem;
-    }
-    p {
-      font-size: 1.8rem;
-      line-height: 2.5rem;
-    }
+.projects-desc {
+  display: flex;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+  align-items: center;
+  margin: 0 5rem;
+  width: 100%;
+  h1 {
+    font-family: 'Calibre-SB';
+    font-size: 6.4rem;
   }
-  .projects-title-desc {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 1rem;
-    .gh {
-      color: green;
-    }
-    .fsa {
-      color: red;
-    }
-    span:hover {
-      text-decoration: underline;
-      text-underline-offset: 0.4rem;
-      text-decoration-thickness: 1px;
-      text-decoration-color: inherit;
-    }
-    a {
-      text-decoration: none;
-    }
+  p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
-  .arrow {
-    border: solid red;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    width: 1px;
+}
+
+.projects-title-desc {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+  .gh {
+    color: green;
   }
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  .fsa {
+    color: red;
   }
-  .cloud {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-grow: 1;
+  span:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-thickness: 1px;
+    text-decoration-color: inherit;
   }
+  a {
+    text-decoration: none;
+  }
+}
+
+.cloud {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-grow: 1;
 }
 
 .tagcloud {
@@ -92,3 +80,9 @@
     width: 100%;
   }
 }
+
+// @media (max-width: 904px) {
+//   .tagcloud-small {
+//     display: block;
+//   }
+// }

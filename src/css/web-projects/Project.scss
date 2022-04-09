@@ -1,7 +1,7 @@
-.git-status {
+.project-name {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   gap: 5rem;
@@ -11,6 +11,8 @@
     align-content: center;
     img {
       width: 60rem;
+      height: 33.5rem;
+      box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.1);
     }
   }
 
@@ -50,34 +52,6 @@
     }
   }
 
-  //   .project-line {
-  //     margin-top: 0.5rem;
-  //     position: relative;
-  //     hr {
-  //       width: 1px;
-  //       top: 4rem;
-  //       height: 100%;
-  //       border: none;
-  //       background-color: grey;
-  //     }
-  //     .circle {
-  //       position: absolute;
-  //       left: -0.3rem;
-  //       top: 0;
-  //       width: 0.6rem;
-  //       height: 0.6rem;
-  //       border-radius: 1rem;
-  //       border: 1px solid grey;
-  //       background-color: #f2f2f2;
-  //     }
-  //     .circle:nth-of-type(2) {
-  //       top: 2.8rem;
-  //     }
-  //     .circle:nth-of-type(3) {
-  //       top: 10.3rem;
-  //     }
-  //   }
-
   .project-details-container {
     display: flex;
     flex-direction: column;
@@ -89,6 +63,7 @@
 
   .project-desc {
     margin: 1rem 0;
+    min-height: 11.3rem;
     p {
       font-size: 1.6rem;
       line-height: 2rem;
@@ -97,6 +72,7 @@
 
   .project-team {
     margin: 1rem 2rem 0 0;
+    min-height: 8.8rem;
     h2 {
       margin-bottom: 1rem;
     }
