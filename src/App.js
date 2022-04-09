@@ -4,7 +4,7 @@ import Footer from './Footer.js';
 import About from './components/About';
 import ProjectDesc from './components/web-projects/ProjectDesc';
 import Projects from './components/web-projects/Projects';
-import Design from './components/graphic-design/Design';
+import DesignDesc from './components/graphic-design/DesignDesc';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
       </div>
       <ProjectDesc />
       <Projects />
-      <Design />
+      <DesignDesc />
       <Footer />
     </div>
   );

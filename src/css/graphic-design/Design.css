@@ -50,14 +50,6 @@
   gap: 1rem;
 }
 
-.designs-title-desc span:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.4rem;
-  text-decoration-thickness: 1px;
-  -webkit-text-decoration-color: inherit;
-          text-decoration-color: inherit;
-}
-
 .designs-title-desc a {
   text-decoration: none;
 }
@@ -93,5 +85,32 @@
 .adobe-icons img {
   max-width: 15rem;
   height: auto;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.xd {
+  color: #ff61f7;
+}
+
+.ind {
+  color: #ff3066;
+}
+
+.il {
+  color: #ff9a00;
+}
+
+.ps {
+  color: #30a8ff;
+}
+
+.pp {
+  color: #9999ff;
+}
+
+.ae {
+  color: #9999ff;
 }
 /*# sourceMappingURL=Design.css.map */
