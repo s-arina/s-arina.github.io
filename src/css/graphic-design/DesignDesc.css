@@ -90,6 +90,18 @@
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 1004px) {
+  .designs-desc {
+    gap: 5rem;
+  }
+  .adobe-icons {
+    gap: 3rem;
+  }
+  .adobe-icons img {
+    width: 100%;
+  }
+}
+
 .ind {
   color: #ff3066;
 }
@@ -113,4 +125,4 @@
 .ae {
   color: #9999ff;
 }
-/*# sourceMappingURL=Design.css.map */
+/*# sourceMappingURL=DesignDesc.css.map */

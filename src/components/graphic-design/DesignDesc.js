@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../css/graphic-design/Design.css';
+import '../../css/graphic-design/DesignDesc.css';
 
 function DesignDesc() {
   const [xd, setXD] = useState(false);

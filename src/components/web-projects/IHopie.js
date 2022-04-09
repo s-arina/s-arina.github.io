@@ -5,6 +5,7 @@ function IHopie() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
+        {/* <div className='banner'></div> */}
         <img src='/web-projects/ihopie.png' alt='' />
       </div>
       <div className='project-info'>

@@ -55,6 +55,18 @@
   }
 }
 
+@media screen and (max-width: 1004px) {
+  .designs-desc {
+    gap: 5rem;
+  }
+  .adobe-icons {
+    gap: 3rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // ======================== WORD / ICON GLOW
 
 .ind {
