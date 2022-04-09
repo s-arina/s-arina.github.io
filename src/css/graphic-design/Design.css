@@ -90,20 +90,20 @@
   transition: all 0.3s ease;
 }
 
-.xd {
-  color: #ff61f7;
-}
-
 .ind {
   color: #ff3066;
 }
 
-.il {
+.ps {
+  color: #30a8ff;
+}
+
+.ai {
   color: #ff9a00;
 }
 
-.ps {
-  color: #30a8ff;
+.xd {
+  color: #ff61f7;
 }
 
 .pp {
