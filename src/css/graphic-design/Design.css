@@ -7,7 +7,7 @@
   background: linear-gradient(360deg, #1a1a1a, #000000);
   color: white;
   padding: 10rem;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .designs-desc {
@@ -79,7 +79,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 7rem;
+  gap: 5rem;
 }
 
 .adobe-icons img {

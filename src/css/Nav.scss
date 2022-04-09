@@ -10,7 +10,7 @@
 }
 
 .nav_black {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   box-shadow: 0 10px 30px -10px rgba(26, 26, 26, 0.7);
 }
 
@@ -24,7 +24,7 @@
   }
   .nav_logo {
     height: 100%;
-    cursor: pointer;
+    cursor: crosshair;
   }
   .nav_links {
     display: flex;

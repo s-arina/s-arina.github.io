@@ -1,0 +1,44 @@
+.designs-container {
+  background-color: blue;
+  min-height: 100vh;
+}
+
+.design-thumbnails ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.design-thumbnails li {
+  width: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.design-thumbnails li:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.design-thumbnails .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 900px) {
+  .design-thumbnails ul li {
+    width: 33.33%;
+  }
+}
+/*# sourceMappingURL=Designs.css.map */

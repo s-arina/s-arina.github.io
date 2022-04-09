@@ -5,6 +5,7 @@ import About from './components/About';
 import ProjectDesc from './components/web-projects/ProjectDesc';
 import Projects from './components/web-projects/Projects';
 import DesignDesc from './components/graphic-design/DesignDesc';
+import Designs from './components/graphic-design/Designs';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <ProjectDesc />
       <Projects />
       <DesignDesc />
+      <Designs />
       <Footer />
     </div>
   );
