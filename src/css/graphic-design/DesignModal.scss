@@ -1,6 +1,10 @@
 .design-modal {
-  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
@@ -11,13 +15,60 @@
   .modal-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    margin-top: 10%;
-    height: 30rem;
-    width: 30rem;
+    background-color: transparent;
+    color: white;
+    margin-top: 5%;
+    max-height: 85vh;
+    width: 70%;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 2rem;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem 1rem 2rem 2rem;
+    z-index: 5;
+  }
+
+  .design-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1rem;
+    gap: 2rem;
+    overflow: auto;
+    h1 {
+      font-family: 'Calibre-SB';
+      font-size: 3.6rem;
+    }
+    h2 {
+      font-family: 'Calibre-SB';
+      font-size: 2.2rem;
+      color: lightgrey;
+    }
+    p {
+      font-size: 1.8rem;
+      margin: 0 20% 0 20%;
+    }
+  }
+
+  .close-button {
+    // align-self: flex-end;
+  }
+  button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    &:hover {
+      cursor: crosshair;
+    }
+  }
+}
+
+// ================== UI MODAL
+
+.ui-redesign-imgs {
+  img {
+    width: 100%;
+    margin-top: 1.5rem;
   }
 }
