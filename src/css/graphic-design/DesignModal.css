@@ -69,21 +69,114 @@
   margin: 0 20% 0 20%;
 }
 
-.design-modal button {
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  background-color: red;
+.design-modal .design-info a {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: 1px;
+  -webkit-text-decoration-color: inherit;
+          text-decoration-color: inherit;
 }
 
-.design-modal button:hover {
+.design-modal .design-info img {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.close-container {
+  position: relative;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 50px;
   cursor: crosshair;
 }
 
-.ui-redesign-imgs img {
-  width: 100%;
-  margin-top: 1.5rem;
+.leftright {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ff0011;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ff0011;
+  border-radius: 2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.close {
+  margin: 60px 0 0 5px;
+  position: absolute;
+}
+
+.close-container:hover .leftright {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #f4a259;
+}
+
+.close-container:hover .rightleft {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #f4a259;
+}
+
+.close-container:hover label {
+  opacity: 1;
+}
+
+.ptp-imgs .ptp-gifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  height: auto;
+}
+
+.ptp-imgs .ptp-gifs img {
+  min-width: 48.3%;
+}
+
+.sb-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sb-imgs .sb-row-1,
+.sb-imgs .sb-row-2,
+.sb-imgs .sb-row-3,
+.sb-imgs .sb-row-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.sb-imgs img {
+  min-width: 48.3%;
+}
+
+.sb-imgs .sb-row-2 img:nth-of-type(2) {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=DesignModal.css.map */

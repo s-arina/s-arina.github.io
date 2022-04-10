@@ -1,13 +1,20 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function UIDesign({ setDesignModal }) {
+function UIDesign({ setDesignModalUI }) {
   return (
-    <div className='design-modal' onClick={() => setDesignModal(false)}>
+    <div className='design-modal' onClick={() => setDesignModalUI(false)}>
       <div className='modal-container'>
         <div className='design-info'>
-          <div className='close-button'>
-            <button onClick={() => setDesignModal(false)}>X</button>
+          <div className='close-container'>
+            <div
+              className='leftright'
+              onClick={() => setDesignModalUI(false)}
+            ></div>
+            <div
+              className='rightleft'
+              onClick={() => setDesignModalUI(false)}
+            ></div>
           </div>
           <h1>UI REDESIGN CHALLENGE</h1>
           <h2>Adobe XD / Adobe Illustrator / Adobe Procreate</h2>
