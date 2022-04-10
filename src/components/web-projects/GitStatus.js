@@ -42,10 +42,10 @@ function GitStatus() {
         <div className='project-body'>
           <div className='project-details-container'>
             <div className='project-details'>
-              <h2>Developer | Designer</h2>
+              <h2>Developer / Designer</h2>
               <br />
               <h2>
-                JavaScript | React.js | Firebase | Chart.js | Bootstrap | GitHub
+                JavaScript / React.js / Firebase / Chart.js / Bootstrap / GitHub
                 API
               </h2>
             </div>

@@ -34,7 +34,7 @@ function Nav() {
               <span style={spanStyle}>02.</span> Graphic Design
             </p>
           </a>
-          <a href='#about'>
+          <a href='#illustration'>
             <p>
               <span style={spanStyle}>03.</span> Illustration
             </p>

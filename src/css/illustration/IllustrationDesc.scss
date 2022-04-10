@@ -1,0 +1,11 @@
+#illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20rem 5rem 5rem 5rem;
+
+  .projects-title-desc p {
+    width: 40%;
+  }
+}

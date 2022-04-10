@@ -85,7 +85,7 @@
 }
 
 .tagcloud .tagcloud--item:hover {
-  color: red;
+  color: black;
 }
 
 .tagcloud-small {
@@ -96,7 +96,7 @@
 }
 
 .tagcloud-small .tagcloud--item:hover {
-  color: red;
+  color: black;
 }
 
 @media (min-width: 905px) {

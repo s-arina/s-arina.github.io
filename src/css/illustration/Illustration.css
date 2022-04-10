@@ -1,0 +1,41 @@
+.illustrations-container .illustrations {
+  margin-top: 5rem;
+}
+
+.illustrations-container .illustrations ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.illustrations-container .illustrations li {
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustrations-container .illustrations li:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.illustrations-container .illustrations .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.illustrations-container .illustrations img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=illustration.css.map */

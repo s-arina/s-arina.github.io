@@ -6,6 +6,8 @@ import ProjectDesc from './components/web-projects/ProjectDesc';
 import Projects from './components/web-projects/Projects';
 import DesignDesc from './components/graphic-design/DesignDesc';
 import Designs from './components/graphic-design/Designs';
+import IllustrationDesc from './components/illustration/IllustrationDesc';
+import Illustration from './components/illustration/Illustration';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
       <Projects />
       <DesignDesc />
       <Designs />
+      <IllustrationDesc />
+      <Illustration />
       <Footer />
     </div>
   );
