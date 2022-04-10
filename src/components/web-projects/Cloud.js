@@ -10,21 +10,21 @@ function Cloud() {
     setTc(tc);
     setTcSM(tcSM);
 
-    var colors = [
-      // '#34A853',
-      // '#FBBC05',
-      // '#4285F4',
-      // '#7FBC00',
-      // 'FFBA01',
-      // '01A6F0',
-      'red',
-      'blue',
-      'orange',
-      'green',
-      'purple',
-    ];
-    var random_color = colors[Math.floor(Math.random() * colors.length)];
-    document.querySelector('.tagcloud').style.color = random_color;
+    // var colors = [
+    //   // '#34A853',
+    //   // '#FBBC05',
+    //   // '#4285F4',
+    //   // '#7FBC00',
+    //   // 'FFBA01',
+    //   // '01A6F0',
+    //   'red',
+    //   'blue',
+    //   'orange',
+    //   'green',
+    //   'purple',
+    // ];
+    // var random_color = colors[Math.floor(Math.random() * colors.length)];
+    // document.querySelector('.tagcloud').style.color = random_color;
   }, []);
 
   const TagCloud = require('TagCloud');
@@ -54,7 +54,7 @@ function Cloud() {
     maxSpeed: 'normal',
     initSpeed: 'normal',
     direction: 135,
-    keep: false,
+    keep: true,
   };
 
   const optionsSM = {

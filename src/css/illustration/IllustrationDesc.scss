@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10rem 5rem 5rem 5rem;
 
-  padding: 20rem 5rem 5rem 5rem;
+  background-color: #1a1a1a;
+  color: white;
 
   .projects-title-desc p {
     width: 40%;

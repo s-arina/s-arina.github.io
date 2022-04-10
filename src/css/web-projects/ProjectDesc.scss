@@ -1,7 +1,7 @@
 #projects {
-  padding: 10rem 10rem 0 10rem;
+  padding: 10rem;
   display: flex;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .projects-desc {
@@ -54,8 +54,9 @@
   font-family: 'Calibre', sans-serif;
   font-size: 2rem;
   margin: auto;
+  z-index: 0;
   .tagcloud--item:hover {
-    color: black;
+    color: red;
   }
   display: none;
 }
@@ -64,8 +65,10 @@
   font-family: 'Calibre', sans-serif;
   font-size: 2rem;
   margin: auto;
+  z-index: 0;
+
   .tagcloud--item:hover {
-    color: black;
+    color: red;
   }
   display: none;
 }

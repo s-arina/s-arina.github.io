@@ -3,8 +3,6 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #1a1a1a;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1a1a1a), to(#000000));
-  background: linear-gradient(360deg, #1a1a1a, #000000);
   color: white;
   padding: 10rem;
   min-height: 110vh;

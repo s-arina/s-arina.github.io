@@ -13,7 +13,7 @@
 }
 
 .nav_black {
-  background-color: black;
+  background-color: #1a1a1a;
   -webkit-box-shadow: 0 10px 30px -10px rgba(26, 26, 26, 0.7);
           box-shadow: 0 10px 30px -10px rgba(26, 26, 26, 0.7);
 }
@@ -37,7 +37,7 @@
 
 .nav_content .nav_logo {
   height: 100%;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 .nav_content .nav_links {
@@ -54,19 +54,15 @@
 .nav_content .nav_links p {
   color: #fff;
   letter-spacing: 0.1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav_content .nav_links a {
   text-decoration: none;
-  -webkit-text-decoration-color: #e50914;
-          text-decoration-color: #e50914;
 }
 
 .nav_content .nav_links a :hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-thickness: 1px;
-  -webkit-text-decoration-color: #e50914;
-          text-decoration-color: #e50914;
+  color: grey;
 }
 /*# sourceMappingURL=Nav.css.map */

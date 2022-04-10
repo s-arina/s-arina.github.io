@@ -9,7 +9,6 @@ function Projects() {
     <div className='projects-scroller'>
       <div className='projects-arrow-wrapper'>
         <i className='arrow right'></i>
-        <i className='arrow right'></i>
       </div>
       <div className='projects-container'>
         <GitStatus />

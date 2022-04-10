@@ -28,11 +28,6 @@ function ProjectDesc() {
             , I had the opportunity to learn and experiment with a diverse tech
             stack to create fun and innovative web applications with team
             members, or on my own.
-            <br />
-            <br />
-            I'm always looking at new and different frameworks and libraries to
-            add to my stack. I'm always a work in progress, and hope to only get
-            better!
           </p>
         </div>
         <Cloud />

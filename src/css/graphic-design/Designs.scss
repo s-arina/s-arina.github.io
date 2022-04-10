@@ -1,6 +1,4 @@
 .designs-container {
-  // background-color: #1a1a1a;
-  min-height: 100vh;
 }
 
 .design-thumbnails {
@@ -56,7 +54,7 @@
   .thumbnail:hover + .thumbnail-hover,
   .thumbnail-hover:hover {
     opacity: 1;
-    cursor: crosshair;
+    cursor: pointer;
   }
 }
 

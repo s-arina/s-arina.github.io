@@ -16,35 +16,26 @@ function SpotTheDiff() {
           >
             <p>Spot the Difference</p>
           </a>
-          <p>
-            <a
-              href={'https://github.com/s-arina/s-arina.github.io'}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                role='img'
-                viewBox='0 0 22 22'
-                fill='none'
-                stroke='red'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                className='feather feather-github'
-              >
-                <title>GitHub</title>
-                <path d='M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22'></path>
-              </svg>
-            </a>
-          </p>
+          <a
+            href={'https://github.com/s-arina/s-arina.github.io'}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <p>code</p>
+          </a>
         </div>
         <div className='project-body'>
           <div className='project-details-container'>
             <div className='project-details'>
-              <h2>Sole Developer / Designer</h2>
-              <br />
-              <h2>JavaScript / HTML / CSS</h2>
+              <ul className='tech-stack'>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Firebase</li>
+                <li>JavaScript</li>
+                <li>Chart.js</li>
+                <li>Bootstrap</li>
+                <li>GitHub API</li>
+              </ul>
             </div>
             <div className='project-desc'>
               <p>
@@ -59,7 +50,7 @@ function SpotTheDiff() {
                 implement more levels in the future!
               </p>
             </div>
-            <div className='project-team'></div>
+            {/* <div className='project-team'></div> */}
           </div>
         </div>
       </div>

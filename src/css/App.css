@@ -16,8 +16,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 10rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1a1a1a), to(#000000));
-  background: linear-gradient(360deg, #1a1a1a, #000000);
+  background: #1a1a1a;
   background-position: top right;
   background-size: cover;
 }

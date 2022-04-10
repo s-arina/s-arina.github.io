@@ -13,9 +13,10 @@ function IllustrationDesc(props) {
             love drawing landscapes and fanart inspired from my favorite movies
             or games.
             <br />
-            <br />I do commmissions in my free time! I've gone from mouse
-            drawing on MS Paint, to tablet drawing on Paint Tool SAI, and now I
-            mainly work with Adobe Procreate and Photoshop.
+            <br />
+            I've gone from drawing in MS Paint with a mouse, to Paint Tool SAI
+            with my first tablet, and now I mainly work with Adobe Procreate on
+            my iPad and Photoshop.
           </p>
         </div>
       </div>

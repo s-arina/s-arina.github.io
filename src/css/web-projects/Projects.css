@@ -6,15 +6,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2rem;
   margin: 0 10rem 10rem 10rem;
   position: relative;
+  min-height: 100vh;
 }
 
 .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 7rem;
   width: 100%;
   overflow-x: auto;
@@ -22,18 +29,9 @@
 }
 
 .projects-arrow-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
-  top: -3rem;
-  right: 2rem;
+  top: 6rem;
+  right: 1rem;
   -webkit-animation: slide 1s ease-in-out infinite;
           animation: slide 1s ease-in-out infinite;
 }
@@ -52,29 +50,5 @@
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-
-@-webkit-keyframes slide {
-  0%,
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(10px, 0);
-            transform: translate(10px, 0);
-  }
-}
-
-@keyframes slide {
-  0%,
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(10px, 0);
-            transform: translate(10px, 0);
-  }
 }
 /*# sourceMappingURL=Projects.css.map */
