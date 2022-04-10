@@ -1,7 +1,7 @@
 #projects {
-  padding: 10rem;
+  padding: 10rem 10rem 0 10rem;
   display: flex;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .projects-desc {
@@ -9,7 +9,6 @@
   justify-content: space-between;
   // flex-wrap: wrap;
   align-items: center;
-  margin: 0 5rem;
   width: 100%;
   h1 {
     font-family: 'Calibre-SB';
@@ -46,14 +45,14 @@
 .cloud {
   display: flex;
   justify-content: center;
-  margin: auto;
+  // margin: auto;
   flex-grow: 1;
 }
 
 .tagcloud {
   font-family: 'Calibre', sans-serif;
   font-size: 2rem;
-  margin: auto;
+  // margin: auto;
   z-index: 0;
   .tagcloud--item:hover {
     color: red;
@@ -61,20 +60,24 @@
   display: none;
 }
 
-.tagcloud-small {
-  font-family: 'Calibre', sans-serif;
-  font-size: 2rem;
-  margin: auto;
-  z-index: 0;
+// .tagcloud-small {
+//   font-family: 'Calibre', sans-serif;
+//   font-size: 2rem;
+//   margin: auto;
+//   z-index: 0;
 
-  .tagcloud--item:hover {
-    color: red;
-  }
-  display: none;
-}
+//   .tagcloud--item:hover {
+//     color: red;
+//   }
+//   display: none;
+// }
 
 // 905px min to show cloud
 @media (min-width: 905px) {
+  #projects {
+    min-height: 100vh;
+    padding: 0 10rem;
+  }
   .projects-title-desc {
     width: 60%;
   }

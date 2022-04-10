@@ -20,8 +20,7 @@ function PTP({ setDesignModalPTP }) {
           <h2>Adobe InDesign</h2>
           <p>
             Book and Kindle redesign and update for Tony Award winning theatre
-            producer <br />
-            Sue Gilad’s book,{' '}
+            producer Sue Gilad’s book,{' '}
             <a
               href={'https://paidtoproofread.com/shop/'}
               target='_blank'
@@ -34,8 +33,7 @@ function PTP({ setDesignModalPTP }) {
             <br />
             <br />
             Updated and given a more fun and modern look after 20 years of being
-            a black and white Microsoft Word document! I redesigned every page
-            as well as a new cover.
+            a black and white Microsoft Word document.
           </p>
           <div className='ptp-imgs'>
             <div className='ptp-gifs'>

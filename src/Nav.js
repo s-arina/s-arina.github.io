@@ -12,6 +12,13 @@ function Nav() {
     }
   };
 
+  const scrollTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', transitionNavBar);
     return () => window.removeEventListener('scroll', transitionNavBar);
@@ -20,9 +27,8 @@ function Nav() {
   return (
     <div className={`nav ${show && 'nav_black'}`}>
       <div className='nav_content'>
-        <a href='/'>
-          <img className='nav_logo' src='/logo.png' alt='' />
-        </a>
+        <img className='nav_logo' src='/logo.png' alt='' onClick={scrollTop} />
+
         <div className='nav_links'>
           <a href='#projects'>
             <p>

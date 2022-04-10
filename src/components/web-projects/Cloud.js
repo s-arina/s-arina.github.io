@@ -54,7 +54,7 @@ function Cloud() {
     maxSpeed: 'normal',
     initSpeed: 'normal',
     direction: 135,
-    keep: true,
+    keep: false,
   };
 
   const optionsSM = {
@@ -68,7 +68,7 @@ function Cloud() {
   return (
     <div className='cloud'>
       <div className='tagcloud'></div>
-      <div className='tagcloud-small'></div>
+      {/* <div className='tagcloud-small'></div> */}
     </div>
   );
 }
