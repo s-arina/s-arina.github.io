@@ -1,0 +1,78 @@
+#contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#contact .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .about img {
+  width: 20rem;
+  border-radius: 200px;
+}
+
+#contact h1 {
+  font-size: 6.4rem;
+  margin-top: 2rem;
+}
+
+#contact h2 {
+  font-size: 2.2rem;
+  color: grey;
+  letter-spacing: 1px;
+}
+
+#contact p {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+
+#contact .contact-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+#contact .contact-btns a {
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+#contact .contact-btns a:hover {
+  color: red;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=Contact.css.map */

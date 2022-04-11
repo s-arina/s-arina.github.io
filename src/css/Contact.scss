@@ -1,0 +1,62 @@
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+  min-height: 100vh;
+  // background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
+  // background-position: top right;
+  // background-size: cover;
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 20rem;
+      border-radius: 200px;
+    }
+  }
+
+  h1 {
+    font-size: 6.4rem;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    color: grey;
+    letter-spacing: 1px;
+  }
+
+  p {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .contact-btns {
+    display: flex;
+    margin-top: 5rem;
+    gap: 2rem;
+    a {
+      color: white;
+      background-color: red;
+      border: 1px solid red;
+      border-radius: 5px;
+      padding: 1.5rem 2.5rem;
+      font-size: 1.8rem;
+      line-height: 1;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        color: red;
+        background-color: #f2f2f2;
+        border: 1px solid red;
+      }
+    }
+  }
+}

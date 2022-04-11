@@ -1,7 +1,7 @@
 import './css/App.css';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
-import About from './components/About';
+import Contact from './components/Contact';
 import ProjectDesc from './components/web-projects/ProjectDesc';
 import Projects from './components/web-projects/Projects';
 import DesignDesc from './components/graphic-design/DesignDesc';
@@ -37,12 +37,10 @@ function App() {
         </a>
       </div>
       <ProjectDesc />
-      {/* <Projects /> */}
       <DesignDesc />
       <Designs />
       <IllustrationDesc />
-      {/* <Illustration /> */}
-      <About />
+      <Contact />
       <Footer />
     </div>
   );
