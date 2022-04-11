@@ -42,7 +42,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -61,6 +61,6 @@
 }
 
 .nav_content .nav_links a :hover {
-  color: #a0a0a0;
+  color: red;
 }
 /*# sourceMappingURL=Nav.css.map */

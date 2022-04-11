@@ -17,8 +17,8 @@
   left: 0;
   z-index: 9999;
   overflow: hidden;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .design-modal .modal-container {
@@ -29,7 +29,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
   color: white;
   margin-top: 2%;
   max-height: 85vh;
@@ -83,6 +83,16 @@
 .design-modal .design-info img {
   width: 100%;
   margin-top: 1.5rem;
+}
+
+.design-modal-invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.design-modal-visible {
+  opacity: 1;
+  pointer-events: initial;
 }
 
 .close-container {

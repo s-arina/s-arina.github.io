@@ -7,9 +7,9 @@ import SpotTheDiff from './SpotTheDiff';
 function Projects() {
   return (
     <div className='projects-scroller'>
-      <div className='projects-arrow-wrapper'>
+      {/* <div className='projects-arrow-wrapper'>
         <i className='arrow right'></i>
-      </div>
+      </div> */}
       <div className='projects-container'>
         <GitStatus />
         <IHopie />

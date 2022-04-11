@@ -77,7 +77,7 @@ function DesignDesc() {
               alt=''
               style={{
                 boxShadow: ind
-                  ? '0px 0px 50px 10px rgba(255, 48, 102, 0.8)'
+                  ? '0px 0px 40px 0px rgba(255, 48, 102, 0.8)'
                   : 'none',
               }}
             />
@@ -86,7 +86,7 @@ function DesignDesc() {
               alt=''
               style={{
                 boxShadow: ps
-                  ? '0px 0px 50px 10px rgba(48, 168, 255, 0.8)'
+                  ? '0px 0px 40px 0px rgba(48, 168, 255, 0.8)'
                   : 'none',
               }}
             />
@@ -95,7 +95,7 @@ function DesignDesc() {
               alt=''
               style={{
                 boxShadow: ai
-                  ? '0px 0px 50px 10px rgba(255, 154, 0, 0.8)'
+                  ? '0px 0px 40px 0px rgba(255, 154, 0, 0.8)'
                   : 'none',
               }}
             />
@@ -106,7 +106,7 @@ function DesignDesc() {
               alt=''
               style={{
                 boxShadow: xd
-                  ? '0px 0px 50px 10px rgba(255, 97, 247, 0.8)'
+                  ? '0px 0px 40px 0px rgba(255, 97, 247, 0.8)'
                   : 'none',
               }}
             />
@@ -116,7 +116,7 @@ function DesignDesc() {
               alt=''
               style={{
                 boxShadow: pp
-                  ? '0px 0px 50px 10px rgba(153, 153, 255, 0.8)'
+                  ? '0px 0px 40px 0px rgba(153, 153, 255, 0.8)'
                   : 'none',
               }}
             />
@@ -125,7 +125,7 @@ function DesignDesc() {
               alt=''
               style={{
                 boxShadow: ae
-                  ? '0px 0px 50px 10px rgba(153, 153, 255, 0.8)'
+                  ? '0px 0px 40px 0px rgba(153, 153, 255, 0.8)'
                   : 'none',
               }}
             />

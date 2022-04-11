@@ -56,12 +56,12 @@ a {
 
 ::-webkit-scrollbar:horizontal {
   height: 0.5rem;
-  display: none;
+  // display: none;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
   background-clip: padding-box;
   border-radius: 20px;
   background-color: #8b949e;
-  display: none;
+  // display: none;
 }

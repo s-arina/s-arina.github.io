@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../css/graphic-design/Designs.css';
+import '../../css/graphic-design/DesignModal.css';
 import UIDesign from './UIDesign';
 import PTP from './PTP';
 import UBF from './UBF';
@@ -17,16 +18,64 @@ function Designs() {
 
   return (
     <div className='designs-container'>
-      {designModalUI ? <UIDesign setDesignModalUI={setDesignModalUI} /> : null}
-      {designModalPTP ? <PTP setDesignModalPTP={setDesignModalPTP} /> : null}
-      {designModalUBF ? <UBF setDesignModalUBF={setDesignModalUBF} /> : null}
-      {designModalSB ? <SB setDesignModalSB={setDesignModalSB} /> : null}
-      {designModalLOUVRE ? (
-        <LOUVRE setDesignModalLOUVRE={setDesignModalLOUVRE} />
-      ) : null}
-      {designModalZODIAC ? (
-        <ZODIAC setDesignModalZODIAC={setDesignModalZODIAC} />
-      ) : null}
+      <div
+        className={`design-modal ${
+          designModalUI ? 'design-modal-visible' : 'design-modal-invisible'
+        }`}
+      >
+        <UIDesign
+          setDesignModalUI={setDesignModalUI}
+          designModalUI={designModalUI}
+        />
+      </div>
+      <div
+        className={`design-modal ${
+          designModalPTP ? 'design-modal-visible' : 'design-modal-invisible'
+        }`}
+      >
+        <PTP
+          setDesignModalPTP={setDesignModalPTP}
+          designModalPTP={designModalPTP}
+        />
+      </div>
+      <div
+        className={`design-modal ${
+          designModalUBF ? 'design-modal-visible' : 'design-modal-invisible'
+        }`}
+      >
+        <UBF
+          setDesignModalUBF={setDesignModalUBF}
+          designModalUBF={designModalUBF}
+        />
+      </div>
+      <div
+        className={`design-modal ${
+          designModalSB ? 'design-modal-visible' : 'design-modal-invisible'
+        }`}
+      >
+        <SB setDesignModalSB={setDesignModalSB} designModalSB={designModalSB} />
+      </div>
+      <div
+        className={`design-modal ${
+          designModalLOUVRE ? 'design-modal-visible' : 'design-modal-invisible'
+        }`}
+      >
+        <LOUVRE
+          setDesignModalLOUVRE={setDesignModalLOUVRE}
+          designModalLOUVRE={designModalLOUVRE}
+        />
+      </div>
+      <div
+        className={`design-modal ${
+          designModalZODIAC ? 'design-modal-visible' : 'design-modal-invisible'
+        }`}
+      >
+        <ZODIAC
+          setDesignModalZODIAC={setDesignModalZODIAC}
+          designModalZODIAC={designModalZODIAC}
+        />
+      </div>
+
       <div className='design-thumbnails'>
         <ul>
           <li>

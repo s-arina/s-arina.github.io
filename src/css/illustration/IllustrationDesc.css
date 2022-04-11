@@ -6,12 +6,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10rem;
   background-color: #1a1a1a;
   color: white;
+  min-height: 100vh;
 }
 
 #illustration .projects-title-desc p {

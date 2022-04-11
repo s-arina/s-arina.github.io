@@ -45,25 +45,37 @@
   opacity: 0;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(39, 39, 39, 0.5);
   width: 100%;
   height: 100%;
   padding: 2rem;
-  -webkit-transition: opacity 0.2s, visibility 0.2s;
-  transition: opacity 0.2s, visibility 0.2s;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .design-thumbnails .thumbnail-hover p {
-  font-family: 'Calibre';
+  font-family: 'Calibre-SB';
   word-wrap: break-word;
   font-size: 3.6rem;
   line-height: 4rem;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .design-thumbnails .thumbnail:hover + .thumbnail-hover,
 .design-thumbnails .thumbnail-hover:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.design-thumbnails .thumbnail:hover + .thumbnail-hover p,
+.design-thumbnails .thumbnail-hover:hover p {
+  opacity: 0.8;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media screen and (max-width: 900px) {

@@ -31,24 +31,16 @@ function Nav() {
 
         <div className='nav_links'>
           <a href='#projects'>
-            <p>
-              <span style={spanStyle}>01.</span> Projects
-            </p>
+            <p>{/* <span style={spanStyle}>01.</span> */}Projects</p>
           </a>
           <a href='#design'>
-            <p>
-              <span style={spanStyle}>02.</span> Graphic Design
-            </p>
+            <p>{/* <span style={spanStyle}>02.</span>  */}Graphic Design</p>
           </a>
           <a href='#illustration'>
-            <p>
-              <span style={spanStyle}>03.</span> Illustration
-            </p>
+            <p>{/* <span style={spanStyle}>03.</span>  */}Illustration</p>
           </a>
           <a href='#about'>
-            <p>
-              <span style={spanStyle}>04.</span> About
-            </p>
+            <p>{/* <span style={spanStyle}>04.</span>  */}About</p>
           </a>
         </div>
       </div>

@@ -51,18 +51,23 @@
 }
 
 .project-name .project-header a {
+  color: black;
   text-decoration: none;
-}
-
-.project-name .project-header a :hover {
-  color: red;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .project-name .project-header p {
   font-size: 3.2rem;
   color: black;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+}
+
+.project-name .project-header p :hover {
+  color: red;
+}
+
+.project-name .project-header p:nth-of-type(2) {
+  font-size: 1.6rem;
 }
 
 .project-name .project-header svg {

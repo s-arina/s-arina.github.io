@@ -1,11 +1,13 @@
 #illustration {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+
   padding: 10rem;
 
   background-color: #1a1a1a;
   color: white;
+  min-height: 100vh;
 
   .projects-title-desc p {
     width: 40%;

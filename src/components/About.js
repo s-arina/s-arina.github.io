@@ -1,8 +1,12 @@
 import React from 'react';
-// import '../../css/web-projects/About.css';
+import '../css/About.css';
 
 function About() {
-  return <div id='about'></div>;
+  return (
+    <div id='about'>
+      <h1>SheeSSHhh sheeesh shessh sheesh SHEEEEEEEESH</h1>
+    </div>
+  );
 }
 
 export default About;

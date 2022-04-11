@@ -42,6 +42,7 @@ function App() {
       <Designs />
       <IllustrationDesc />
       <Illustration />
+      <About />
       <Footer />
     </div>
   );

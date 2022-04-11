@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Calibre-SB';
-  src: url('/public/CalibreSemibold.otf');
+  src: url("/public/CalibreSemibold.otf");
 }
 
 @font-face {
   font-family: 'Calibre';
-  src: url('/public/CalibreRegular.otf');
+  src: url("/public/CalibreRegular.otf");
 }
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Calibre', 'Calibre-SB', san-serif;
 }
 
@@ -31,8 +31,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 a {
@@ -51,13 +50,11 @@ a {
 
 ::-webkit-scrollbar:horizontal {
   height: 0.5rem;
-  display: none;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
   background-clip: padding-box;
   border-radius: 20px;
   background-color: #8b949e;
-  display: none;
 }
 /*# sourceMappingURL=index.css.map */
