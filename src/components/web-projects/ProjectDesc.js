@@ -30,6 +30,18 @@ function ProjectDesc() {
             stack to create fun and innovative web applications with team
             members, or on my own.
           </p>
+          <div className='skills'>
+            <li>JavaScript</li>
+            <li>CSS / SCSS</li>
+            <li>HTML</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>Sequelize</li>
+            <li>PostgreSQL</li>
+            <li>git</li>
+          </div>
         </div>
         {/* <Cloud /> */}
         <Projects />

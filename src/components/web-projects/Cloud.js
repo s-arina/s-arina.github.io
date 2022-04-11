@@ -9,22 +9,6 @@ function Cloud() {
     const tcSM = TagCloud(containerSM, myTags, optionsSM);
     setTc(tc);
     setTcSM(tcSM);
-
-    // var colors = [
-    //   // '#34A853',
-    //   // '#FBBC05',
-    //   // '#4285F4',
-    //   // '#7FBC00',
-    //   // 'FFBA01',
-    //   // '01A6F0',
-    //   'red',
-    //   'blue',
-    //   'orange',
-    //   'green',
-    //   'purple',
-    // ];
-    // var random_color = colors[Math.floor(Math.random() * colors.length)];
-    // document.querySelector('.tagcloud').style.color = random_color;
   }, []);
 
   const TagCloud = require('TagCloud');

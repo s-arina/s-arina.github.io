@@ -62,18 +62,12 @@
 @media screen and (max-width: 970px) {
   .projects-scroller {
     justify-content: flex-start;
-    height: 60%;
-  }
-}
-
-@media screen and (max-width: 590px) {
-  .projects-scroller {
-    width: 50%;
+    height: 50%;
   }
 }
 
 @media screen and (max-width: 556px) {
   .projects-scroller {
-    height: 40%;
+    height: 30%;
   }
 }

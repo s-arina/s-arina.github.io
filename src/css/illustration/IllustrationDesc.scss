@@ -2,14 +2,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
-  padding: 10rem;
-
+  padding-left: 10rem;
   background-color: #1a1a1a;
   color: white;
-  min-height: 100vh;
+  // min-height: 100vh;
 
-  .projects-title-desc p {
-    width: 40%;
+  .illustration-desc {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    h1 {
+      font-family: 'Calibre-SB';
+      font-size: 6.4rem;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .illustration-title-desc {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 962px) {
+  #illustration {
+    padding-left: 0;
+    .illustration-title-desc {
+      padding: 10rem;
+    }
+    .illustration-desc {
+      gap: 0;
+    }
   }
 }

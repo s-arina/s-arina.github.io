@@ -9,13 +9,63 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10rem;
   background-color: #1a1a1a;
   color: white;
-  min-height: 100vh;
 }
 
-#illustration .projects-title-desc p {
-  width: 40%;
+#illustration .illustration-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5rem;
+}
+
+#illustration .illustration-desc h1 {
+  font-family: 'Calibre-SB';
+  font-size: 6.4rem;
+}
+
+#illustration .illustration-desc p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+#illustration .illustration-title-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  gap: 1rem;
+}
+
+#illustration .illustration-title-desc a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 962px) {
+  #illustration {
+    padding-left: 0;
+  }
+  #illustration .illustration-title-desc {
+    padding: 10rem;
+  }
+  #illustration .illustration-desc {
+    gap: 0;
+  }
 }
 /*# sourceMappingURL=IllustrationDesc.css.map */

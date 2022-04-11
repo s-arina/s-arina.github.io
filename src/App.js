@@ -41,7 +41,7 @@ function App() {
       <DesignDesc />
       <Designs />
       <IllustrationDesc />
-      <Illustration />
+      {/* <Illustration /> */}
       <About />
       <Footer />
     </div>
