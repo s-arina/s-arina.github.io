@@ -37,7 +37,7 @@ function App() {
         </a>
       </div>
       <ProjectDesc />
-      <Projects />
+      {/* <Projects /> */}
       <DesignDesc />
       <Designs />
       <IllustrationDesc />

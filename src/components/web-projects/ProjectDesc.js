@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/web-projects/ProjectDesc.css';
 import Cloud from './Cloud';
+import Projects from './Projects';
 
 function ProjectDesc() {
   return (
@@ -30,7 +31,8 @@ function ProjectDesc() {
             members, or on my own.
           </p>
         </div>
-        <Cloud />
+        {/* <Cloud /> */}
+        <Projects />
       </div>
     </div>
   );

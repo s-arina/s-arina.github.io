@@ -10,23 +10,26 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
-  padding: 0 10rem 10rem 10rem;
-  position: relative;
-  min-height: 95vh;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  gap: 7rem;
+  gap: 4rem;
   width: 100%;
-  overflow-x: auto;
-  padding: 1rem 2rem 2rem 0;
+  overflow: auto;
+  height: 100%;
+  padding: 0 2rem 0 0.5rem;
 }
 
 .projects-arrow-wrapper {
@@ -57,5 +60,26 @@
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 970px) {
+  .projects-scroller {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .projects-scroller {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .projects-scroller {
+    height: 40%;
+  }
 }
 /*# sourceMappingURL=Projects.css.map */

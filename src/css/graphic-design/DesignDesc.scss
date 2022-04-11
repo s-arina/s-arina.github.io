@@ -37,7 +37,6 @@
 .adobe-icons {
   display: flex;
   justify-content: center;
-
   flex: 1 1 50%;
   gap: 5rem;
   .icon-row-1,
@@ -68,6 +67,16 @@
     }
     img {
       max-width: 9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .icon-row-1,
+  .icon-row-2 {
+    img {
+      max-width: 7rem;
+      border-radius: 20px;
     }
   }
 }

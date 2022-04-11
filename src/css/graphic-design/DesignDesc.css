@@ -110,6 +110,14 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .icon-row-1 img,
+  .icon-row-2 img {
+    max-width: 7rem;
+    border-radius: 20px;
+  }
+}
+
 .ind {
   color: #ff3066;
 }
