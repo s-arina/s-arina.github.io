@@ -1,13 +1,12 @@
 import React from 'react';
 import '../css/Contact.css';
-import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
     <div id='contact'>
       <div className='about'>
         <img src='/self.png' alt='' />
-        <h1>About me.</h1>
+        <h1>Hi!</h1>
         <h2>NYC / Always Sleepy & Hungry / Horror Movie Fanatic</h2>
         <p>
           Currently I'm looking for a <strong>front-end</strong> or a{' '}
@@ -15,8 +14,7 @@ function Contact() {
           too).
           <br />
           <br />
-          You can get in touch with me by sending a messsage. I'd love to
-          connect!
+          Get in touch with me by sending a messsage. I'd love to connect!
         </p>
         <div className='contact-btns'>
           <a

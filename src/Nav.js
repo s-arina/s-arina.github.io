@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './css/Nav.css';
 
 function Nav() {
-  const spanStyle = { color: 'red' };
   const [show, handleShow] = useState(false);
+  const [hamMenu, setHamMenu] = useState(false);
+
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
       handleShow(true);
@@ -28,20 +29,25 @@ function Nav() {
     <div className={`nav ${show && 'nav_black'}`}>
       <div className='nav_content'>
         <img className='nav_logo' src='/logo.png' alt='' onClick={scrollTop} />
-
         <div className='nav_links'>
           <a href='#projects'>
-            <p>{/* <span style={spanStyle}>01.</span> */}Projects</p>
+            <p>Projects</p>
           </a>
           <a href='#design'>
-            <p>{/* <span style={spanStyle}>02.</span>  */}Graphic Design</p>
+            <p>Graphic Design</p>
           </a>
           <a href='#illustration'>
-            <p>{/* <span style={spanStyle}>03.</span>  */}Illustration</p>
+            <p>Illustration</p>
           </a>
-          <a href='#about'>
-            <p>{/* <span style={spanStyle}>04.</span>  */}About</p>
+          <a href='#contact'>
+            <p>Contact</p>
           </a>
+          <button className='icon' onClick={() => setHamMenu(!hamMenu)}>
+            &#9776;
+          </button>
+          <div className={`ham-menu${hamMenu ? '-visible' : ''}`}>
+            <h1>Links here</h1>
+          </div>
         </div>
       </div>
     </div>
