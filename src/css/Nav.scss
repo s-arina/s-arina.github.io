@@ -2,18 +2,18 @@
   box-sizing: border-box;
   position: fixed;
   top: 0;
-  padding: 3rem 3rem;
+  padding: 3rem;
   width: 100%;
   z-index: 1;
   transition-timing-function: ease-in;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
-.nav_black {
+.nav-black {
   background-color: #1a1a1a;
 }
 
-.nav_content {
+.nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,11 +21,12 @@
   a {
     height: 100%;
   }
-  .nav_logo {
+  .nav-logo {
     height: 100%;
+    z-index: 3;
     cursor: pointer;
   }
-  .nav_links {
+  .nav-links {
     display: flex;
     font-size: 1.6rem;
     justify-content: space-between;
@@ -44,14 +45,38 @@
   }
 }
 
-.nav .icon {
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+  opacity: 0.5;
+  background-color: black;
+  visibility: hidden;
+  transform: translateX(100vw);
+}
+
+.overlay-visible {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+  opacity: 0.5;
+  background-color: black;
+  visibility: visible;
+  transform: translateX(0vw);
+}
+
+.ham-icon {
   display: none;
   background-color: transparent;
   border: none;
   font-size: 4.8rem;
   color: red;
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
 }
 
 .ham-menu {
@@ -62,15 +87,15 @@
   top: 0px;
   bottom: 0px;
   right: 0px;
-  padding: 50px 10px;
+  padding: 5rem 1rem;
   width: calc(min(75vw, 400px));
-  height: 100vh;
+  min-height: 100vh;
   outline: 0px;
   color: white;
-  z-index: 2;
+  z-index: 3;
   transform: translateX(100vw);
   visibility: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 
 .ham-menu-visible {
@@ -81,29 +106,66 @@
   top: 0px;
   bottom: 0px;
   right: 0px;
-  padding: 50px 10px;
+  padding: 5rem 1rem;
   width: calc(min(75vw, 400px));
-  height: 100vh;
+  min-height: 100vh;
   outline: 0px;
   color: white;
-  z-index: 2;
+  z-index: 3;
   transform: translateX(0vw);
   visibility: visible;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 
-  background-color: blue;
+  background-color: #1a1a1a;
 
-  h1 {
-    color: white;
+  .ham-links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.2rem;
+    gap: 4rem;
+    hr {
+      margin: auto;
+      width: 10%;
+      border: none;
+      background-color: grey;
+      height: 1px;
+    }
+    p {
+      color: white;
+      letter-spacing: 0.1rem;
+      transition: all 0.3s ease;
+    }
+    a {
+      text-decoration: none;
+      :hover {
+        color: red;
+      }
+    }
+  }
+  .ham-menu-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .nav a {
+  .nav .nav-links a {
     display: none;
   }
-  .nav .icon {
+  .ham-icon {
     float: right;
     display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ham-menu-visible {
+    display: none;
+  }
+  .overlay-visible {
+    display: none;
   }
 }

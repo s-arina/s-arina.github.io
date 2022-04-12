@@ -6,7 +6,6 @@
 
 .projects-desc {
   display: flex;
-  // justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
@@ -115,3 +114,13 @@
 //     display: block;
 //   }
 // }
+
+@media screen and (max-width: 970px) {
+  #projects {
+    height: auto;
+    padding: 10rem 5rem;
+    .projects-desc {
+      display: block;
+    }
+  }
+}

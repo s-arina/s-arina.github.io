@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EAiBb,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,IAAI,EAAE,OAAO;CAoBd;;AAvCD,AAsBE,cAtBY,CAsBZ,GAAG,GAAG,GAAG,CAAC;EACR,gBAAgB,EAAE,KAAK;CACxB;;AAxBH,AAkCE,cAlCY,CAkCZ,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CAClB",
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,IAAI,EAAE,OAAO;CAWd;;AAdD,AAKE,cALY,CAKZ,GAAG,GAAG,GAAG,CAAC;EACR,gBAAgB,EAAE,KAAK;CACxB;;AAPH,AASE,cATY,CASZ,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CAClB",
     "sources": [
-        "Illustration.scss"
+        "illustration.scss"
     ],
     "names": [],
-    "file": "Illustration.css"
+    "file": "illustration.css"
 }

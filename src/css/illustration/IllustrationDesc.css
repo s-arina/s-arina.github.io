@@ -57,12 +57,12 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 962px) {
+@media screen and (max-width: 979px) {
   #illustration {
-    padding-left: 0;
+    padding: 0;
   }
   #illustration .illustration-title-desc {
-    padding: 10rem;
+    padding: 10rem 5rem;
   }
   #illustration .illustration-desc {
     gap: 0;

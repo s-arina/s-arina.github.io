@@ -195,3 +195,24 @@ svg {
   height: 20px;
   fill: transparent;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app .banner {
+    padding: 10rem 5rem;
+    .intro {
+      padding: 0 5rem;
+      .type-box {
+        width: 30rem;
+        h1 {
+          font-size: 7rem;
+        }
+      }
+    }
+  }
+}

@@ -132,4 +132,12 @@
   border-radius: 50px;
   margin-right: 2rem;
 }
+
+@media screen and (max-width: 970px) {
+  .project-name {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 /*# sourceMappingURL=Project.css.map */

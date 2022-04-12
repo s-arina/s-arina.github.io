@@ -112,4 +112,14 @@
 .tagcloud .tagcloud--item:hover {
   color: red;
 }
+
+@media screen and (max-width: 970px) {
+  #projects {
+    height: auto;
+    padding: 10rem 5rem;
+  }
+  #projects .projects-desc {
+    display: block;
+  }
+}
 /*# sourceMappingURL=ProjectDesc.css.map */

@@ -10,7 +10,6 @@
 
 .designs-desc {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -77,6 +76,23 @@
     img {
       max-width: 7rem;
       border-radius: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #design {
+    padding: 0;
+    min-height: 0;
+    .designs-desc {
+      display: block;
+      gap: 0;
+      .designs-title-desc {
+        padding: 10rem 5rem 5rem 5rem;
+      }
+      .adobe-icons {
+        padding: 5rem 5rem 10rem 5rem;
+      }
     }
   }
 }

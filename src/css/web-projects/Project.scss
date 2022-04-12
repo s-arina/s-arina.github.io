@@ -10,11 +10,8 @@
     display: flex;
     align-content: center;
     img {
-      // width: 60rem;
       width: 100%;
-      // height: 33.5rem;
       box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.1);
-      // filter: brightness(95%);
       transition: all 0.3s ease;
     }
   }
@@ -92,5 +89,11 @@
       border-radius: 50px;
       margin-right: 2rem;
     }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .project-name {
+    justify-content: flex-start;
   }
 }
