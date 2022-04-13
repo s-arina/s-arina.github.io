@@ -303,13 +303,10 @@ svg {
   .app .banner {
     padding: 10rem 5rem;
   }
-  .app .banner .intro {
-    padding: 0 5rem;
-  }
-  .app .banner .intro .type-box {
+  .app .banner .type-box {
     width: 30rem;
   }
-  .app .banner .intro .type-box h1 {
+  .app .banner .type-box h1 {
     font-size: 7rem;
   }
 }

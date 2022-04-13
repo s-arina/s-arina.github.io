@@ -64,63 +64,15 @@
   }
 }
 
-.cloud {
-  display: flex;
-  justify-content: center;
-  // margin: auto;
-  flex-grow: 1;
-}
-
-.tagcloud {
-  font-family: 'Calibre', sans-serif;
-  font-size: 2rem;
-  // margin: auto;
-  z-index: 0;
-  .tagcloud--item:hover {
-    color: red;
-  }
-  display: none;
-}
-
-// .tagcloud-small {
-//   font-family: 'Calibre', sans-serif;
-//   font-size: 2rem;
-//   margin: auto;
-//   z-index: 0;
-
-//   .tagcloud--item:hover {
-//     color: red;
-//   }
-//   display: none;
-// }
-
-// 905px min to show cloud
-// @media (min-width: 905px) {
-//   #projects {
-//     min-height: 100vh;
-//     // padding-left: 10rem;
-//   }
-//   .projects-title-desc {
-//     width: 50%;
-//   }
-//   .tagcloud {
-//     display: block;
-//     width: 100%;
-//   }
-// }
-
-// @media (max-width: 904px) {
-//   .tagcloud-small {
-//     display: block;
-//   }
-// }
-
 @media screen and (max-width: 970px) {
   #projects {
     height: auto;
     padding: 10rem 5rem;
     .projects-desc {
       display: block;
+      .skills {
+        margin: 2rem auto 0;
+      }
     }
   }
 }

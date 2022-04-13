@@ -128,7 +128,11 @@
     padding: 10rem 5rem 5rem 5rem;
   }
   #design .designs-desc .adobe-icons {
-    padding: 5rem 5rem 10rem 5rem;
+    padding: 0 5rem 10rem 5rem;
+  }
+  #design .designs-desc .adobe-icons .icon-row-1,
+  #design .designs-desc .adobe-icons .icon-row-2 {
+    gap: 2rem;
   }
 }
 

@@ -91,7 +91,11 @@
         padding: 10rem 5rem 5rem 5rem;
       }
       .adobe-icons {
-        padding: 5rem 5rem 10rem 5rem;
+        padding: 0 5rem 10rem 5rem;
+        .icon-row-1,
+        .icon-row-2 {
+          gap: 2rem;
+        }
       }
     }
   }

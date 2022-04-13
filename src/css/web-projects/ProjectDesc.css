@@ -90,29 +90,6 @@
   color: red;
 }
 
-.cloud {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.tagcloud {
-  font-family: 'Calibre', sans-serif;
-  font-size: 2rem;
-  z-index: 0;
-  display: none;
-}
-
-.tagcloud .tagcloud--item:hover {
-  color: red;
-}
-
 @media screen and (max-width: 970px) {
   #projects {
     height: auto;
@@ -120,6 +97,9 @@
   }
   #projects .projects-desc {
     display: block;
+  }
+  #projects .projects-desc .skills {
+    margin: 2rem auto 0;
   }
 }
 /*# sourceMappingURL=ProjectDesc.css.map */

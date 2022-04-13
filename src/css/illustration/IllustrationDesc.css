@@ -65,6 +65,7 @@
     padding: 10rem 5rem;
   }
   #illustration .illustration-desc {
+    display: block;
     gap: 0;
   }
 }

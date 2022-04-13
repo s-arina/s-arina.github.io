@@ -32,36 +32,6 @@
   padding: 0 2rem 0 0.5rem;
 }
 
-.projects-arrow-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  top: 0rem;
-  bottom: 0;
-  right: 1rem;
-  -webkit-animation: slide 1s ease-in-out infinite;
-          animation: slide 1s ease-in-out infinite;
-}
-
-.projects-arrow-wrapper p {
-  margin-right: 1rem;
-}
-
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
 @media screen and (max-width: 970px) {
   .projects-scroller {
     margin-top: 5rem;

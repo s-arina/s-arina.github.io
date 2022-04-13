@@ -6,8 +6,9 @@ function Contact() {
     <div id='contact'>
       <div className='about'>
         <img src='/self.png' alt='' />
-        <h1>Hi!</h1>
-        <h2>NYC / Always Sleepy & Hungry / Horror Movie Fanatic</h2>
+        <h1>Hello!</h1>
+        <h2>I NEED TO SHIT</h2>
+        {/* <h2>NYC / Always Sleepy & Hungry / Horror Movie Fanatic</h2> */}
         <p>
           Currently I'm looking for a <strong>front-end</strong> or a{' '}
           <strong>full-stack</strong> developer role (junior or internship,

@@ -3,11 +3,9 @@ import Nav from './Nav.js';
 import Footer from './Footer.js';
 import Contact from './components/Contact';
 import ProjectDesc from './components/web-projects/ProjectDesc';
-import Projects from './components/web-projects/Projects';
 import DesignDesc from './components/graphic-design/DesignDesc';
 import Designs from './components/graphic-design/Designs';
 import IllustrationDesc from './components/illustration/IllustrationDesc';
-import Illustration from './components/illustration/Illustration';
 
 function App() {
   return (
