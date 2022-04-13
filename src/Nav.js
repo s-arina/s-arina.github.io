@@ -70,7 +70,10 @@ function Nav() {
             &#9776;
           </button>
         </div>
-        <div className={`overlay${hamMenu ? '-visible' : ''}`}></div>
+        <div
+          className={`overlay${hamMenu ? '-visible' : ''}`}
+          onClick={() => setHamMenu(false)}
+        ></div>
         <div className={`ham-menu${hamMenu ? '-visible' : ''}`}>
           <div className='ham-links'>
             <a href='#projects' onClick={() => setHamMenu(false)}>

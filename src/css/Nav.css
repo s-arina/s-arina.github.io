@@ -76,6 +76,7 @@
   visibility: hidden;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
+  cursor: pointer;
 }
 
 .overlay-visible {
@@ -86,11 +87,10 @@
   height: 100vh;
   opacity: 0.5;
   background-color: black;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
   visibility: visible;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
+  cursor: pointer;
 }
 
 .ham-icon {
@@ -122,7 +122,10 @@
   min-height: 100vh;
   outline: 0px;
   color: white;
+  background-color: #1a1a1a;
   z-index: 3;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   visibility: hidden;
@@ -149,13 +152,15 @@
   min-height: 100vh;
   outline: 0px;
   color: white;
+  background-color: #1a1a1a;
   z-index: 3;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
   visibility: visible;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
-  background-color: #1a1a1a;
 }
 
 .ham-menu-visible .ham-links {

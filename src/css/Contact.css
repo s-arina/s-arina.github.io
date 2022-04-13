@@ -12,6 +12,8 @@
   padding: 5rem;
   text-align: center;
   min-height: 100vh;
+  background-color: white;
+  color: black;
 }
 
 #contact .about {
@@ -30,12 +32,13 @@
 
 #contact .about img {
   width: 20rem;
-  border-radius: 200px;
+  border-radius: 10rem;
 }
 
 #contact h1 {
+  font-family: 'Calibre-SB';
   font-size: 6.4rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 #contact h2 {
@@ -54,7 +57,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 #contact .contact-btns a {
@@ -73,7 +76,7 @@
 
 #contact .contact-btns a:hover {
   color: red;
-  background-color: #f2f2f2;
+  background-color: transparent;
   border: 1px solid red;
 }
 /*# sourceMappingURL=Contact.css.map */

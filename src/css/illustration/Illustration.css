@@ -8,10 +8,6 @@
           flex: 1 1 60%;
 }
 
-.illustrations div > div {
-  background-color: white;
-}
-
 .illustrations img {
   width: 100%;
   height: 100%;

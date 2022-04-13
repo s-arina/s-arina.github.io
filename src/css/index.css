@@ -27,7 +27,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f2f2f2;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 code {
@@ -45,7 +46,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: #8b949e;
+  background-color: #474747;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -55,6 +56,6 @@ a {
 ::-webkit-scrollbar-thumb:horizontal {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: #8b949e;
+  background-color: #474747;
 }
 /*# sourceMappingURL=index.css.map */

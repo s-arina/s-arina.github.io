@@ -7,6 +7,9 @@
   text-align: center;
   min-height: 100vh;
 
+  background-color: white;
+  color: black;
+
   .about {
     display: flex;
     flex-direction: column;
@@ -14,13 +17,14 @@
     margin-top: 10rem;
     img {
       width: 20rem;
-      border-radius: 200px;
+      border-radius: 10rem;
     }
   }
 
   h1 {
+    font-family: 'Calibre-SB';
     font-size: 6.4rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   h2 {
@@ -37,7 +41,7 @@
   .contact-btns {
     display: flex;
     margin-top: 5rem;
-    gap: 2rem;
+    gap: 2.5rem;
     a {
       color: white;
       background-color: red;
@@ -51,7 +55,7 @@
       cursor: pointer;
       &:hover {
         color: red;
-        background-color: #f2f2f2;
+        background-color: transparent;
         border: 1px solid red;
       }
     }
