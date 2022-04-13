@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.3db7f0ab.css",
-    "main.js": "/website/static/js/main.ffaccbb6.js",
-    "static/js/787.71e672d5.chunk.js": "/website/static/js/787.71e672d5.chunk.js",
-    "static/media/CalibreSemibold.otf": "/website/static/media/CalibreSemibold.508412ff4c6875e10aa1.otf",
-    "static/media/CalibreRegular.otf": "/website/static/media/CalibreRegular.84b1f95cc4641415a24e.otf",
-    "index.html": "/website/index.html",
-    "main.3db7f0ab.css.map": "/website/static/css/main.3db7f0ab.css.map",
-    "main.ffaccbb6.js.map": "/website/static/js/main.ffaccbb6.js.map",
-    "787.71e672d5.chunk.js.map": "/website/static/js/787.71e672d5.chunk.js.map"
+    "main.css": "./static/css/main.a3e15bd1.css",
+    "main.js": "./static/js/main.f66dd41e.js",
+    "static/js/787.71e672d5.chunk.js": "./static/js/787.71e672d5.chunk.js",
+    "static/media/CalibreSemibold.otf": "./static/media/CalibreSemibold.508412ff4c6875e10aa1.otf",
+    "static/media/CalibreRegular.otf": "./static/media/CalibreRegular.84b1f95cc4641415a24e.otf",
+    "index.html": "./index.html",
+    "main.a3e15bd1.css.map": "./static/css/main.a3e15bd1.css.map",
+    "main.f66dd41e.js.map": "./static/js/main.f66dd41e.js.map",
+    "787.71e672d5.chunk.js.map": "./static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3db7f0ab.css",
-    "static/js/main.ffaccbb6.js"
+    "static/css/main.a3e15bd1.css",
+    "static/js/main.f66dd41e.js"
   ]
 }
