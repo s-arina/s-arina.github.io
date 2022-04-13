@@ -24,22 +24,22 @@ function SB({ setDesignModalSB }) {
         </p>
         <div className='sb-imgs'>
           <div className='sb-row-1'>
-            <img src='/website/graphic-design/sb/sb-1.gif' alt='' />
-            <img src='/website/graphic-design/sb/sb-2.gif' alt='' />
+            <img src='/graphic-design/sb/sb-1.gif' alt='' />
+            <img src='/graphic-design/sb/sb-2.gif' alt='' />
           </div>
           <div className='sb-row-2'>
-            <img src='/website/graphic-design/sb/sb-3.gif' alt='' />
-            <img src='/website/graphic-design/sb/sb-5.gif' alt='' />
+            <img src='/graphic-design/sb/sb-3.gif' alt='' />
+            <img src='/graphic-design/sb/sb-5.gif' alt='' />
           </div>
           <div className='sb-row-3'>
-            <img src='/website/graphic-design/sb/sb-6.gif' alt='' />
-            <img src='/website/graphic-design/sb/sb-4.gif' alt='' />
+            <img src='/graphic-design/sb/sb-6.gif' alt='' />
+            <img src='/graphic-design/sb/sb-4.gif' alt='' />
           </div>
           <div className='sb-row-4'>
-            <img src='/website/graphic-design/sb/sb-7.gif' alt='' />
-            <img src='/website/graphic-design/sb/sb-8.gif' alt='' />
+            <img src='/graphic-design/sb/sb-7.gif' alt='' />
+            <img src='/graphic-design/sb/sb-8.gif' alt='' />
           </div>
-          <img src='/website/graphic-design/sb/sb-9.png' alt='' />
+          <img src='/graphic-design/sb/sb-9.png' alt='' />
         </div>
       </div>
     </div>

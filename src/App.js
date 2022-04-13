@@ -14,7 +14,7 @@ function App() {
       <div className='banner'>
         <div className='container'>
           <div className='logo'>
-            <img src='/website/logo.gif' alt='' />
+            <img src='/logo.gif' alt='' />
           </div>
           <div className='intro'>
             <h2>Hi,</h2>

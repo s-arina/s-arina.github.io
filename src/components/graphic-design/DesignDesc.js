@@ -73,7 +73,7 @@ function DesignDesc() {
         <div className='adobe-icons'>
           <div className='icon-row-1'>
             <img
-              src='/website/graphic-design/adobe-icons/InDesign.png'
+              src='/graphic-design/adobe-icons/InDesign.png'
               alt=''
               style={{
                 boxShadow: ind
@@ -82,7 +82,7 @@ function DesignDesc() {
               }}
             />
             <img
-              src='/website/graphic-design/adobe-icons/Photoshop.png'
+              src='/graphic-design/adobe-icons/Photoshop.png'
               alt=''
               style={{
                 boxShadow: ps
@@ -91,7 +91,7 @@ function DesignDesc() {
               }}
             />
             <img
-              src='/website/graphic-design/adobe-icons/Illustrator.png'
+              src='/graphic-design/adobe-icons/Illustrator.png'
               alt=''
               style={{
                 boxShadow: ai
@@ -102,7 +102,7 @@ function DesignDesc() {
           </div>
           <div className='icon-row-2'>
             <img
-              src='/website/graphic-design/adobe-icons/XD.png'
+              src='/graphic-design/adobe-icons/XD.png'
               alt=''
               style={{
                 boxShadow: xd
@@ -112,7 +112,7 @@ function DesignDesc() {
             />
 
             <img
-              src='/website/graphic-design/adobe-icons/PremierePro.png'
+              src='/graphic-design/adobe-icons/PremierePro.png'
               alt=''
               style={{
                 boxShadow: pp
@@ -121,7 +121,7 @@ function DesignDesc() {
               }}
             />
             <img
-              src='/website/graphic-design/adobe-icons/AfterEffects.png'
+              src='/graphic-design/adobe-icons/AfterEffects.png'
               alt=''
               style={{
                 boxShadow: ae

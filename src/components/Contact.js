@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div id='contact'>
       <div className='about'>
-        <img src='/website/self.png' alt='' />
+        <img src='/self.png' alt='' />
         <h1>Hello!</h1>
         <h2>NYC / Always Sleepy & Hungry / Horror Movie Fanatic</h2>
         <p>

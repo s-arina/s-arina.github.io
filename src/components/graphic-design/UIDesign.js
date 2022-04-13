@@ -24,10 +24,10 @@ function UIDesign({ setDesignModalUI, designModalUI }) {
           time on one!
         </p>
         <div className='ui-redesign-imgs'>
-          <img src='/website/graphic-design/ui-redesign/ui-1.png' alt='' />
-          <img src='/website/graphic-design/ui-redesign/ui-2.png' alt='' />
-          <img src='/website/graphic-design/ui-redesign/ui-3.png' alt='' />
-          <img src='/website/graphic-design/ui-redesign/ui-4.png' alt='' />
+          <img src='/graphic-design/ui-redesign/ui-1.png' alt='' />
+          <img src='/graphic-design/ui-redesign/ui-2.png' alt='' />
+          <img src='/graphic-design/ui-redesign/ui-3.png' alt='' />
+          <img src='/graphic-design/ui-redesign/ui-4.png' alt='' />
         </div>
       </div>
     </div>

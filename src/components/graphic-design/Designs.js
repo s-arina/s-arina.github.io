@@ -82,7 +82,7 @@ function Designs() {
             <div
               className='thumbnail'
               style={{
-                backgroundImage: `url('/website/graphic-design/thumbnails/UI-CHALLENGE.png')`,
+                backgroundImage: `url('/graphic-design/thumbnails/UI-CHALLENGE.png')`,
               }}
             ></div>
             <div
@@ -96,7 +96,7 @@ function Designs() {
             <div
               className='thumbnail'
               style={{
-                backgroundImage: `url('/website/graphic-design/thumbnails/PTP.png')`,
+                backgroundImage: `url('/graphic-design/thumbnails/PTP.png')`,
               }}
             ></div>
             <div
@@ -110,7 +110,7 @@ function Designs() {
             <div
               className='thumbnail'
               style={{
-                backgroundImage: `url('/website/graphic-design/thumbnails/UBF.png')`,
+                backgroundImage: `url('/graphic-design/thumbnails/UBF.png')`,
               }}
             ></div>
             <div
@@ -124,7 +124,7 @@ function Designs() {
             <div
               className='thumbnail'
               style={{
-                backgroundImage: `url('/website/graphic-design/thumbnails/SB.png')`,
+                backgroundImage: `url('/graphic-design/thumbnails/SB.png')`,
               }}
             ></div>
             <div
@@ -138,7 +138,7 @@ function Designs() {
             <div
               className='thumbnail'
               style={{
-                backgroundImage: `url('/website/graphic-design/thumbnails/LOUVRE.png')`,
+                backgroundImage: `url('/graphic-design/thumbnails/LOUVRE.png')`,
               }}
             ></div>
             <div
@@ -152,7 +152,7 @@ function Designs() {
             <div
               className='thumbnail'
               style={{
-                backgroundImage: `url('/website/graphic-design/thumbnails/ZODIAC.png')`,
+                backgroundImage: `url('/graphic-design/thumbnails/ZODIAC.png')`,
               }}
             ></div>
             <div

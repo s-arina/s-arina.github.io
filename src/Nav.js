@@ -46,7 +46,7 @@ function Nav() {
       <div className='nav-content'>
         <img
           className='nav-logo'
-          src='/website/logo.png'
+          src='/logo.png'
           alt=''
           onClick={() => {
             scrollTop();
