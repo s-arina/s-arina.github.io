@@ -65,6 +65,71 @@
   color: red;
 }
 
+.ham-icon,
+.ham-icon-open {
+  width: 30px;
+  height: 5px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+  z-index: 4;
+  display: none;
+}
+
+.ham-icon span,
+.ham-icon-open span {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #e70000;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  z-index: 4;
+}
+
+.ham-icon span:nth-child(1) {
+  top: -11px;
+}
+
+.ham-icon span:nth-child(2),
+.ham-icon span:nth-child(3) {
+  top: 0px;
+}
+
+.ham-icon span:nth-child(4) {
+  top: 11px;
+}
+
+.ham-icon-open span:nth-child(1) {
+  top: 0px;
+  width: 0%;
+  left: 50%;
+}
+
+.ham-icon-open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ham-icon-open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.ham-icon-open span:nth-child(4) {
+  top: 0px;
+  width: 0%;
+  left: 50%;
+}
+
 .overlay {
   position: absolute;
   top: 0px;
@@ -91,16 +156,6 @@
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
   cursor: pointer;
-}
-
-.ham-icon {
-  display: none;
-  background-color: transparent;
-  border: none;
-  font-size: 4.8rem;
-  color: red;
-  cursor: pointer;
-  z-index: 4;
 }
 
 .ham-menu {
@@ -214,7 +269,8 @@
   .nav .nav-links a {
     display: none;
   }
-  .ham-icon {
+  .ham-icon,
+  .ham-icon-open {
     float: right;
     display: block;
   }

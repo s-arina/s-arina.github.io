@@ -5,6 +5,7 @@ function Nav() {
   const [show, handleShow] = useState(false);
   const [hamMenu, setHamMenu] = useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
+  const [hamIconOpen, setHamIconOpen] = useState(false);
 
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
@@ -66,9 +67,18 @@ function Nav() {
           <a href='#contact'>
             <p>Contact</p>
           </a>
-          <button className='ham-icon' onClick={() => setHamMenu(!hamMenu)}>
-            &#9776;
-          </button>
+          <div
+            className={`ham-icon${hamIconOpen ? '-open' : ''}`}
+            onClick={() => {
+              setHamMenu(!hamMenu);
+              setHamIconOpen(!hamIconOpen);
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
         <div
           className={`overlay${hamMenu ? '-visible' : ''}`}

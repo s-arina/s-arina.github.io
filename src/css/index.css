@@ -29,6 +29,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1a1a1a;
   color: white;
+  overflow: overlay;
 }
 
 code {
@@ -46,7 +47,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: #474747;
+  background-color: lightgrey;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -56,6 +57,6 @@ a {
 ::-webkit-scrollbar-thumb:horizontal {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: #474747;
+  background-color: lightgrey;
 }
 /*# sourceMappingURL=index.css.map */

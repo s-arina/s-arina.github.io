@@ -11,7 +11,7 @@ function SpotTheDiff() {
         <div className='project-header'>
           <p>
             <a
-              href={'https://s-arina.github.io'}
+              href={'https://cat-fe.herokuapp.com/'}
               target='_blank'
               rel='noreferrer'
             >
@@ -20,7 +20,7 @@ function SpotTheDiff() {
           </p>
 
           <a
-            href={'https://github.com/s-arina/s-arina.github.io'}
+            href={'https://github.com/s-arina/cat-fe'}
             target='_blank'
             rel='noreferrer'
           >
