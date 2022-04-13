@@ -5,7 +5,7 @@ function SpotTheDiff() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/spotTheDiff.png' alt='' />
+        <img src='/website/web-projects/spotTheDiff.png' alt='' />
       </div>
       <div className='project-info'>
         <div className='project-header'>

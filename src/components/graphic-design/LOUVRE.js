@@ -22,11 +22,11 @@ function LOUVRE({ setDesignModalLOUVRE }) {
           works of art.
         </p>
         <div className='louvre-imgs'>
-          <img src='/graphic-design/louvre/louvre-1.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-2.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-3.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-4.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-5.png' alt='' />
+          <img src='/website/graphic-design/louvre/louvre-1.png' alt='' />
+          <img src='/website/graphic-design/louvre/louvre-2.png' alt='' />
+          <img src='/website/graphic-design/louvre/louvre-3.png' alt='' />
+          <img src='/website/graphic-design/louvre/louvre-4.png' alt='' />
+          <img src='/website/graphic-design/louvre/louvre-5.png' alt='' />
         </div>
       </div>
     </div>

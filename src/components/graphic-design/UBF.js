@@ -53,11 +53,11 @@ function UBF({ setDesignModalUBF }) {
           website!
         </p>
         <div className='ubf-imgs'>
-          <img src='/graphic-design/ubf/ubf-1.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-2.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-3.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-4.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-5.png' alt='' />
+          <img src='/website/graphic-design/ubf/ubf-1.png' alt='' />
+          <img src='/website/graphic-design/ubf/ubf-2.png' alt='' />
+          <img src='/website/graphic-design/ubf/ubf-3.png' alt='' />
+          <img src='/website/graphic-design/ubf/ubf-4.png' alt='' />
+          <img src='/website/graphic-design/ubf/ubf-5.png' alt='' />
         </div>
       </div>
     </div>

@@ -36,10 +36,10 @@ function PTP({ setDesignModalPTP }) {
         </p>
         <div className='ptp-imgs'>
           <div className='ptp-gifs'>
-            <img src='/graphic-design/ptp/ptp-1.gif' alt='' />
-            <img src='/graphic-design/ptp/ptp-2.gif' alt='' />
+            <img src='/website/graphic-design/ptp/ptp-1.gif' alt='' />
+            <img src='/website/graphic-design/ptp/ptp-2.gif' alt='' />
           </div>
-          <img src='/graphic-design/ptp/ptp-3.png' alt='' />
+          <img src='/website/graphic-design/ptp/ptp-3.png' alt='' />
         </div>
       </div>
     </div>

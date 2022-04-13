@@ -5,7 +5,7 @@ function GitStatus() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/gitstatus.png' alt='' />
+        <img src='/website/web-projects/gitstatus.png' alt='' />
       </div>
       <div className='project-info'>
         <div className='project-header'>

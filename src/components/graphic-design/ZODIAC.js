@@ -23,11 +23,11 @@ function ZODIAC({ setDesignModalZODIAC }) {
           about them.
         </p>
         <div className='zodiac-imgs'>
-          <img src='/graphic-design/zodiac/zodiac-1.png' alt='' />
-          <img src='/graphic-design/zodiac/zodiac-2.png' alt='' />
-          <img src='/graphic-design/zodiac/zodiac-3.png' alt='' />
-          <img src='/graphic-design/zodiac/zodiac-4.png' alt='' />
-          <img src='/graphic-design/zodiac/zodiac-5.png' alt='' />
+          <img src='/website/graphic-design/zodiac/zodiac-1.png' alt='' />
+          <img src='/website/graphic-design/zodiac/zodiac-2.png' alt='' />
+          <img src='/website/graphic-design/zodiac/zodiac-3.png' alt='' />
+          <img src='/website/graphic-design/zodiac/zodiac-4.png' alt='' />
+          <img src='/website/graphic-design/zodiac/zodiac-5.png' alt='' />
         </div>
       </div>
     </div>
