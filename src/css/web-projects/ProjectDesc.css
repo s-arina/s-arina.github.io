@@ -95,13 +95,19 @@
 @media screen and (max-width: 970px) {
   #projects {
     height: auto;
-    padding: 10rem 5rem;
   }
   #projects .projects-desc {
     display: block;
   }
   #projects .projects-desc .skills {
     margin: 2rem auto 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #projects {
+    height: auto;
+    padding: 10rem 5rem;
   }
 }
 /*# sourceMappingURL=ProjectDesc.css.map */

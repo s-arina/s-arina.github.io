@@ -114,7 +114,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 970px) {
   #design {
     padding: 0;
     min-height: 0;
@@ -124,7 +124,7 @@
     gap: 0;
   }
   #design .designs-desc .designs-title-desc {
-    padding: 10rem 5rem 5rem 5rem;
+    padding: 10rem;
   }
   #design .designs-desc .adobe-icons {
     padding: 0 5rem 10rem 5rem;
@@ -132,6 +132,12 @@
   #design .designs-desc .adobe-icons .icon-row-1,
   #design .designs-desc .adobe-icons .icon-row-2 {
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #design .designs-desc .designs-title-desc {
+    padding: 10rem 5rem 5rem 5rem;
   }
 }
 

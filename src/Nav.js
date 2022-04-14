@@ -37,8 +37,9 @@ function Nav() {
   }, []);
 
   useEffect(() => {
-    if (width > 600) {
+    if (width > 770) {
       setHamMenu(false);
+      setHamIconOpen(false);
     }
   }, [width]);
 

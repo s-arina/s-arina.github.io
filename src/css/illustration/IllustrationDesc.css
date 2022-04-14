@@ -55,16 +55,22 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 970px) {
   #illustration {
     padding: 0;
   }
   #illustration .illustration-title-desc {
-    padding: 10rem 5rem;
+    padding: 10rem;
   }
   #illustration .illustration-desc {
     display: block;
     gap: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #illustration .illustration-title-desc {
+    padding: 10rem 5rem;
   }
 }
 /*# sourceMappingURL=IllustrationDesc.css.map */

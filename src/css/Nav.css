@@ -72,8 +72,8 @@
   position: relative;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
   z-index: 4;
   display: none;
@@ -85,18 +85,18 @@
   height: 5px;
   width: 100%;
   background: #e70000;
-  border-radius: 2px;
+  border-radius: 1px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   z-index: 4;
 }
 
 .ham-icon span:nth-child(1) {
-  top: -11px;
+  top: -13px;
 }
 
 .ham-icon span:nth-child(2),
@@ -105,7 +105,7 @@
 }
 
 .ham-icon span:nth-child(4) {
-  top: 11px;
+  top: 13px;
 }
 
 .ham-icon-open span:nth-child(1) {
@@ -141,7 +141,6 @@
   visibility: hidden;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
-  cursor: pointer;
 }
 
 .overlay-visible {
@@ -155,7 +154,6 @@
   visibility: visible;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
-  cursor: pointer;
 }
 
 .ham-menu {
@@ -265,7 +263,7 @@
   gap: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   .nav .nav-links a {
     display: none;
   }
@@ -276,7 +274,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 770px) {
   .ham-menu-visible {
     display: none;
   }

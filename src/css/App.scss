@@ -195,7 +195,7 @@ svg {
   fill: transparent;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   footer {
     display: none;
   }
@@ -210,5 +210,11 @@ svg {
         font-size: 7rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .chevron-container {
+    display: none;
   }
 }
