@@ -42,6 +42,17 @@ function Nav() {
     }
   }, [width]);
 
+  // disable scrolling when ham menu is open
+  // useEffect(() => {
+  //   if (hamMenu) {
+  //     document.documentElement.style.overflow = 'hidden';
+  //     document.body.scroll = 'no';
+  //   } else {
+  //     document.documentElement.style.overflow = 'visible';
+  //     document.body.scroll = 'yes';
+  //   }
+  // });
+
   return (
     <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
@@ -84,25 +95,52 @@ function Nav() {
         </div>
         <div
           className={`overlay${hamMenu ? '-visible' : ''}`}
-          onClick={() => setHamMenu(false)}
+          onClick={() => {
+            setHamMenu(false);
+            setHamIconOpen(false);
+          }}
         ></div>
         <div className={`ham-menu${hamMenu ? '-visible' : ''}`}>
           <div className='ham-links'>
-            <a href='#projects' onClick={() => setHamMenu(false)}>
+            <a
+              href='#projects'
+              onClick={() => {
+                setHamMenu(false);
+                setHamIconOpen(false);
+              }}
+            >
               <p>Projects</p>
             </a>
             <hr />
-            <a href='#design' onClick={() => setHamMenu(false)}>
+            <a
+              href='#design'
+              onClick={() => {
+                setHamMenu(false);
+                setHamIconOpen(false);
+              }}
+            >
               <p>Graphic Design</p>
             </a>
             <hr />
 
-            <a href='#illustration' onClick={() => setHamMenu(false)}>
+            <a
+              href='#illustration'
+              onClick={() => {
+                setHamMenu(false);
+                setHamIconOpen(false);
+              }}
+            >
               <p>Illustration</p>
             </a>
             <hr />
 
-            <a href='#contact' onClick={() => setHamMenu(false)}>
+            <a
+              href='#contact'
+              onClick={() => {
+                setHamMenu(false);
+                setHamIconOpen(false);
+              }}
+            >
               <p>Contact</p>
             </a>
             <div className='ham-menu-social'>

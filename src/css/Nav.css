@@ -167,6 +167,7 @@
   visibility: visible;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
+  position: fixed;
 }
 
 .ham-menu,
