@@ -2,18 +2,22 @@ import React, { useState, useEffect } from 'react';
 import './css/Nav.css';
 
 function Nav() {
-  const [show, handleShow] = useState(false);
+  const [show, setHandleShow] = useState(true);
   const [hamMenu, setHamMenu] = useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
   const [hamIconOpen, setHamIconOpen] = useState(false);
 
-  const transitionNavBar = () => {
-    if (window.scrollY > 100) {
-      handleShow(true);
+  var currPos = window.scrollY;
+  document.addEventListener('scroll', () => {
+    if (window.scrollY < currPos) {
+      // scrolling up shows the nav
+      setHandleShow(true);
     } else {
-      handleShow(false);
+      // scrolling down hides the nav
+      setHandleShow(false);
     }
-  };
+    currPos = window.scrollY;
+  });
 
   const scrollTop = () => {
     window.scroll({
@@ -25,11 +29,6 @@ function Nav() {
   const updateWidthAndHeight = () => {
     setWidth(window.innerWidth);
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', transitionNavBar);
-    return () => window.removeEventListener('scroll', transitionNavBar);
-  }, []);
 
   useEffect(() => {
     window.addEventListener('resize', updateWidthAndHeight);
@@ -44,7 +43,7 @@ function Nav() {
   }, [width]);
 
   return (
-    <div className={`nav ${show && 'nav-black'}`}>
+    <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
         <img
           className='nav-logo'
@@ -69,16 +68,18 @@ function Nav() {
             <p>Contact</p>
           </a>
           <div
-            className={`ham-icon${hamIconOpen ? '-open' : ''}`}
+            className='ham-icon-wrapper'
             onClick={() => {
               setHamMenu(!hamMenu);
               setHamIconOpen(!hamIconOpen);
             }}
           >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className={`ham-icon${hamIconOpen ? '-open' : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
         <div

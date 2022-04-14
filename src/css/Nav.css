@@ -6,14 +6,16 @@
   padding: 3rem;
   width: 100%;
   z-index: 1;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  background-color: #1a1a1a;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.nav-black {
-  background-color: #1a1a1a;
+.show {
+  -webkit-transform: translateY(-105px);
+          transform: translateY(-105px);
 }
 
 .nav-content {
@@ -65,6 +67,18 @@
   color: red;
 }
 
+.ham-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 45px;
+  cursor: pointer;
+}
+
 .ham-icon,
 .ham-icon-open {
   width: 30px;
@@ -74,7 +88,6 @@
           transform: rotate(0deg);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  cursor: pointer;
   z-index: 4;
   display: none;
 }
@@ -156,36 +169,7 @@
           transform: translateX(0vw);
 }
 
-.ham-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  padding: 5rem 1rem;
-  width: calc(min(75vw, 400px));
-  min-height: 100vh;
-  outline: 0px;
-  color: white;
-  background-color: #1a1a1a;
-  z-index: 3;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  visibility: hidden;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-}
-
+.ham-menu,
 .ham-menu-visible {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,13 +193,14 @@
   z-index: 3;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateX(0vw);
-          transform: translateX(0vw);
-  visibility: visible;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  visibility: hidden;
 }
 
+.ham-menu .ham-links,
 .ham-menu-visible .ham-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,6 +215,7 @@
   gap: 4rem;
 }
 
+.ham-menu .ham-links hr,
 .ham-menu-visible .ham-links hr {
   margin: auto;
   width: 10%;
@@ -238,6 +224,7 @@
   height: 1px;
 }
 
+.ham-menu .ham-links p,
 .ham-menu-visible .ham-links p {
   color: white;
   letter-spacing: 0.1rem;
@@ -245,14 +232,17 @@
   transition: all 0.3s ease;
 }
 
+.ham-menu .ham-links a,
 .ham-menu-visible .ham-links a {
   text-decoration: none;
 }
 
+.ham-menu .ham-links a :hover,
 .ham-menu-visible .ham-links a :hover {
   color: red;
 }
 
+.ham-menu .ham-menu-social,
 .ham-menu-visible .ham-menu-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +251,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+}
+
+.ham-menu-visible {
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
+  visibility: visible;
 }
 
 @media screen and (max-width: 770px) {
