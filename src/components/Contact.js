@@ -5,16 +5,27 @@ function Contact() {
   return (
     <div id='contact'>
       <div className='about'>
-        <img src='/self.png' alt='' />
+        <div className='circle'>
+          <img src='/self.png' alt='' />
+        </div>
+
         <h1>Hello!</h1>
-        <h2>NYC / Always Sleepy & Hungry / Horror Movie Fanatic</h2>
+        <h2>Nice to meet you.</h2>
         <p>
-          Hi! I'm Sarina. Currently I'm looking for a <strong>front-end</strong>{' '}
-          or a <strong>full-stack</strong> developer role (junior or internship,
-          too).
+          I'm <span>Sarina</span>; a graphic designer and illustrator born and
+          raised in NYC! <br />
+          <br />I hold degrees in Graphic Design and Art History, and most
+          recently, a certification from The Grace Hopper Program at Fullstack
+          Academy.
           <br />
           <br />
-          Get in touch with me by sending a messsage. I'd love to connect!
+          I'm currently looking for a <span>front-end</span> or a{' '}
+          <span>full-stack</span> developer role. I'm open to junior or
+          internship roles, too!
+          <br />
+          <br />
+          Get in touch with me by sending a messsage. <br />
+          I'd love to connect!
         </p>
         <div className='contact-btns'>
           <a

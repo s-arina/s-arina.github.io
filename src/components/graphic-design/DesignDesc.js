@@ -15,8 +15,8 @@ function DesignDesc() {
         <div className='designs-title-desc'>
           <h1>Graphic Design.</h1>
           <p>
-            Before I got into web development, I've been working as a graphic
-            designer. I have interests in{' '}
+            Before my journey into web development, I was (and still am!) a
+            graphic designer. I have interests in{' '}
             <span
               className='xd'
               onMouseOver={() => setXD(true)}

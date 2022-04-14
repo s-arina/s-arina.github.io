@@ -215,6 +215,9 @@
 }
 
 @media screen and (min-width: 770px) {
+  .ham-icon-wrapper {
+    display: none;
+  }
   .ham-menu-visible {
     display: none;
   }
