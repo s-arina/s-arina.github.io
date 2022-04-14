@@ -5,12 +5,13 @@
   padding: 3rem;
   width: 100%;
   z-index: 1;
-  transition-timing-function: ease-in;
-  transition: all 0.8s;
+  background-color: #1a1a1a;
+  transform: translateY(0);
+  transition: all 0.3s;
 }
 
-.nav-black {
-  background-color: #1a1a1a;
+.show {
+  transform: translateY(-105px);
 }
 
 .nav-content {
@@ -47,6 +48,14 @@
 
 // ============================ HAM MENU ICON
 
+.ham-icon-wrapper {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 45px;
+  cursor: pointer;
+}
+
 .ham-icon,
 .ham-icon-open {
   width: 30px;
@@ -54,7 +63,6 @@
   position: relative;
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
-  cursor: pointer;
   z-index: 4;
   display: none;
 }
@@ -134,27 +142,7 @@
 
 // ============================ HAM MENU
 
-.ham-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  padding: 5rem 1rem;
-  width: calc(min(75vw, 400px));
-  min-height: 100vh;
-  outline: 0px;
-  color: white;
-  background-color: #1a1a1a;
-  z-index: 3;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(100vw);
-  visibility: hidden;
-  transition: all 0.8s ease;
-}
-
+.ham-menu,
 .ham-menu-visible {
   display: flex;
   justify-content: center;
@@ -171,9 +159,9 @@
   background-color: #1a1a1a;
   z-index: 3;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(0vw);
-  visibility: visible;
   transition: all 0.8s ease;
+  transform: translateX(100vw);
+  visibility: hidden;
 
   .ham-links {
     display: flex;
@@ -207,6 +195,13 @@
     gap: 2rem;
   }
 }
+
+.ham-menu-visible {
+  transform: translateX(0vw);
+  visibility: visible;
+}
+
+// ============================ MEDIA QUERY
 
 @media screen and (max-width: 770px) {
   .nav .nav-links a {
