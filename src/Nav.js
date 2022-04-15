@@ -50,11 +50,15 @@ function Nav() {
     if (hamMenu) {
       document.removeEventListener('scroll', navScroll);
       content.style.filter = 'blur(4px)';
+      content.style.overflow = 'hidden';
+      content.style.position = 'fixed';
       document.body.style.overflow = 'hidden';
       document.body.style.padding = '0 5px 0 0';
     } else {
       document.addEventListener('scroll', navScroll);
       content.style.filter = 'none';
+      content.style.overflow = 'visible';
+      content.style.position = 'relative';
       document.body.style.overflow = 'visible';
       document.body.style.padding = '0';
     }

@@ -32,6 +32,12 @@
   padding: 0 2rem 0 0.5rem;
 }
 
+.projects-container::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-radius: 20px;
+  background-color: lightgrey;
+}
+
 @media screen and (max-width: 970px) {
   .projects-scroller {
     margin-top: 5rem;
