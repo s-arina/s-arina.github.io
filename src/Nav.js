@@ -8,7 +8,8 @@ function Nav() {
   const [hamIconOpen, setHamIconOpen] = useState(false);
 
   var currPos = window.scrollY;
-  document.addEventListener('scroll', function handler() {
+
+  function navScroll() {
     if (window.scrollY < currPos) {
       // scrolling up shows the nav
       setHandleShow(true);
@@ -17,7 +18,7 @@ function Nav() {
       setHandleShow(false);
     }
     currPos = window.scrollY;
-  });
+  }
 
   const scrollTop = () => {
     window.scroll({
@@ -25,8 +26,6 @@ function Nav() {
       behavior: 'smooth',
     });
   };
-
-  // disable scrolling on mobile
 
   // listen for window width change to hide menu when resizing
   const updateWidthAndHeight = () => {
@@ -49,13 +48,13 @@ function Nav() {
   useEffect(() => {
     const content = document.getElementsByClassName('content')[0];
     if (hamMenu) {
+      document.removeEventListener('scroll', navScroll);
       content.style.filter = 'blur(4px)';
-      content.style.touchAction = 'none';
       document.body.style.overflow = 'hidden';
       document.body.style.padding = '0 5px 0 0';
     } else {
+      document.addEventListener('scroll', navScroll);
       content.style.filter = 'none';
-      content.style.touchAction = 'auto';
       document.body.style.overflow = 'visible';
       document.body.style.padding = '0';
     }
