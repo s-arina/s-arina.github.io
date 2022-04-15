@@ -9,6 +9,47 @@ function DesignDesc() {
   const [pp, setPP] = useState(false);
   const [ae, setAE] = useState(false);
 
+  const row1 = [
+    {
+      id: 1,
+      url: '/graphic-design/adobe-icons/InDesign.png',
+      name: ind,
+      boxShadow: '0px 0px 40px 0px rgba(255, 48, 102, 0.8)',
+    },
+    {
+      id: 2,
+      url: '/graphic-design/adobe-icons/Photoshop.png',
+      name: ps,
+      boxShadow: '0px 0px 40px 0px rgba(48, 168, 255, 0.8)',
+    },
+    {
+      id: 3,
+      url: '/graphic-design/adobe-icons/Illustrator.png',
+      name: ai,
+      boxShadow: '0px 0px 40px 0px rgba(255, 48, 102, 0.8)',
+    },
+  ];
+  const row2 = [
+    {
+      id: 1,
+      url: '/graphic-design/adobe-icons/XD.png',
+      name: xd,
+      boxShadow: '0px 0px 40px 0px rgba(255, 97, 247, 0.8)',
+    },
+    {
+      id: 2,
+      url: '/graphic-design/adobe-icons/PremierePro.png',
+      name: pp,
+      boxShadow: '0px 0px 40px 0px rgba(153, 153, 255, 0.8)',
+    },
+    {
+      id: 3,
+      url: '/graphic-design/adobe-icons/AfterEffects.png',
+      name: ae,
+      boxShadow: '0px 0px 40px 0px rgba(153, 153, 255, 0.8)',
+    },
+  ];
+
   return (
     <div id='design'>
       <div className='designs-desc'>

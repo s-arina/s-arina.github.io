@@ -1,4 +1,4 @@
-.app .banner {
+.hero {
   color: #fff;
   position: relative;
   min-height: 100vh;
@@ -20,7 +20,7 @@
   background-size: cover;
 }
 
-.app .container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,20 +37,20 @@
   gap: 9rem;
 }
 
-.app .container h2:first-of-type {
+.container h2:first-of-type {
   font-size: 3.6rem;
   color: red;
   letter-spacing: 0.1rem;
 }
 
-.app .container h2:nth-of-type(2) {
+.container h2:nth-of-type(2) {
   font-size: 2.2rem;
   color: grey;
   letter-spacing: 0.4rem;
   margin-top: 2rem;
 }
 
-.app .container .intro {
+.container .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +60,7 @@
           flex-direction: column;
 }
 
-.app .container img {
+.container img {
   width: 15rem;
   -webkit-animation: logo-spin infinite 20s linear;
           animation: logo-spin infinite 20s linear;
@@ -270,4 +270,4 @@
     display: none;
   }
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=Hero.css.map */

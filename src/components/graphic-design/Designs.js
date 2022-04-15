@@ -19,38 +19,38 @@ function Designs() {
   const imgs = [
     {
       id: 1,
-      url: '/graphic-design/thumbnails/UI-CHALLENGE.png',
-      abv: setDesignModalUI,
+      url: 'UI-CHALLENGE',
+      fn: setDesignModalUI,
       title: 'UI Redesign Challenge',
     },
     {
       id: 2,
-      url: '/graphic-design/thumbnails/PTP.png',
-      abv: setDesignModalPTP,
+      url: 'PTP',
+      fn: setDesignModalPTP,
       title: 'Paid to Proofread',
     },
     {
       id: 3,
-      url: '/graphic-design/thumbnails/UBF.png',
-      abv: setDesignModalUI,
+      url: 'UBF',
+      fn: setDesignModalUI,
       title: 'Urban Body Fix',
     },
     {
       id: 4,
-      url: '/graphic-design/thumbnails/SB.png',
-      abv: setDesignModalSB,
+      url: 'SB',
+      fn: setDesignModalSB,
       title: 'Starbucks Redesign',
     },
     {
       id: 5,
-      url: '/graphic-design/thumbnails/LOUVRE.png',
-      abv: setDesignModalLOUVRE,
+      url: 'LOUVRE',
+      fn: setDesignModalLOUVRE,
       title: 'LOUVRE',
     },
     {
       id: 6,
-      url: '/graphic-design/thumbnails/ZODIAC.png',
-      abv: setDesignModalZODIAC,
+      url: 'ZODIAC',
+      fn: setDesignModalZODIAC,
       title: 'ZODIAC',
     },
   ];
@@ -123,13 +123,13 @@ function Designs() {
                   <div
                     className='thumbnail'
                     style={{
-                      backgroundImage: `url(${img.url})`,
+                      backgroundImage: `url(/graphic-design/thumbnails/${img.url}.png)`,
                     }}
                   ></div>
                   <div
                     className='thumbnail-hover'
                     onClick={() => {
-                      img.abv(true);
+                      img.fn(true);
                     }}
                   >
                     <p>{img.title}</p>

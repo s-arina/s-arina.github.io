@@ -1,46 +1,44 @@
-.app {
-  .banner {
-    color: #fff;
-    position: relative;
-    min-height: 100vh;
+.hero {
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+
+  // background: linear-gradient(360deg, #1a1a1a, #000000);
+  background-position: top right;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0rem 1rem;
+  gap: 9rem;
+  h2:first-of-type {
+    font-size: 3.6rem;
+    color: red;
+    letter-spacing: 0.1rem;
+  }
+  h2:nth-of-type(2) {
+    font-size: 2.2rem;
+    color: grey;
+    letter-spacing: 0.4rem;
+    margin-top: 2rem;
+  }
+  .intro {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10rem;
-
-    // background: linear-gradient(360deg, #1a1a1a, #000000);
-    background-position: top right;
-    background-size: cover;
   }
-
-  .container {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0rem 1rem;
-    gap: 9rem;
-    h2:first-of-type {
-      font-size: 3.6rem;
-      color: red;
-      letter-spacing: 0.1rem;
-    }
-    h2:nth-of-type(2) {
-      font-size: 2.2rem;
-      color: grey;
-      letter-spacing: 0.4rem;
-      margin-top: 2rem;
-    }
-    .intro {
-      display: flex;
-      flex-direction: column;
-    }
-    img {
-      width: 15rem;
-      animation: logo-spin infinite 20s linear;
-    }
+  img {
+    width: 15rem;
+    animation: logo-spin infinite 20s linear;
   }
 }
 
@@ -165,7 +163,7 @@ $base: 0.6rem;
   }
 }
 
-// ======================== FOOTER
+// ======================== MEDIA QUERY
 
 @media screen and (max-width: 500px) {
   .app .banner {
