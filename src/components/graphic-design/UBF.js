@@ -2,6 +2,14 @@ import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
 function UBF({ setDesignModalUBF }) {
+  const imgs = [
+    { id: 1, name: '/graphic-design/ubf/ubf-1.png' },
+    { id: 2, name: '/graphic-design/ubf/ubf-2.png' },
+    { id: 3, name: '/graphic-design/ubf/ubf-3.png' },
+    { id: 4, name: '/graphic-design/ubf/ubf-4.png' },
+    { id: 5, name: '/graphic-design/ubf/ubf-5.png' },
+  ];
+
   return (
     <div className='modal-container'>
       <div className='design-info'>
@@ -50,13 +58,13 @@ function UBF({ setDesignModalUBF }) {
           </a>
           website.
         </p>
-        <div className='ubf-imgs'>
-          <img src='/graphic-design/ubf/ubf-1.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-2.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-3.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-4.png' alt='' />
-          <img src='/graphic-design/ubf/ubf-5.png' alt='' />
-        </div>
+        {imgs
+          ? imgs.map((img) => (
+              <div className='ubf-imgs' key={img.id}>
+                <img id={img.id} src={img.name} alt='' />
+              </div>
+            ))
+          : null}
       </div>
     </div>
   );

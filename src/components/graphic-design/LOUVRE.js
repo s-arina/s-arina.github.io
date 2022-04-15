@@ -2,6 +2,14 @@ import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
 function LOUVRE({ setDesignModalLOUVRE }) {
+  const imgs = [
+    { id: 1, name: '/graphic-design/louvre/louvre-1.png' },
+    { id: 2, name: '/graphic-design/louvre/louvre-2.png' },
+    { id: 3, name: '/graphic-design/louvre/louvre-3.png' },
+    { id: 4, name: '/graphic-design/louvre/louvre-4.png' },
+    { id: 5, name: '/graphic-design/louvre/louvre-5.png' },
+  ];
+
   return (
     <div className='modal-container'>
       <div className='design-info'>
@@ -20,13 +28,13 @@ function LOUVRE({ setDesignModalLOUVRE }) {
           A mini zine and guide to some of the Louvre’s most famous sights and
           works of art.
         </p>
-        <div className='louvre-imgs'>
-          <img src='/graphic-design/louvre/louvre-1.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-2.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-3.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-4.png' alt='' />
-          <img src='/graphic-design/louvre/louvre-5.png' alt='' />
-        </div>
+        {imgs
+          ? imgs.map((img) => (
+              <div className='louvre-imgs' key={img.id}>
+                <img id={img.id} src={img.name} alt='' />
+              </div>
+            ))
+          : null}
       </div>
     </div>
   );

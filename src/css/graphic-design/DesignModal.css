@@ -167,8 +167,16 @@
   gap: 2rem;
 }
 
-.sb-imgs img {
-  min-width: 48.3%;
+.sb-imgs .sb-row-1 img,
+.sb-imgs .sb-row-2 img,
+.sb-imgs .sb-row-3 img,
+.sb-imgs .sb-row-4 img {
+  margin-top: 0;
+  min-width: 46%;
+}
+
+.sb-imgs .sb-row-1 {
+  margin-top: 1.5rem;
 }
 
 .sb-imgs .sb-row-2 img:nth-of-type(2) {

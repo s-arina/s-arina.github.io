@@ -46,6 +46,15 @@
   gap: 1rem;
 }
 
+.projects-title-desc span {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .projects-title-desc .gh {
   color: green;
 }
@@ -55,7 +64,6 @@
 }
 
 .projects-title-desc span:hover {
-  text-decoration: underline;
   text-underline-offset: 0.4rem;
   text-decoration-thickness: 1px;
   -webkit-text-decoration-color: inherit;

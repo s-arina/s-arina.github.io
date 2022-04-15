@@ -142,7 +142,7 @@
 
 @media screen and (max-width: 770px) {
   #contact {
-    padding: 5rem;
+    padding: 5rem 5rem 0 5rem;
   }
   #contact .contact-btns {
     margin-top: 5rem;

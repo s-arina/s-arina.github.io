@@ -2,6 +2,13 @@ import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
 function UIDesign({ setDesignModalUI, designModalUI }) {
+  const imgs = [
+    { id: 1, name: '/graphic-design/ui-redesign/ui-1.png' },
+    { id: 2, name: '/graphic-design/ui-redesign/ui-2.png' },
+    { id: 3, name: '/graphic-design/ui-redesign/ui-3.png' },
+    { id: 4, name: '/graphic-design/ui-redesign/ui-4.png' },
+  ];
+
   return (
     <div className='modal-container'>
       <div className='close-container'>
@@ -23,12 +30,13 @@ function UIDesign({ setDesignModalUI, designModalUI }) {
           It was a way for me to quickly explore different directions with
           design without spending too much time on one!
         </p>
-        <div className='ui-redesign-imgs'>
-          <img src='/graphic-design/ui-redesign/ui-1.png' alt='' />
-          <img src='/graphic-design/ui-redesign/ui-2.png' alt='' />
-          <img src='/graphic-design/ui-redesign/ui-3.png' alt='' />
-          <img src='/graphic-design/ui-redesign/ui-4.png' alt='' />
-        </div>
+        {imgs
+          ? imgs.map((img) => (
+              <div className='ui-redesign-imgs' key={img.id}>
+                <img id={img.id} src={img.name} alt='' />
+              </div>
+            ))
+          : null}
       </div>
     </div>
   );

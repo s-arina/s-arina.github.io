@@ -2,6 +2,18 @@ import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
 function SB({ setDesignModalSB }) {
+  const imgs = [
+    { id: 1, name: '/graphic-design/sb/sb-1.gif' },
+    { id: 2, name: '/graphic-design/sb/sb-2.gif' },
+    { id: 3, name: '/graphic-design/sb/sb-3.gif' },
+    { id: 4, name: '/graphic-design/sb/sb-5.gif' },
+    { id: 5, name: '/graphic-design/sb/sb-6.gif' },
+    { id: 6, name: '/graphic-design/sb/sb-4.gif' },
+    { id: 7, name: '/graphic-design/sb/sb-7.gif' },
+    { id: 8, name: '/graphic-design/sb/sb-8.gif' },
+    { id: 9, name: '/graphic-design/sb/sb-9.gif' },
+  ];
+
   return (
     <div className='modal-container'>
       <div className='design-info'>
@@ -21,6 +33,8 @@ function SB({ setDesignModalSB }) {
           colors were incorporated into the design to make the website more
           colorful and fun, while still keeping its minimalistic aesthetic.
         </p>
+        {/* {imgs
+          ? imgs.map((img) => ( */}
         <div className='sb-imgs'>
           <div className='sb-row-1'>
             <img src='/graphic-design/sb/sb-1.gif' alt='' />
@@ -40,6 +54,8 @@ function SB({ setDesignModalSB }) {
           </div>
           <img src='/graphic-design/sb/sb-9.png' alt='' />
         </div>
+        {/* ))
+          : null} */}
       </div>
     </div>
   );

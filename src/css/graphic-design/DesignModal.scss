@@ -133,9 +133,13 @@
   .sb-row-4 {
     display: flex;
     gap: 2rem;
+    img {
+      margin-top: 0;
+      min-width: 46%;
+    }
   }
-  img {
-    min-width: 48.3%;
+  .sb-row-1 {
+    margin-top: 1.5rem;
   }
   .sb-row-2 {
     img:nth-of-type(2) {

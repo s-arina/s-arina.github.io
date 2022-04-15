@@ -16,6 +16,45 @@ function Designs() {
   const [designModalLOUVRE, setDesignModalLOUVRE] = useState(false);
   const [designModalZODIAC, setDesignModalZODIAC] = useState(false);
 
+  const imgs = [
+    {
+      id: 1,
+      url: '/graphic-design/thumbnails/UI-CHALLENGE.png',
+      abv: setDesignModalUI,
+      title: 'UI Redesign Challenge',
+    },
+    {
+      id: 2,
+      url: '/graphic-design/thumbnails/PTP.png',
+      abv: setDesignModalPTP,
+      title: 'Paid to Proofread',
+    },
+    {
+      id: 3,
+      url: '/graphic-design/thumbnails/UBF.png',
+      abv: setDesignModalUI,
+      title: 'Urban Body Fix',
+    },
+    {
+      id: 4,
+      url: '/graphic-design/thumbnails/SB.png',
+      abv: setDesignModalSB,
+      title: 'Starbucks Redesign',
+    },
+    {
+      id: 5,
+      url: '/graphic-design/thumbnails/LOUVRE.png',
+      abv: setDesignModalLOUVRE,
+      title: 'LOUVRE',
+    },
+    {
+      id: 6,
+      url: '/graphic-design/thumbnails/ZODIAC.png',
+      abv: setDesignModalZODIAC,
+      title: 'ZODIAC',
+    },
+  ];
+
   return (
     <div className='designs-container'>
       <div
@@ -78,90 +117,26 @@ function Designs() {
 
       <div className='design-thumbnails'>
         <ul>
-          <li>
-            <div
-              className='thumbnail'
-              style={{
-                backgroundImage: `url('/graphic-design/thumbnails/UI-CHALLENGE.png')`,
-              }}
-            ></div>
-            <div
-              className='thumbnail-hover'
-              onClick={() => setDesignModalUI(true)}
-            >
-              <p>UI Redesign Challenge</p>
-            </div>
-          </li>
-          <li>
-            <div
-              className='thumbnail'
-              style={{
-                backgroundImage: `url('/graphic-design/thumbnails/PTP.png')`,
-              }}
-            ></div>
-            <div
-              className='thumbnail-hover'
-              onClick={() => setDesignModalPTP(true)}
-            >
-              <p>Paid to Proofread</p>
-            </div>
-          </li>
-          <li>
-            <div
-              className='thumbnail'
-              style={{
-                backgroundImage: `url('/graphic-design/thumbnails/UBF.png')`,
-              }}
-            ></div>
-            <div
-              className='thumbnail-hover'
-              onClick={() => setDesignModalUBF(true)}
-            >
-              <p>Urban Body Fix</p>
-            </div>
-          </li>
-          <li>
-            <div
-              className='thumbnail'
-              style={{
-                backgroundImage: `url('/graphic-design/thumbnails/SB.png')`,
-              }}
-            ></div>
-            <div
-              className='thumbnail-hover'
-              onClick={() => setDesignModalSB(true)}
-            >
-              <p>Starbucks Redesign</p>
-            </div>
-          </li>
-          <li>
-            <div
-              className='thumbnail'
-              style={{
-                backgroundImage: `url('/graphic-design/thumbnails/LOUVRE.png')`,
-              }}
-            ></div>
-            <div
-              className='thumbnail-hover'
-              onClick={() => setDesignModalLOUVRE(true)}
-            >
-              <p>LOUVRE</p>
-            </div>
-          </li>
-          <li>
-            <div
-              className='thumbnail'
-              style={{
-                backgroundImage: `url('/graphic-design/thumbnails/ZODIAC.png')`,
-              }}
-            ></div>
-            <div
-              className='thumbnail-hover'
-              onClick={() => setDesignModalZODIAC(true)}
-            >
-              <p>ZODIAC</p>
-            </div>
-          </li>
+          {imgs
+            ? imgs.map((img) => (
+                <li key={img.id}>
+                  <div
+                    className='thumbnail'
+                    style={{
+                      backgroundImage: `url(${img.url})`,
+                    }}
+                  ></div>
+                  <div
+                    className='thumbnail-hover'
+                    onClick={() => {
+                      img.abv(true);
+                    }}
+                  >
+                    <p>{img.title}</p>
+                  </div>
+                </li>
+              ))
+            : null}
         </ul>
       </div>
     </div>

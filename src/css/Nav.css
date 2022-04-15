@@ -33,11 +33,11 @@
 
 .nav-content a {
   height: 100%;
+  z-index: 3;
 }
 
 .nav-content .nav-logo {
   height: 100%;
-  z-index: 3;
   cursor: pointer;
 }
 

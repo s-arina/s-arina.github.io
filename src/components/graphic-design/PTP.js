@@ -2,6 +2,12 @@ import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
 function PTP({ setDesignModalPTP }) {
+  const imgs = [
+    { id: 1, name: '/graphic-design/ptp/ptp-1.gif' },
+    { id: 2, name: '/graphic-design/ptp/ptp-2.gif' },
+    { id: 3, name: '/graphic-design/ptp/ptp-3.png' },
+  ];
+
   return (
     <div className='modal-container'>
       <div className='design-info'>

@@ -21,10 +21,10 @@
   height: 4.5rem;
   a {
     height: 100%;
+    z-index: 3;
   }
   .nav-logo {
     height: 100%;
-    z-index: 3;
     cursor: pointer;
   }
   .nav-links {
