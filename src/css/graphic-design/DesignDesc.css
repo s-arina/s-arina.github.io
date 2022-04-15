@@ -58,6 +58,8 @@
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   gap: 5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .adobe-icons .icon-row-1,
@@ -70,6 +72,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .adobe-icons img {

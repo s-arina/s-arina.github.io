@@ -16,7 +16,6 @@ function ZODIAC({ setDesignModalZODIAC }) {
           ></div>
         </div>
         <h1>ZODIAC</h1>
-        <h2>Adobe InDesign</h2>
         <p>
           Inspired by my love for the stars.
           <br />A zine about the twelve zodiac signs and some general facts

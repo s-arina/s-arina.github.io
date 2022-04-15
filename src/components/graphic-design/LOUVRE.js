@@ -16,7 +16,6 @@ function LOUVRE({ setDesignModalLOUVRE }) {
           ></div>
         </div>
         <h1>LOUVRE</h1>
-        <h2>Adobe InDesign</h2>
         <p>
           A mini zine and guide to some of the Louvre’s most famous sights and
           works of art.

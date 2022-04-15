@@ -16,7 +16,6 @@ function SB({ setDesignModalSB }) {
           ></div>
         </div>
         <h1>Starbucks Redesign</h1>
-        <h2>Adobe XD / Adobe Photoshop</h2>
         <p>
           A redesign of the UI on Starbucks' website and mobile app. Seasonal
           colors were incorporated into the design to make the website more

@@ -47,7 +47,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: lightgrey;
+  background-color: #494949;
 }
 
 ::-webkit-scrollbar:horizontal {

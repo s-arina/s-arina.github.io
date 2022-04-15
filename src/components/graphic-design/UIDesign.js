@@ -4,19 +4,18 @@ import '../../css/graphic-design/DesignModal.css';
 function UIDesign({ setDesignModalUI, designModalUI }) {
   return (
     <div className='modal-container'>
+      <div className='close-container'>
+        <div
+          className='leftright'
+          onClick={() => setDesignModalUI(false)}
+        ></div>
+        <div
+          className='rightleft'
+          onClick={() => setDesignModalUI(false)}
+        ></div>
+      </div>
       <div className='design-info'>
-        <div className='close-container'>
-          <div
-            className='leftright'
-            onClick={() => setDesignModalUI(false)}
-          ></div>
-          <div
-            className='rightleft'
-            onClick={() => setDesignModalUI(false)}
-          ></div>
-        </div>
-        <h1>UI REDESIGN CHALLENGE</h1>
-        <h2>Adobe XD / Adobe Illustrator / Adobe Procreate</h2>
+        <h1>UI Redesign Challenge</h1>
         <p>
           A personal project where I challenged myself to resdesign the UI of
           some of my most used or favorite apps. <br />

@@ -16,11 +16,9 @@ function UBF({ setDesignModalUBF }) {
           ></div>
         </div>
         <h1>Urban Body Fix</h1>
-        <h2>Adobe InDesign</h2>
         <p>
-          Book design (interior and exterior) and publishing for Nutrition
-          Coach, Massage Therapist, Tony Award winning producer, and finally,
-          author,{' '}
+          Book design and publishing for Nutrition Coach, Massage Therapist,
+          Tony Award winning producer, and finally, author,{' '}
           <a
             href={'https://urbanbodyfix.com/about/'}
             target='_blank'
@@ -38,7 +36,7 @@ function UBF({ setDesignModalUBF }) {
             rel='noreferrer'
             style={{ color: 'cyan' }}
           >
-            The Urban Body Fix{' '}
+            The Urban Body Fix
           </a>
           ! Formatted for both Kindle and print. <br />
           <br />I was also given the pleasure of redesigning and updating the{' '}
@@ -50,7 +48,7 @@ function UBF({ setDesignModalUBF }) {
           >
             Urban Body Fix{' '}
           </a>
-          website!
+          website.
         </p>
         <div className='ubf-imgs'>
           <img src='/graphic-design/ubf/ubf-1.png' alt='' />

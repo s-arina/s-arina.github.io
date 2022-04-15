@@ -152,15 +152,13 @@
   height: 100vh;
   opacity: 0.5;
   background-color: black;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   visibility: hidden;
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
 }
 
 .overlay-visible {
   visibility: visible;
-  -webkit-transform: translateX(0vw);
-          transform: translateX(0vw);
 }
 
 .ham-menu,
@@ -187,8 +185,8 @@
   z-index: 3;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   visibility: hidden;

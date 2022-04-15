@@ -16,7 +16,6 @@ function PTP({ setDesignModalPTP }) {
           ></div>
         </div>
         <h1>Paid to Proofread</h1>
-        <h2>Adobe InDesign</h2>
         <p>
           Book and Kindle redesign and update for Tony Award winning theatre
           producer Sue Gilad’s book,{' '}

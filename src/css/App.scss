@@ -167,40 +167,6 @@ $base: 0.6rem;
 
 // ======================== FOOTER
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  font-size: 1.2rem;
-  bottom: 0;
-  left: 3.5rem;
-  text-align: center;
-  margin: 3.5rem 0;
-  hr {
-    width: 1px;
-    height: 9rem;
-    border: none;
-    background-color: red;
-  }
-  a {
-    padding: 0.5rem;
-  }
-}
-
-svg {
-  width: 20px;
-  height: 20px;
-  fill: transparent;
-}
-
-@media screen and (max-width: 770px) {
-  footer {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .app .banner {
     padding: 10rem 5rem;

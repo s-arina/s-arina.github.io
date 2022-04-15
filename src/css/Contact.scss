@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 10%;
 
     img {
       width: 20rem;
@@ -36,10 +37,11 @@
     font-size: 2.2rem;
     color: grey;
     letter-spacing: 1px;
+    margin-bottom: 2rem;
   }
 
   p {
-    margin-top: 3rem;
+    margin-top: 0.8rem;
     font-size: 1.8rem;
   }
 
@@ -67,6 +69,17 @@
   }
 }
 
+// =============================== FOOTER
+
+.contact-footer {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+  gap: 1rem;
+  display: none;
+}
 // =============================== CIRCLE
 
 @mixin border-gradient($from, $to, $weight: 0) {
@@ -106,8 +119,18 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+// =============================== MEDIA QUERY
+
+@media screen and (max-width: 770px) {
   #contact {
     padding: 5rem;
+    .contact-btns {
+      margin-top: 5rem;
+    }
+    .contact-footer {
+      display: flex;
+      position: absolute;
+      bottom: 3rem;
+    }
   }
 }
