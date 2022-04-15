@@ -13,6 +13,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Calibre', 'Calibre-SB', san-serif;
+  // get rid of blue focus on mobile when clicking
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -28,18 +30,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1a1a1a;
   color: white;
-  // overflow: overlay;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-:focus-visible {
-  // outline: none;
-}
-
 // ================== LINK & SCROLLBAR
 
 a {

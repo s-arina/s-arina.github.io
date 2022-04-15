@@ -14,6 +14,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Calibre', 'Calibre-SB', san-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {

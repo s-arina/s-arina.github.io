@@ -143,7 +143,8 @@
   left: 50%;
 }
 
-.overlay {
+.overlay,
+.overlay-visible {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -157,17 +158,9 @@
 }
 
 .overlay-visible {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 100vh;
-  opacity: 0.5;
-  background-color: black;
   visibility: visible;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
-  position: fixed;
 }
 
 .ham-menu,

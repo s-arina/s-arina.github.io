@@ -35,7 +35,7 @@ function Contact() {
           >
             Email
           </a>
-          <a href='/resume.pdf' rel='noopener noreferrer' target='_blank'>
+          <a href='/Resume.pdf' rel='noopener noreferrer' target='_blank'>
             Resume
           </a>
         </div>
