@@ -20,12 +20,12 @@ function Nav() {
     currPos = window.scrollY;
   }
 
-  const scrollTop = () => {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  // const scrollTop = () => {
+  //   window.scroll({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // };
 
   // listen for window width change to hide menu when resizing
   const updateWidthAndHeight = () => {
@@ -65,16 +65,17 @@ function Nav() {
   return (
     <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
-        <img
-          className='nav-logo'
-          src='/logo.png'
-          alt=''
-          onClick={() => {
-            scrollTop();
-            setHamMenu(false);
-            setHamIconOpen(false);
-          }}
-        />
+        <a href='/'>
+          <img
+            className='nav-logo'
+            src='/logo.png'
+            alt=''
+            onClick={() => {
+              setHamMenu(false);
+              setHamIconOpen(false);
+            }}
+          />
+        </a>
         <div className='nav-links'>
           <a href='#projects'>
             <p>Projects</p>
