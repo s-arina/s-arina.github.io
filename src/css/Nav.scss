@@ -123,16 +123,14 @@
   left: 0px;
   right: 0px;
   height: 100vh;
-  opacity: 0.5;
+  opacity: 0.6;
   background-color: black;
   transition: all 0.1s ease;
   visibility: hidden;
-  // transform: translateX(100vw);
 }
 
 .overlay-visible {
   visibility: visible;
-  // transform: translateX(0vw);
 }
 
 // ============================ HAM MENU
@@ -153,7 +151,7 @@
   color: white;
   background-color: #1a1a1a;
   z-index: 3;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
   transform: translateX(100vw);
   visibility: hidden;

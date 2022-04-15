@@ -15,6 +15,7 @@ function UIDesign({ setDesignModalUI, designModalUI }) {
         ></div>
       </div>
       <div className='design-info'>
+        <h1>NEXT</h1>
         <h1>UI Redesign Challenge</h1>
         <p>
           A personal project where I challenged myself to resdesign the UI of

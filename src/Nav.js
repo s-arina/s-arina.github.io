@@ -26,6 +26,8 @@ function Nav() {
     });
   };
 
+  // disable scrolling on mobile
+
   // listen for window width change to hide menu when resizing
   const updateWidthAndHeight = () => {
     setWidth(window.innerWidth);
@@ -43,12 +45,17 @@ function Nav() {
     }
   }, [width]);
 
-  // disable scrolling when ham menu is open
+  // disable scrolling when ham menu is open / blur overlay
   useEffect(() => {
+    const content = document.getElementsByClassName('content')[0];
     if (hamMenu) {
+      content.style.filter = 'blur(4px)';
+      content.style.touchAction = 'none';
       document.body.style.overflow = 'hidden';
       document.body.style.padding = '0 5px 0 0';
     } else {
+      content.style.filter = 'none';
+      content.style.touchAction = 'auto';
       document.body.style.overflow = 'visible';
       document.body.style.padding = '0';
     }
@@ -64,6 +71,7 @@ function Nav() {
           onClick={() => {
             scrollTop();
             setHamMenu(false);
+            setHamIconOpen(false);
           }}
         />
         <div className='nav-links'>

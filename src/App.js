@@ -12,35 +12,37 @@ function App() {
   return (
     <div className='app'>
       <Nav />
-      <div className='banner'>
-        <div className='container'>
-          <div className='logo'>
-            <img src='/logo.gif' alt='' />
-          </div>
-          <div className='intro'>
-            <h2>Hi,</h2>
-            <div className='type-box'>
-              <div className='typed'>
-                <h1> I'm Sarina.</h1>
-              </div>
+      <div className='content'>
+        <div className='banner'>
+          <div className='container'>
+            <div className='logo'>
+              <img src='/logo.gif' alt='' />
             </div>
-            <h2>Web Developer / Graphic Designer / Illustrator</h2>
+            <div className='intro'>
+              <h2>Hi,</h2>
+              <div className='type-box'>
+                <div className='typed'>
+                  <h1> I'm Sarina.</h1>
+                </div>
+              </div>
+              <h2>Web Developer / Graphic Designer / Illustrator</h2>
+            </div>
           </div>
+          <a href='#projects'>
+            <div className='chevron-container'>
+              <div className='chevron'></div>
+              <div className='chevron'></div>
+              <div className='chevron'></div>
+            </div>
+          </a>
         </div>
-        <a href='#projects'>
-          <div className='chevron-container'>
-            <div className='chevron'></div>
-            <div className='chevron'></div>
-            <div className='chevron'></div>
-          </div>
-        </a>
+        <ProjectDesc />
+        <DesignDesc />
+        <Designs />
+        <IllustrationDesc />
+        <Contact />
+        <Footer />
       </div>
-      <ProjectDesc />
-      <DesignDesc />
-      <Designs />
-      <IllustrationDesc />
-      <Contact />
-      <Footer />
     </div>
   );
 }
