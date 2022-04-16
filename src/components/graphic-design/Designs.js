@@ -66,19 +66,21 @@ function Designs() {
     }
   }
 
+  // disable scrolling when modal open
   useEffect(() => {
-    const content = document.getElementsByClassName('content')[0];
     if (
-      (designModalUI,
-      designModalPTP,
-      designModalUBF,
-      designModalSB,
-      designModalLOUVRE,
-      designModalZODIAC)
+      designModalUI ||
+      designModalPTP ||
+      designModalUBF ||
+      designModalSB ||
+      designModalLOUVRE ||
+      designModalZODIAC
     ) {
-      // content.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      document.body.style.padding = '0 5px 0 0';
     } else {
-      // content.style.overflow = 'visible';
+      document.body.style.overflow = 'visible';
+      document.body.style.padding = '0';
     }
   }, [
     designModalUI,
@@ -92,9 +94,7 @@ function Designs() {
   return (
     <div className='designs-container'>
       <div
-        className={`design-modal ${
-          designModalUI ? 'design-modal-visible' : 'design-modal-invisible'
-        }`}
+        className={designModalUI ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
@@ -104,9 +104,7 @@ function Designs() {
         />
       </div>
       <div
-        className={`design-modal ${
-          designModalPTP ? 'design-modal-visible' : 'design-modal-invisible'
-        }`}
+        className={designModalPTP ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
@@ -116,9 +114,7 @@ function Designs() {
         />
       </div>
       <div
-        className={`design-modal ${
-          designModalUBF ? 'design-modal-visible' : 'design-modal-invisible'
-        }`}
+        className={designModalUBF ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
@@ -128,18 +124,16 @@ function Designs() {
         />
       </div>
       <div
-        className={`design-modal ${
-          designModalSB ? 'design-modal-visible' : 'design-modal-invisible'
-        }`}
+        className={designModalSB ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
         <SB setDesignModalSB={setDesignModalSB} designModalSB={designModalSB} />
       </div>
       <div
-        className={`design-modal ${
-          designModalLOUVRE ? 'design-modal-visible' : 'design-modal-invisible'
-        }`}
+        className={
+          designModalLOUVRE ? 'design-modal' : 'design-modal-invisible'
+        }
         onClick={closeModal}
         id='bg'
       >
@@ -149,9 +143,9 @@ function Designs() {
         />
       </div>
       <div
-        className={`design-modal ${
-          designModalZODIAC ? 'design-modal-visible' : 'design-modal-invisible'
-        }`}
+        className={
+          designModalZODIAC ? 'design-modal' : 'design-modal-invisible'
+        }
         onClick={closeModal}
         id='bg'
       >
