@@ -16,7 +16,6 @@
   top: 0;
   left: 0;
   z-index: 4;
-  overflow: hidden;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -54,7 +53,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 1rem;
-  gap: 2rem;
+  gap: 1.5rem;
   overflow: auto;
 }
 
@@ -67,7 +66,7 @@
 .design-modal .design-info p {
   line-height: 2.5rem;
   font-size: 1.6rem;
-  margin: 0 10%;
+  margin: 0 10% 1rem;
 }
 
 .design-modal .design-info a {
@@ -80,17 +79,12 @@
 
 .design-modal .design-info img {
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
 }
 
 .design-modal-invisible {
   opacity: 0;
   pointer-events: none;
-}
-
-.design-modal-visible {
-  opacity: 1;
-  pointer-events: initial;
 }
 
 .close-container {
@@ -134,6 +128,7 @@
   display: flex;
   gap: 1.5rem;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .ptp-imgs .ptp-gifs img {

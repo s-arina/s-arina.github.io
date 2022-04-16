@@ -27,7 +27,7 @@ function UIDesign({ setDesignModalUI, designModalUI }) {
           A personal project where I challenged myself to resdesign the UI of
           some of my most used or favorite apps. <br />
           It was a way for me to quickly explore different directions with
-          design without spending too much time on one!
+          design without spending too much time on one.
         </p>
         {imgs
           ? imgs.map((img) => (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../css/graphic-design/Designs.css';
 import '../../css/graphic-design/DesignModal.css';
 import UIDesign from './UIDesign';
@@ -32,7 +32,7 @@ function Designs() {
     {
       id: 3,
       url: 'UBF',
-      fn: setDesignModalUI,
+      fn: setDesignModalUBF,
       title: 'Urban Body Fix',
     },
     {
@@ -65,6 +65,29 @@ function Designs() {
       setDesignModalZODIAC(false);
     }
   }
+
+  useEffect(() => {
+    const content = document.getElementsByClassName('content')[0];
+    if (
+      (designModalUI,
+      designModalPTP,
+      designModalUBF,
+      designModalSB,
+      designModalLOUVRE,
+      designModalZODIAC)
+    ) {
+      // content.style.overflow = 'hidden';
+    } else {
+      // content.style.overflow = 'visible';
+    }
+  }, [
+    designModalUI,
+    designModalPTP,
+    designModalUBF,
+    designModalSB,
+    designModalLOUVRE,
+    designModalZODIAC,
+  ]);
 
   return (
     <div className='designs-container'>

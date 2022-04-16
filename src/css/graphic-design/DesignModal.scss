@@ -10,7 +10,6 @@
   top: 0;
   left: 0;
   z-index: 4;
-  overflow: hidden;
   transition: opacity 0.5s;
 
   .modal-container {
@@ -33,7 +32,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-right: 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
     overflow: auto;
     h1 {
       font-family: 'Calibre-SB', sans-serif;
@@ -43,7 +42,7 @@
     p {
       line-height: 2.5rem;
       font-size: 1.6rem;
-      margin: 0 10%;
+      margin: 0 10% 1rem;
     }
     a {
       text-decoration: underline;
@@ -53,7 +52,7 @@
     }
     img {
       width: 100%;
-      margin-top: 1.5rem;
+      margin-top: 0rem;
     }
   }
 }
@@ -65,10 +64,11 @@
   pointer-events: none;
 }
 
-.design-modal-visible {
-  opacity: 1;
-  pointer-events: initial;
-}
+// .design-modal-visible {
+//   opacity: 1;
+//   pointer-events: initial;
+//   overflow: hidden;
+// }
 
 // ================== CLOSE BUTTON
 
@@ -110,6 +110,7 @@
     display: flex;
     gap: 1.5rem;
     height: auto;
+    margin-bottom: 2rem;
     img {
       min-width: 48.3%;
     }

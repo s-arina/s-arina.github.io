@@ -35,7 +35,6 @@ function PTP({ setDesignModalPTP }) {
           </a>
           .
           <br />
-          <br />
           Updated and given a more fun and modern look after 20 years of being a
           black and white Microsoft Word document.
         </p>
