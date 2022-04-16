@@ -254,13 +254,13 @@
 }
 
 @media screen and (max-width: 500px) {
-  .app .banner {
+  .hero {
     padding: 10rem 5rem;
   }
-  .app .banner .type-box {
+  .hero .type-box {
     width: 30rem;
   }
-  .app .banner .type-box h1 {
+  .hero .type-box h1 {
     font-size: 7rem;
   }
 }
