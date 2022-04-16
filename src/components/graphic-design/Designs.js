@@ -61,6 +61,7 @@ function Designs() {
         className={`design-modal ${
           designModalUI ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
+        onClick={() => setDesignModalUI(false)}
       >
         <UIDesign
           setDesignModalUI={setDesignModalUI}

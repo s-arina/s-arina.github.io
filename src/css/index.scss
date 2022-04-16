@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Calibre', 'Calibre-SB', san-serif;
+  font-family: 'Calibre', 'Calibre-SB', sans-serif;
   // get rid of blue focus on mobile when clicking
   -webkit-tap-highlight-color: transparent;
 }
@@ -34,7 +34,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace, sans-serif;
 }
 
 .content {

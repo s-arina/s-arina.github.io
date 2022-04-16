@@ -13,7 +13,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Calibre', 'Calibre-SB', san-serif;
+  font-family: 'Calibre', 'Calibre-SB', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace, sans-serif;
 }
 
 .content {
