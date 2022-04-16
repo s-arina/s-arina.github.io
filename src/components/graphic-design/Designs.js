@@ -55,13 +55,25 @@ function Designs() {
     },
   ];
 
+  function closeModal(e) {
+    if (e.target.id === 'bg') {
+      setDesignModalUI(false);
+      setDesignModalPTP(false);
+      setDesignModalUBF(false);
+      setDesignModalSB(false);
+      setDesignModalLOUVRE(false);
+      setDesignModalZODIAC(false);
+    }
+  }
+
   return (
     <div className='designs-container'>
       <div
         className={`design-modal ${
           designModalUI ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
-        onClick={() => setDesignModalUI(false)}
+        onClick={closeModal}
+        id='bg'
       >
         <UIDesign
           setDesignModalUI={setDesignModalUI}
@@ -72,6 +84,8 @@ function Designs() {
         className={`design-modal ${
           designModalPTP ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
+        onClick={closeModal}
+        id='bg'
       >
         <PTP
           setDesignModalPTP={setDesignModalPTP}
@@ -82,6 +96,8 @@ function Designs() {
         className={`design-modal ${
           designModalUBF ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
+        onClick={closeModal}
+        id='bg'
       >
         <UBF
           setDesignModalUBF={setDesignModalUBF}
@@ -92,6 +108,8 @@ function Designs() {
         className={`design-modal ${
           designModalSB ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
+        onClick={closeModal}
+        id='bg'
       >
         <SB setDesignModalSB={setDesignModalSB} designModalSB={designModalSB} />
       </div>
@@ -99,6 +117,8 @@ function Designs() {
         className={`design-modal ${
           designModalLOUVRE ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
+        onClick={closeModal}
+        id='bg'
       >
         <LOUVRE
           setDesignModalLOUVRE={setDesignModalLOUVRE}
@@ -109,6 +129,8 @@ function Designs() {
         className={`design-modal ${
           designModalZODIAC ? 'design-modal-visible' : 'design-modal-invisible'
         }`}
+        onClick={closeModal}
+        id='bg'
       >
         <ZODIAC
           setDesignModalZODIAC={setDesignModalZODIAC}
