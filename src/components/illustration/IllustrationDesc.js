@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../css/illustration/IllustrationDesc.css';
 import Illustration from './Illustration';
 
-function IllustrationDesc(props) {
+function IllustrationDesc() {
+  const imgs = [
+    { id: 1, name: 'catfe' },
+    { id: 2, name: 'study5' },
+    { id: 3, name: 'study' },
+    { id: 4, name: 'aqua4' },
+    { id: 5, name: 'companion' },
+    { id: 6, name: 'untitled' },
+    { id: 7, name: 'stargazing' },
+    { id: 8, name: 'santamonica' },
+    { id: 9, name: 'ub' },
+  ];
+
   return (
     <div id='illustration'>
       <div className='illustration-desc'>
@@ -19,7 +31,7 @@ function IllustrationDesc(props) {
             and Photoshop.
           </p>
         </div>
-        <Illustration />
+        <Illustration imgs={imgs} />
       </div>
     </div>
   );

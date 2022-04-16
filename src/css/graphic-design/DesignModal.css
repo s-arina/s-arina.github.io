@@ -59,15 +59,9 @@
 }
 
 .design-modal .design-info h1 {
-  font-family: 'Calibre-SB';
+  font-family: 'Calibre-SB', sans-serif;
   font-size: 3.6rem;
   margin-top: 1rem;
-}
-
-.design-modal .design-info h2 {
-  font-family: 'Calibre-SB';
-  font-size: rem;
-  color: lightgrey;
 }
 
 .design-modal .design-info p {

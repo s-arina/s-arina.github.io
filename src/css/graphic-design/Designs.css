@@ -54,7 +54,7 @@
 }
 
 .design-thumbnails .thumbnail-hover p {
-  font-family: 'Calibre-SB';
+  font-family: 'Calibre-SB', sans-serif;
   word-wrap: break-word;
   font-size: 3.6rem;
   line-height: 4rem;

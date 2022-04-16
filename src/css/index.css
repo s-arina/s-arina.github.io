@@ -63,4 +63,12 @@ a {
   border-radius: 20px;
   background-color: lightgrey;
 }
+
+.fallback {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 5rem;
+  color: grey;
+  letter-spacing: 1px;
+}
 /*# sourceMappingURL=index.css.map */
