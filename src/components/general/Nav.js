@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './css/Nav.css';
+import '../../css/general/Nav.css';
 
 function Nav() {
   const [show, setHandleShow] = useState(true);
@@ -68,7 +68,7 @@ function Nav() {
         <a href='/'>
           <img
             className='nav-logo'
-            src='/logo.png'
+            src='/imgs/logo.png'
             alt=''
             onClick={() => {
               setHamMenu(false);

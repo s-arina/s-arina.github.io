@@ -1,12 +1,12 @@
 import React from 'react';
-import '../css/Contact.css';
+import '../../css/general/Contact.css';
 
 function Contact() {
   return (
     <div id='contact'>
       <div className='about'>
         <div className='circle'>
-          <img src='/self.png' alt='' />
+          <img src='/imgs/self.png' alt='' />
         </div>
 
         <h1>Hello!</h1>
@@ -32,7 +32,7 @@ function Contact() {
           >
             Email
           </a>
-          <a href='/Resume.pdf' rel='noopener noreferrer' target='_blank'>
+          <a href='/imgs/Resume.pdf' rel='noopener noreferrer' target='_blank'>
             Resume
           </a>
         </div>

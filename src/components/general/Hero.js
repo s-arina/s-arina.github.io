@@ -1,12 +1,12 @@
 import React from 'react';
-import './css/Hero.css';
+import '../../css/general/Hero.css';
 
 function Hero() {
   return (
     <div className='hero'>
       <div className='container'>
         <div className='logo'>
-          <img src='/logo.gif' alt='' />
+          <img src='/imgs/logo.gif' alt='' />
         </div>
         <div className='intro'>
           <h2>Hi,</h2>

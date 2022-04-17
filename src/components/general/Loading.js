@@ -3,7 +3,7 @@ import React from 'react';
 function Loading() {
   return (
     <div className='loading'>
-      <img src='/spinner.gif' alt='' />
+      <img src='/imgs/spinner.gif' alt='' />
     </div>
   );
 }

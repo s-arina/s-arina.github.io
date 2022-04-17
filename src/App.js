@@ -1,14 +1,13 @@
 import React, { Suspense } from 'react';
-import Nav from './Nav';
-import Hero from './Hero';
+import Nav from './components/general/Nav';
+import Hero from './components/general/Hero';
 // import ProjectDesc from './components/web-projects/ProjectDesc';
 // import DesignDesc from './components/graphic-design/DesignDesc';
 // import Designs from './components/graphic-design/Designs';
 // import IllustrationDesc from './components/illustration/IllustrationDesc';
 // import Contact from './components/Contact';
-import Footer from './Footer';
+import Footer from './components/general/Footer';
 
-import Loading from './Loading';
 const ProjectDesc = React.lazy(() =>
   import('./components/web-projects/ProjectDesc')
 );
@@ -20,7 +19,7 @@ const Designs = React.lazy(() => import('./components/graphic-design/Designs'));
 const Illustrations = React.lazy(() =>
   import('./components/illustration/IllustrationDesc')
 );
-const Contact = React.lazy(() => import('./components/Contact'));
+const Contact = React.lazy(() => import('./components/general/Contact'));
 
 function App() {
   return (
