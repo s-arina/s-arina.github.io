@@ -34,9 +34,11 @@
 @media screen and (max-width: 970px) {
   .projects-scroller {
     margin-top: 5rem;
+  max-height: 85vh;
     .projects-container {
       flex-direction: row;
       overflow-x: auto;
+      overflow-y: hidden;
       padding: 0 0 2rem 0;
     }
   }
