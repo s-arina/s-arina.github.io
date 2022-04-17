@@ -20,6 +20,11 @@
       width: 20rem;
       border-radius: 100%;
       position: relative;
+      transition: all 0.3s ease;
+      &:hover {
+        filter: grayscale(0) brightness(80%) sepia(100%) hue-rotate(-50deg)
+          saturate(350%) contrast(0.8);
+      }
     }
   }
 
@@ -90,12 +95,13 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  height: 23rem;
-  width: 23rem;
+  height: 21rem;
+  width: 21rem;
 
   border-radius: 100%;
-  @include border-gradient(red, black);
-  // animation: rotateThis 2s linear infinite;
+  background-color: #1a1a1a;
+  // @include border-gradient(red, red);
+  transition: all 0.3s ease;
 }
 
 @keyframes rotateThis {
@@ -144,8 +150,8 @@
       width: 15rem;
     }
     .circle {
-      height: 18rem;
-      width: 18rem;
+      height: 16rem;
+      width: 16rem;
     }
   }
 }
