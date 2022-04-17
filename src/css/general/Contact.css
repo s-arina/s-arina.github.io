@@ -159,5 +159,12 @@
             align-items: center;
     padding: 2rem;
   }
+  #contact .about img {
+    width: 15rem;
+  }
+  #contact .circle {
+    height: 18rem;
+    width: 18rem;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */
