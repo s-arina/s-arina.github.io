@@ -1,7 +1,11 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function ZODIAC({ setDesignModalZODIAC }) {
+function ZODIAC({
+  setDesignModalZODIAC,
+  setDesignModalLOUVRE,
+  setDesignModalUI,
+}) {
   const imgs = [
     { id: 1, name: '/graphic-design/zodiac/zodiac-1.png' },
     { id: 2, name: '/graphic-design/zodiac/zodiac-2.png' },
@@ -22,6 +26,24 @@ function ZODIAC({ setDesignModalZODIAC }) {
             className='rightleft'
             onClick={() => setDesignModalZODIAC(false)}
           ></div>
+        </div>
+        <div className='prev-proj'>
+          <span
+            className='chevron left'
+            onClick={() => {
+              setDesignModalZODIAC(false);
+              setDesignModalLOUVRE(true);
+            }}
+          ></span>
+        </div>
+        <div className='next-proj'>
+          <span
+            className='chevron right'
+            onClick={() => {
+              setDesignModalZODIAC(false);
+              setDesignModalUI(true);
+            }}
+          ></span>
         </div>
         <h1>ZODIAC</h1>
         <p>

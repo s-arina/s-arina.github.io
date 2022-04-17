@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function SB({ setDesignModalSB }) {
+function SB({ setDesignModalSB, setDesignModalUBF, setDesignModalLOUVRE }) {
   const imgs = [
     { id: 1, name: '/graphic-design/sb/sb-1.gif' },
     { id: 2, name: '/graphic-design/sb/sb-2.gif' },
@@ -26,6 +26,24 @@ function SB({ setDesignModalSB }) {
             className='rightleft'
             onClick={() => setDesignModalSB(false)}
           ></div>
+        </div>
+        <div className='prev-proj'>
+          <span
+            className='chevron left'
+            onClick={() => {
+              setDesignModalSB(false);
+              setDesignModalUBF(true);
+            }}
+          ></span>
+        </div>
+        <div className='next-proj'>
+          <span
+            className='chevron right'
+            onClick={() => {
+              setDesignModalSB(false);
+              setDesignModalLOUVRE(true);
+            }}
+          ></span>
         </div>
         <h1>Starbucks Redesign</h1>
         <p>

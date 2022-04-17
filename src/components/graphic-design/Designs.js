@@ -100,7 +100,8 @@ function Designs() {
       >
         <UIDesign
           setDesignModalUI={setDesignModalUI}
-          designModalUI={designModalUI}
+          setDesignModalPTP={setDesignModalPTP}
+          setDesignModalZODIAC={setDesignModalZODIAC}
         />
       </div>
       <div
@@ -110,7 +111,8 @@ function Designs() {
       >
         <PTP
           setDesignModalPTP={setDesignModalPTP}
-          designModalPTP={designModalPTP}
+          setDesignModalUI={setDesignModalUI}
+          setDesignModalUBF={setDesignModalUBF}
         />
       </div>
       <div
@@ -120,7 +122,8 @@ function Designs() {
       >
         <UBF
           setDesignModalUBF={setDesignModalUBF}
-          designModalUBF={designModalUBF}
+          setDesignModalPTP={setDesignModalPTP}
+          setDesignModalSB={setDesignModalSB}
         />
       </div>
       <div
@@ -128,7 +131,11 @@ function Designs() {
         onClick={closeModal}
         id='bg'
       >
-        <SB setDesignModalSB={setDesignModalSB} designModalSB={designModalSB} />
+        <SB
+          setDesignModalSB={setDesignModalSB}
+          setDesignModalUBF={setDesignModalUBF}
+          setDesignModalLOUVRE={setDesignModalLOUVRE}
+        />
       </div>
       <div
         className={
@@ -139,7 +146,8 @@ function Designs() {
       >
         <LOUVRE
           setDesignModalLOUVRE={setDesignModalLOUVRE}
-          designModalLOUVRE={designModalLOUVRE}
+          setDesignModalSB={setDesignModalSB}
+          setDesignModalZODIAC={setDesignModalZODIAC}
         />
       </div>
       <div
@@ -151,7 +159,8 @@ function Designs() {
       >
         <ZODIAC
           setDesignModalZODIAC={setDesignModalZODIAC}
-          designModalZODIAC={designModalZODIAC}
+          setDesignModalLOUVRE={setDesignModalLOUVRE}
+          setDesignModalUI={setDesignModalUI}
         />
       </div>
 

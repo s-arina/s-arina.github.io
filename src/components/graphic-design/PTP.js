@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function PTP({ setDesignModalPTP }) {
+function PTP({ setDesignModalPTP, setDesignModalUBF, setDesignModalUI }) {
   const imgs = [
     { id: 1, name: '/graphic-design/ptp/ptp-1.gif' },
     { id: 2, name: '/graphic-design/ptp/ptp-2.gif' },
@@ -20,6 +20,24 @@ function PTP({ setDesignModalPTP }) {
             className='rightleft'
             onClick={() => setDesignModalPTP(false)}
           ></div>
+        </div>
+        <div className='prev-proj'>
+          <span
+            className='chevron left'
+            onClick={() => {
+              setDesignModalPTP(false);
+              setDesignModalUI(true);
+            }}
+          ></span>
+        </div>
+        <div className='next-proj'>
+          <span
+            className='chevron right'
+            onClick={() => {
+              setDesignModalPTP(false);
+              setDesignModalUBF(true);
+            }}
+          ></span>
         </div>
         <h1>Paid to Proofread</h1>
         <p>

@@ -1,7 +1,11 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function UIDesign({ setDesignModalUI, designModalUI }) {
+function UIDesign({
+  setDesignModalUI,
+  setDesignModalPTP,
+  setDesignModalZODIAC,
+}) {
   const imgs = [
     { id: 1, name: '/graphic-design/ui-redesign/ui-1.png' },
     { id: 2, name: '/graphic-design/ui-redesign/ui-2.png' },
@@ -20,6 +24,24 @@ function UIDesign({ setDesignModalUI, designModalUI }) {
           className='rightleft'
           onClick={() => setDesignModalUI(false)}
         ></div>
+      </div>
+      <div className='prev-proj'>
+        <span
+          className='chevron left'
+          onClick={() => {
+            setDesignModalUI(false);
+            setDesignModalZODIAC(true);
+          }}
+        ></span>
+      </div>
+      <div className='next-proj'>
+        <span
+          className='chevron right'
+          onClick={() => {
+            setDesignModalUI(false);
+            setDesignModalPTP(true);
+          }}
+        ></span>
       </div>
       <div className='design-info'>
         <h1>UI Redesign Challenge</h1>

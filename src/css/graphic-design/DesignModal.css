@@ -94,41 +94,6 @@
   pointer-events: none;
 }
 
-.close-container {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  bottom: 2.75rem;
-  right: 1.25rem;
-}
-
-.leftright {
-  height: 4px;
-  width: 20px;
-  position: absolute;
-  margin-top: 24px;
-  background-color: #ff0011;
-  border-radius: 2px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.rightleft {
-  height: 4px;
-  width: 20px;
-  position: absolute;
-  margin-top: 24px;
-  background-color: #ff0011;
-  border-radius: 2px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
 .ptp-imgs .ptp-gifs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +143,81 @@
 .sb-imgs .sb-row-2 img:nth-of-type(2) {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.close-container {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  bottom: 2.5rem;
+  right: 1rem;
+}
+
+.leftright {
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ff0011;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ff0011;
+  border-radius: 2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.next-proj,
+.prev-proj {
+  position: absolute;
+  bottom: 2.6rem;
+  cursor: pointer;
+}
+
+.next-proj {
+  right: 46%;
+}
+
+.prev-proj {
+  right: 54%;
+}
+
+.chevron::before {
+  color: red;
+  border-style: solid;
+  border-width: 0.5rem 0.5rem 0 0;
+  content: '';
+  height: 0.75rem;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 0.75rem;
+  border-radius: 3px;
+}
+
+.chevron.right:before {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.chevron.left:before {
+  left: 0.25em;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 @media screen and (max-width: 770px) {

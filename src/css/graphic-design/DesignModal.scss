@@ -12,7 +12,6 @@
   left: 0;
   z-index: 4;
   transition: opacity 0.5s;
-  // overflow: hidden;
 
   .modal-container {
     display: flex;
@@ -66,45 +65,6 @@
   pointer-events: none;
 }
 
-// .design-modal-visible {
-//   opacity: 1;
-//   pointer-events: initial;
-//   overflow: hidden;
-// }
-
-// ================== CLOSE BUTTON
-
-.close-container {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  bottom: 2.75rem;
-  right: 1.25rem;
-}
-
-.leftright {
-  height: 4px;
-  width: 20px;
-  position: absolute;
-  margin-top: 24px;
-  background-color: #ff0011;
-  border-radius: 2px;
-  transform: rotate(45deg);
-  transition: all 0.3s ease-in;
-}
-
-.rightleft {
-  height: 4px;
-  width: 20px;
-  position: absolute;
-  margin-top: 24px;
-  background-color: #ff0011;
-  border-radius: 2px;
-  transform: rotate(-45deg);
-  transition: all 0.3s ease-in;
-}
-
 // ================== PTP MODAL
 
 .ptp-imgs {
@@ -144,6 +104,78 @@
       object-fit: cover;
     }
   }
+}
+
+// ================== CLOSE BUTTON
+
+.close-container {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  bottom: 2.5rem;
+  right: 1rem;
+}
+
+.leftright {
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ff0011;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ff0011;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+// ================== LEFT / RIGHT CHEVRON
+
+.next-proj,
+.prev-proj {
+  position: absolute;
+  bottom: 2.6rem;
+  cursor: pointer;
+}
+
+.next-proj {
+  right: 46%;
+}
+
+.prev-proj {
+  right: 54%;
+}
+
+.chevron::before {
+  color: red;
+  border-style: solid;
+  border-width: 0.5rem 0.5rem 0 0;
+  content: '';
+  height: 0.75rem;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 0.75rem;
+  border-radius: 3px;
+}
+
+.chevron.right:before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.chevron.left:before {
+  left: 0.25em;
+  transform: rotate(-135deg);
 }
 
 // ================== MEDIA QUERY

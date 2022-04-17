@@ -1,7 +1,11 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function LOUVRE({ setDesignModalLOUVRE }) {
+function LOUVRE({
+  setDesignModalLOUVRE,
+  setDesignModalSB,
+  setDesignModalZODIAC,
+}) {
   const imgs = [
     { id: 1, name: '/graphic-design/louvre/louvre-1.png' },
     { id: 2, name: '/graphic-design/louvre/louvre-2.png' },
@@ -22,6 +26,24 @@ function LOUVRE({ setDesignModalLOUVRE }) {
             className='rightleft'
             onClick={() => setDesignModalLOUVRE(false)}
           ></div>
+        </div>
+        <div className='prev-proj'>
+          <span
+            className='chevron left'
+            onClick={() => {
+              setDesignModalLOUVRE(false);
+              setDesignModalSB(true);
+            }}
+          ></span>
+        </div>
+        <div className='next-proj'>
+          <span
+            className='chevron right'
+            onClick={() => {
+              setDesignModalLOUVRE(false);
+              setDesignModalZODIAC(true);
+            }}
+          ></span>
         </div>
         <h1>LOUVRE</h1>
         <p>

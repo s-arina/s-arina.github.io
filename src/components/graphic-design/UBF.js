@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/graphic-design/DesignModal.css';
 
-function UBF({ setDesignModalUBF }) {
+function UBF({ setDesignModalUBF, setDesignModalPTP, setDesignModalSB }) {
   const imgs = [
     { id: 1, name: '/graphic-design/ubf/ubf-1.png' },
     { id: 2, name: '/graphic-design/ubf/ubf-2.png' },
@@ -22,6 +22,24 @@ function UBF({ setDesignModalUBF }) {
             className='rightleft'
             onClick={() => setDesignModalUBF(false)}
           ></div>
+        </div>
+        <div className='prev-proj'>
+          <span
+            className='chevron left'
+            onClick={() => {
+              setDesignModalUBF(false);
+              setDesignModalPTP(true);
+            }}
+          ></span>
+        </div>
+        <div className='next-proj'>
+          <span
+            className='chevron right'
+            onClick={() => {
+              setDesignModalUBF(false);
+              setDesignModalSB(true);
+            }}
+          ></span>
         </div>
         <h1>Urban Body Fix</h1>
         <p>
