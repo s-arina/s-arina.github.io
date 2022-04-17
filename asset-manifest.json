@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.abbca8de.css",
-    "main.js": "/static/js/main.e8d7ace1.js",
-    "static/css/242.d3d1bea5.chunk.css": "/static/css/242.d3d1bea5.chunk.css",
+    "main.js": "/static/js/main.7b6cbe24.js",
+    "static/css/242.fc60be4b.chunk.css": "/static/css/242.fc60be4b.chunk.css",
     "static/js/242.fd6cd409.chunk.js": "/static/js/242.fd6cd409.chunk.js",
     "static/css/215.e99f20a5.chunk.css": "/static/css/215.e99f20a5.chunk.css",
     "static/js/215.19b59cdc.chunk.js": "/static/js/215.19b59cdc.chunk.js",
@@ -17,8 +17,8 @@
     "static/media/CalibreRegular.otf": "/static/media/CalibreRegular.84b1f95cc4641415a24e.otf",
     "index.html": "/index.html",
     "main.abbca8de.css.map": "/static/css/main.abbca8de.css.map",
-    "main.e8d7ace1.js.map": "/static/js/main.e8d7ace1.js.map",
-    "242.d3d1bea5.chunk.css.map": "/static/css/242.d3d1bea5.chunk.css.map",
+    "main.7b6cbe24.js.map": "/static/js/main.7b6cbe24.js.map",
+    "242.fc60be4b.chunk.css.map": "/static/css/242.fc60be4b.chunk.css.map",
     "242.fd6cd409.chunk.js.map": "/static/js/242.fd6cd409.chunk.js.map",
     "215.e99f20a5.chunk.css.map": "/static/css/215.e99f20a5.chunk.css.map",
     "215.19b59cdc.chunk.js.map": "/static/js/215.19b59cdc.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.abbca8de.css",
-    "static/js/main.e8d7ace1.js"
+    "static/js/main.7b6cbe24.js"
   ]
 }
