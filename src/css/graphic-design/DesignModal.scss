@@ -140,44 +140,44 @@
 }
 
 // ================== LEFT / RIGHT CHEVRON
+.modal-container {
+  .next-proj,
+  .prev-proj {
+    position: absolute;
+    bottom: 2.6rem;
+    cursor: pointer;
+  }
 
-.next-proj,
-.prev-proj {
-  position: absolute;
-  bottom: 2.6rem;
-  cursor: pointer;
+  .next-proj {
+    right: 46%;
+  }
+
+  .prev-proj {
+    right: 54%;
+  }
+
+  .chevron::before {
+    color: red;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0 0;
+    content: '';
+    height: 0.75rem;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 0.75rem;
+    border-radius: 3px;
+  }
+
+  .chevron.right:before {
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  .chevron.left:before {
+    left: 0.25em;
+    transform: rotate(-135deg);
+  }
 }
-
-.next-proj {
-  right: 46%;
-}
-
-.prev-proj {
-  right: 54%;
-}
-
-.chevron::before {
-  color: red;
-  border-style: solid;
-  border-width: 0.5rem 0.5rem 0 0;
-  content: '';
-  height: 0.75rem;
-  position: absolute;
-  transform: rotate(-45deg);
-  width: 0.75rem;
-  border-radius: 3px;
-}
-
-.chevron.right:before {
-  left: 0;
-  transform: rotate(45deg);
-}
-
-.chevron.left:before {
-  left: 0.25em;
-  transform: rotate(-135deg);
-}
-
 // ================== MEDIA QUERY
 
 @media screen and (max-width: 770px) {

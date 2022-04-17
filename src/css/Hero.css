@@ -16,8 +16,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10rem;
-  background-position: top right;
-  background-size: cover;
 }
 
 .container {
@@ -161,13 +159,13 @@
   }
 }
 
-.chevron-container {
+.hero .chevron-container {
   bottom: 10rem;
   right: 10rem;
   position: absolute;
 }
 
-.chevron-container .chevron {
+.hero .chevron-container .chevron {
   position: absolute;
   width: 2.1rem;
   height: 0.48rem;
@@ -178,18 +176,18 @@
           animation: move-chevron 3s ease-out infinite;
 }
 
-.chevron-container .chevron:first-child {
+.hero .chevron-container .chevron:first-child {
   -webkit-animation: move-chevron 3s ease-out 1s infinite;
           animation: move-chevron 3s ease-out 1s infinite;
 }
 
-.chevron-container .chevron:nth-child(2) {
+.hero .chevron-container .chevron:nth-child(2) {
   -webkit-animation: move-chevron 3s ease-out 2s infinite;
           animation: move-chevron 3s ease-out 2s infinite;
 }
 
-.chevron-container .chevron:before,
-.chevron-container .chevron:after {
+.hero .chevron-container .chevron:before,
+.hero .chevron-container .chevron:after {
   content: '';
   position: absolute;
   top: 0;
@@ -198,13 +196,13 @@
   background: red;
 }
 
-.chevron-container .chevron:before {
+.hero .chevron-container .chevron:before {
   left: 0;
   -webkit-transform: skewY(30deg);
           transform: skewY(30deg);
 }
 
-.chevron-container .chevron:after {
+.hero .chevron-container .chevron:after {
   right: 0;
   width: 50%;
   -webkit-transform: skewY(-30deg);

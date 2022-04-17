@@ -180,22 +180,22 @@
   transition: all 0.3s ease-in;
 }
 
-.next-proj,
-.prev-proj {
+.modal-container .next-proj,
+.modal-container .prev-proj {
   position: absolute;
   bottom: 2.6rem;
   cursor: pointer;
 }
 
-.next-proj {
+.modal-container .next-proj {
   right: 46%;
 }
 
-.prev-proj {
+.modal-container .prev-proj {
   right: 54%;
 }
 
-.chevron::before {
+.modal-container .chevron::before {
   color: red;
   border-style: solid;
   border-width: 0.5rem 0.5rem 0 0;
@@ -208,13 +208,13 @@
   border-radius: 3px;
 }
 
-.chevron.right:before {
+.modal-container .chevron.right:before {
   left: 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.chevron.left:before {
+.modal-container .chevron.left:before {
   left: 0.25em;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
