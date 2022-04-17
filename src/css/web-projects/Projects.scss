@@ -16,10 +16,13 @@
   overflow: auto;
   height: 100%;
   padding: 0 2rem 0 0.5rem;
+  &::-webkit-scrollbar {
+    background-color: lightgrey;
+  }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
     border-radius: 20px;
-    background-color: lightgrey;
+    background-color: #8d8d8d;
   }
 }
 
