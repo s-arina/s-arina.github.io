@@ -13,8 +13,8 @@ function Contact() {
         <h2>Nice to meet you.</h2>
 
         <p>
-          I'm <span>Sarina</span>! A graphic designer and illustrator born and
-          raised in NYC.
+          I'm <span>Sarina</span>! A graphic designer and illustrator based in
+          NYC.
         </p>
         <p>
           I hold degrees in Graphic Design and Art History, and most recently, a

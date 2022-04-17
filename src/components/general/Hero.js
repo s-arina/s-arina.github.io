@@ -15,7 +15,7 @@ function Hero() {
               <h1> I'm Sarina.</h1>
             </div>
           </div>
-          <h2>Web Developer / Graphic Designer / Illustrator</h2>
+          <h2>Web Developer &#183; Graphic Designer &#183; Illustrator</h2>
         </div>
       </div>
       <a href='#projects'>
