@@ -39,7 +39,7 @@ svg {
 
 @media screen and (max-width: 770px) {
   footer {
-    display: none;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=Footer.css.map */

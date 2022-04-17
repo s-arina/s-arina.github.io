@@ -9,6 +9,7 @@ footer {
   left: 3.5rem;
   text-align: center;
   margin: 3.5rem 0;
+
   hr {
     width: 1px;
     height: 9rem;
@@ -30,6 +31,6 @@ svg {
 
 @media screen and (max-width: 770px) {
   footer {
-    display: none;
+    opacity: 0;
   }
 }
