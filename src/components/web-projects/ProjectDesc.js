@@ -27,7 +27,7 @@ function ProjectDesc() {
             </a>
             , I had the opportunity to learn and experiment with a diverse tech
             stack to create fun and innovative web applications with team
-            members, or on my own.
+            members and on my own.
           </p>
           <div className='skills'>
             <li>JavaScript</li>

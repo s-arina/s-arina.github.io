@@ -17,12 +17,12 @@ function Contact() {
           NYC.
         </p>
         <p>
-          I hold degrees in Graphic Design and Art History, and most recently, a
-          certification from The Grace Hopper Program at Fullstack Academy.
+          I hold degrees in Graphic Design and Art History, and a certification
+          from The Grace Hopper Program at Fullstack Academy.
         </p>
         <p>
           I'm currently looking for a <span>front-end</span> or a{' '}
-          <span>full-stack</span> developer role.
+          <span>full-stack</span> developer role!
         </p>
         <div className='contact-btns'>
           <a
