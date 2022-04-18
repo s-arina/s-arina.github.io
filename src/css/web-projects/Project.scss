@@ -4,7 +4,7 @@
   justify-content: center;
   position: relative;
   gap: 5rem;
-  min-width: 100%;
+  min-width: 99%;
 
   .project-banner {
     display: flex;
@@ -97,5 +97,6 @@
 @media screen and (max-width: 970px) {
   .project-name {
     justify-content: flex-start;
+    padding: 1rem 1rem 0 0;
   }
 }
