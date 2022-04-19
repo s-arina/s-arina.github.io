@@ -7,6 +7,7 @@ function Nav() {
   const [width, setWidth] = React.useState(window.innerWidth);
   const [hamIconOpen, setHamIconOpen] = useState(false);
 
+  // tracking window scroll position
   var currPos = window.scrollY;
 
   function navScroll() {
@@ -20,6 +21,7 @@ function Nav() {
     currPos = window.scrollY;
   }
 
+  // scroll to top button, don't need it atm
   // const scrollTop = () => {
   //   window.scroll({
   //     top: 0,
@@ -28,15 +30,17 @@ function Nav() {
   // };
 
   // listen for window width change to hide menu when resizing
-  const updateWidthAndHeight = () => {
+  const updateWidth = () => {
     setWidth(window.innerWidth);
   };
 
+  // event listener for width
   useEffect(() => {
-    window.addEventListener('resize', updateWidthAndHeight);
-    return () => window.removeEventListener('resize', updateWidthAndHeight);
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
+  // automatically close the ham menu when screen width 770px and under
   useEffect(() => {
     if (width > 770) {
       setHamMenu(false);
@@ -44,16 +48,24 @@ function Nav() {
     }
   }, [width]);
 
-  // disable scrolling when ham menu is open / blur overlay
   useEffect(() => {
+    // wrap everything under Nav component in a div so the Nav doesn't get blurred (check App.js)
     const content = document.getElementsByClassName('content')[0];
+
+    // when ham menu is open, do all of this:
     if (hamMenu) {
+      // disable scrolling when ham menu is open
       document.removeEventListener('scroll', navScroll);
+
+      // blur the background, overflow to stop scroll
       content.style.filter = 'blur(4px)';
       content.style.overflow = 'hidden';
+
+      // overflow to stop scroll, padding to fix body jumping
       document.body.style.overflow = 'hidden';
       document.body.style.padding = '0 5px 0 0';
     } else {
+      // everything back to default
       document.addEventListener('scroll', navScroll);
       content.style.filter = 'none';
       content.style.overflow = 'visible';
@@ -63,8 +75,10 @@ function Nav() {
   }, [hamMenu]);
 
   return (
+    // disappearing nav when scrolling
     <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
+        {/* pressing logo resets ham menu */}
         <a href='/'>
           <img
             className='nav-logo'
@@ -89,6 +103,7 @@ function Nav() {
           <a href='#contact'>
             <p>Contact</p>
           </a>
+          {/* toggle ham menu/icon opening and closing */}
           <div
             className='ham-icon-wrapper'
             onClick={() => {
@@ -96,6 +111,7 @@ function Nav() {
               setHamIconOpen(!hamIconOpen);
             }}
           >
+            {/* toggle ham menu icon style changing */}
             <div className={`ham-icon${hamIconOpen ? '-open' : ''}`}>
               <span></span>
               <span></span>
@@ -104,6 +120,8 @@ function Nav() {
             </div>
           </div>
         </div>
+        {/* overlay and blur on the body wrapper when ham menu open */}
+        {/* hide the menu/icon when the overlay is clicked */}
         <div
           className={`overlay${hamMenu ? '-visible' : ''}`}
           onClick={() => {
@@ -111,8 +129,10 @@ function Nav() {
             setHamIconOpen(false);
           }}
         ></div>
+        {/* if menu is open, show links */}
         <div className={`ham-menu${hamMenu ? '-visible' : ''}`}>
           <div className='ham-links'>
+            {/* when a link is clicked, hide the menu and reset the icon again */}
             <a
               href='#projects'
               onClick={() => {
