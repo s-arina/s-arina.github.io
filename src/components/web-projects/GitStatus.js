@@ -47,7 +47,6 @@ function GitStatus() {
                 <li>JavaScript</li>
                 <li>React.js</li>
                 <li>Firebase</li>
-                <li>JavaScript</li>
                 <li>Chart.js</li>
                 <li>Bootstrap</li>
                 <li>GitHub API</li>
