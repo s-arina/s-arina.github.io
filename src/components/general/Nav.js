@@ -76,6 +76,7 @@ function Nav() {
 
   return (
     // disappearing nav when scrolling
+
     <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
         {/* pressing logo resets ham menu */}
@@ -103,6 +104,7 @@ function Nav() {
           <a href='#contact'>
             <p>Contact</p>
           </a>
+
           {/* toggle ham menu/icon opening and closing */}
           <div
             className='ham-icon-wrapper'

@@ -183,8 +183,8 @@
   color: white;
   background-color: #1a1a1a;
   z-index: 3;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   visibility: hidden;
