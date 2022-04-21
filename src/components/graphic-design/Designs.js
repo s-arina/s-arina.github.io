@@ -7,7 +7,6 @@ import UBF from './UBF';
 import SB from './SB';
 import LOUVRE from './LOUVRE';
 import ZODIAC from './ZODIAC';
-import FadeInSection from '../../FadeInSection';
 
 function Designs() {
   const [designModalUI, setDesignModalUI] = useState(false);
@@ -94,103 +93,101 @@ function Designs() {
 
   return (
     <div className='designs-container'>
-      <FadeInSection>
-        <div
-          className={designModalUI ? 'design-modal' : 'design-modal-invisible'}
-          onClick={closeModal}
-          id='bg'
-        >
-          <UIDesign
-            setDesignModalUI={setDesignModalUI}
-            setDesignModalPTP={setDesignModalPTP}
-            setDesignModalZODIAC={setDesignModalZODIAC}
-          />
-        </div>
-        <div
-          className={designModalPTP ? 'design-modal' : 'design-modal-invisible'}
-          onClick={closeModal}
-          id='bg'
-        >
-          <PTP
-            setDesignModalPTP={setDesignModalPTP}
-            setDesignModalUI={setDesignModalUI}
-            setDesignModalUBF={setDesignModalUBF}
-          />
-        </div>
-        <div
-          className={designModalUBF ? 'design-modal' : 'design-modal-invisible'}
-          onClick={closeModal}
-          id='bg'
-        >
-          <UBF
-            setDesignModalUBF={setDesignModalUBF}
-            setDesignModalPTP={setDesignModalPTP}
-            setDesignModalSB={setDesignModalSB}
-          />
-        </div>
-        <div
-          className={designModalSB ? 'design-modal' : 'design-modal-invisible'}
-          onClick={closeModal}
-          id='bg'
-        >
-          <SB
-            setDesignModalSB={setDesignModalSB}
-            setDesignModalUBF={setDesignModalUBF}
-            setDesignModalLOUVRE={setDesignModalLOUVRE}
-          />
-        </div>
-        <div
-          className={
-            designModalLOUVRE ? 'design-modal' : 'design-modal-invisible'
-          }
-          onClick={closeModal}
-          id='bg'
-        >
-          <LOUVRE
-            setDesignModalLOUVRE={setDesignModalLOUVRE}
-            setDesignModalSB={setDesignModalSB}
-            setDesignModalZODIAC={setDesignModalZODIAC}
-          />
-        </div>
-        <div
-          className={
-            designModalZODIAC ? 'design-modal' : 'design-modal-invisible'
-          }
-          onClick={closeModal}
-          id='bg'
-        >
-          <ZODIAC
-            setDesignModalZODIAC={setDesignModalZODIAC}
-            setDesignModalLOUVRE={setDesignModalLOUVRE}
-            setDesignModalUI={setDesignModalUI}
-          />
-        </div>
+      <div
+        className={designModalUI ? 'design-modal' : 'design-modal-invisible'}
+        onClick={closeModal}
+        id='bg'
+      >
+        <UIDesign
+          setDesignModalUI={setDesignModalUI}
+          setDesignModalPTP={setDesignModalPTP}
+          setDesignModalZODIAC={setDesignModalZODIAC}
+        />
+      </div>
+      <div
+        className={designModalPTP ? 'design-modal' : 'design-modal-invisible'}
+        onClick={closeModal}
+        id='bg'
+      >
+        <PTP
+          setDesignModalPTP={setDesignModalPTP}
+          setDesignModalUI={setDesignModalUI}
+          setDesignModalUBF={setDesignModalUBF}
+        />
+      </div>
+      <div
+        className={designModalUBF ? 'design-modal' : 'design-modal-invisible'}
+        onClick={closeModal}
+        id='bg'
+      >
+        <UBF
+          setDesignModalUBF={setDesignModalUBF}
+          setDesignModalPTP={setDesignModalPTP}
+          setDesignModalSB={setDesignModalSB}
+        />
+      </div>
+      <div
+        className={designModalSB ? 'design-modal' : 'design-modal-invisible'}
+        onClick={closeModal}
+        id='bg'
+      >
+        <SB
+          setDesignModalSB={setDesignModalSB}
+          setDesignModalUBF={setDesignModalUBF}
+          setDesignModalLOUVRE={setDesignModalLOUVRE}
+        />
+      </div>
+      <div
+        className={
+          designModalLOUVRE ? 'design-modal' : 'design-modal-invisible'
+        }
+        onClick={closeModal}
+        id='bg'
+      >
+        <LOUVRE
+          setDesignModalLOUVRE={setDesignModalLOUVRE}
+          setDesignModalSB={setDesignModalSB}
+          setDesignModalZODIAC={setDesignModalZODIAC}
+        />
+      </div>
+      <div
+        className={
+          designModalZODIAC ? 'design-modal' : 'design-modal-invisible'
+        }
+        onClick={closeModal}
+        id='bg'
+      >
+        <ZODIAC
+          setDesignModalZODIAC={setDesignModalZODIAC}
+          setDesignModalLOUVRE={setDesignModalLOUVRE}
+          setDesignModalUI={setDesignModalUI}
+        />
+      </div>
 
-        <div className='design-thumbnails'>
-          <ul>
-            {imgs
-              ? imgs.map((img) => (
-                  <li key={img.id}>
-                    <div
-                      className='thumbnail'
-                      style={{
-                        backgroundImage: `url(/graphic-design/thumbnails/${img.url}.png)`,
-                      }}
-                    ></div>
-                    <div
-                      className='thumbnail-hover'
-                      onClick={() => {
-                        img.fn(true);
-                      }}
-                    >
-                      <p>{img.title}</p>
-                    </div>
-                  </li>
-                ))
-              : null}
-          </ul>
-        </div>
-      </FadeInSection>
+      <div className='design-thumbnails'>
+        <ul>
+          {imgs
+            ? imgs.map((img) => (
+                <li key={img.id}>
+                  <div
+                    className='thumbnail'
+                    style={{
+                      backgroundImage: `url(/graphic-design/thumbnails/${img.url}.png)`,
+                    }}
+                  ></div>
+                  <div
+                    className='thumbnail-hover'
+                    onClick={() => {
+                      img.fn(true);
+                    }}
+                  >
+                    <p>{img.title}</p>
+                  </div>
+                </li>
+              ))
+            : null}
+        </ul>
+      </div>
     </div>
   );
 }

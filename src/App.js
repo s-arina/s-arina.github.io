@@ -27,9 +27,7 @@ function App() {
           <DesignDesc />
         </FadeInSection>
 
-        <FadeInSection>
-          <Designs />
-        </FadeInSection>
+        <Designs />
 
         <FadeInSection>
           <Illustrations />
