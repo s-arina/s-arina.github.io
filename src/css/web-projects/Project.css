@@ -72,6 +72,13 @@
   font-size: 1.6rem;
 }
 
+.project-name .project-header .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
 .project-name .project-header svg {
   margin: 0;
 }
