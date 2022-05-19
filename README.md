@@ -1,6 +1,6 @@
 ## Portfolio – sarinachang.com
 
-(https://github.com/s-arina/s-arina.github.io/blob/main/public/imgs/meta-img.png)
+![alt text](https://github.com/s-arina/s-arina.github.io/blob/main/public/imgs/meta-img.png)
 
 My personal portfolio.
 
