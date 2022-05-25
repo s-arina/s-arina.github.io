@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import '../../css/illustration/IllustrationDesc.css';
 import Illustration from './Illustration';
 
