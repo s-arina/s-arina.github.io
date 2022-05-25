@@ -51,6 +51,8 @@
   }
 }
 
+// ======================== MEDIA QUERY
+
 @media screen and (max-width: 1004px) {
   .designs-desc {
     gap: 5rem;
@@ -62,19 +64,10 @@
     .icon-row-1,
     .icon-row-2 {
       flex-direction: row;
+      gap: 9rem;
     }
     img {
-      max-width: 9rem;
-    }
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .icon-row-1,
-  .icon-row-2 {
-    img {
-      max-width: 7rem;
-      border-radius: 20px;
+      max-width: 10rem;
     }
   }
 }
@@ -93,7 +86,7 @@
         padding: 0 5rem 10rem 5rem;
         .icon-row-1,
         .icon-row-2 {
-          gap: 2rem;
+          gap: 6rem;
         }
       }
     }
@@ -103,6 +96,16 @@
 @media screen and (max-width: 770px) {
   #design .designs-desc .designs-title-desc {
     padding: 10rem 5rem 5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .icon-row-1,
+  .icon-row-2 {
+    img {
+      max-width: 7rem;
+      border-radius: 20px;
+    }
   }
 }
 
