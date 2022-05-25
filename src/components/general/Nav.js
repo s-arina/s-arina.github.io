@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../../css/general/Nav.css';
-import FadeInSection from '../../FadeInSection';
 import '../../css/index.css';
 
 function Nav() {

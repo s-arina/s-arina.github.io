@@ -16,6 +16,24 @@ function Designs() {
   const [designModalLOUVRE, setDesignModalLOUVRE] = useState(false);
   const [designModalZODIAC, setDesignModalZODIAC] = useState(false);
 
+  const [mobileView, setMobileView] = useState(false);
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
+  useEffect(() => {
+    if (width < 500) {
+      setMobileView(true);
+    }
+  }, [width]);
+
   const imgs = [
     {
       id: 1,
@@ -172,7 +190,9 @@ function Designs() {
                   <div
                     className='thumbnail'
                     style={{
-                      backgroundImage: `url(/graphic-design/thumbnails/${img.url}.png)`,
+                      backgroundImage: mobileView
+                        ? `url(/graphic-design/thumbnails-mobile/${img.url}_mobile.png)`
+                        : `url(/graphic-design/thumbnails/${img.url}.png)`,
                     }}
                   ></div>
                   <div
