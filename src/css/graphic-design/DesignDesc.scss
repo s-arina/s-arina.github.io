@@ -99,14 +99,14 @@
   }
 }
 
-@media screen and (max-width: 550px) {
-  .icon-row-1,
-  .icon-row-2 {
-    img {
-      max-width: 7rem;
-      border-radius: 20px;
+@media screen and (max-width: 500px) {
+    .icon-row-1,
+    .icon-row-2 {
+      img {
+        max-width: 6rem;
+        border-radius: 20px;
+      }
     }
-  }
 }
 
 // ======================== WORD / ICON GLOW
