@@ -31,6 +31,8 @@ function Designs() {
   useEffect(() => {
     if (width < 500) {
       setMobileView(true);
+    } else {
+      setMobileView(false);
     }
   }, [width]);
 

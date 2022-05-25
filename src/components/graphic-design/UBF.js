@@ -49,9 +49,10 @@ function UBF({ setDesignModalUBF, setDesignModalPTP, setDesignModalSB }) {
             href={'https://urbanbodyfix.com/about/'}
             target='_blank'
             rel='noreferrer'
-            style={{ color: 'orange' }}
           >
-            Larry Rogowsky’s{' '}
+            <span className='modal-link' style={{ color: 'orange' }}>
+              Larry Rogowsky's{' '}
+            </span>
           </a>
           new book about health and wellness,{' '}
           <a
@@ -60,9 +61,10 @@ function UBF({ setDesignModalUBF, setDesignModalPTP, setDesignModalSB }) {
             }
             target='_blank'
             rel='noreferrer'
-            style={{ color: 'cyan' }}
           >
-            The Urban Body Fix
+            <span className='modal-link' style={{ color: 'cyan' }}>
+              The Urban Body Fix
+            </span>
           </a>
           ! Formatted for both Kindle and print. <br />
           <br />I was also given the pleasure of redesigning and updating the{' '}
@@ -70,9 +72,10 @@ function UBF({ setDesignModalUBF, setDesignModalPTP, setDesignModalSB }) {
             href={'https://urbanbodyfix.com/'}
             target='_blank'
             rel='noreferrer'
-            style={{ color: 'cyan' }}
           >
-            Urban Body Fix{' '}
+            <span className='modal-link' style={{ color: 'cyan' }}>
+              Urban Body Fix{' '}
+            </span>
           </a>
           website.
         </p>

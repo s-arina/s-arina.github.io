@@ -72,9 +72,18 @@
   margin: 0 10% 1rem;
 }
 
-.design-modal .design-info a,
-.design-modal-invisible .design-info a {
+.design-modal .design-info .modal-link,
+.design-modal-invisible .design-info .modal-link {
   text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.design-modal .design-info .modal-link:hover,
+.design-modal-invisible .design-info .modal-link:hover {
   text-underline-offset: 0.4rem;
   text-decoration-thickness: 1px;
   -webkit-text-decoration-color: inherit;

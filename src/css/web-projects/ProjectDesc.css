@@ -70,10 +70,6 @@
           text-decoration-color: inherit;
 }
 
-.projects-title-desc a {
-  text-decoration: none;
-}
-
 .projects-title-desc .skills {
   display: -ms-grid;
   display: grid;

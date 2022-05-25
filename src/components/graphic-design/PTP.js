@@ -47,9 +47,10 @@ function PTP({ setDesignModalPTP, setDesignModalUBF, setDesignModalUI }) {
             href={'https://paidtoproofread.com/shop/'}
             target='_blank'
             rel='noreferrer'
-            style={{ color: 'orange' }}
           >
-            Paid to Proofread
+            <span className='modal-link' style={{ color: 'orange' }}>
+              Paid to Proofread
+            </span>
           </a>
           .
           <br />
