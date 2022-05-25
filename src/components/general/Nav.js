@@ -22,14 +22,6 @@ function Nav() {
     currPos = window.scrollY;
   }
 
-  // scroll to top button, don't need it atm
-  // const scrollTop = () => {
-  //   window.scroll({
-  //     top: 0,
-  //     behavior: 'smooth',
-  //   });
-  // };
-
   // listen for window width change to hide menu when resizing
   const updateWidth = () => {
     setWidth(window.innerWidth);
