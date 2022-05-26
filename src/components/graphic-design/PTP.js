@@ -10,35 +10,29 @@ function PTP({ setDesignModalPTP, setDesignModalUBF, setDesignModalUI }) {
 
   return (
     <div className='modal-container'>
+      <div className='close-container' onClick={() => setDesignModalPTP(false)}>
+        <div className='leftright'></div>
+        <div className='rightleft'></div>
+      </div>
+      <div className='prev-proj'>
+        <span
+          className='chevron left'
+          onClick={() => {
+            setDesignModalPTP(false);
+            setDesignModalUI(true);
+          }}
+        ></span>
+      </div>
+      <div className='next-proj'>
+        <span
+          className='chevron right'
+          onClick={() => {
+            setDesignModalPTP(false);
+            setDesignModalUBF(true);
+          }}
+        ></span>
+      </div>
       <div className='design-info'>
-        <div className='close-container'>
-          <div
-            className='leftright'
-            onClick={() => setDesignModalPTP(false)}
-          ></div>
-          <div
-            className='rightleft'
-            onClick={() => setDesignModalPTP(false)}
-          ></div>
-        </div>
-        <div className='prev-proj'>
-          <span
-            className='chevron left'
-            onClick={() => {
-              setDesignModalPTP(false);
-              setDesignModalUI(true);
-            }}
-          ></span>
-        </div>
-        <div className='next-proj'>
-          <span
-            className='chevron right'
-            onClick={() => {
-              setDesignModalPTP(false);
-              setDesignModalUBF(true);
-            }}
-          ></span>
-        </div>
         <h1>Paid to Proofread</h1>
         <p>
           Book and Kindle redesign and update for Tony Award winning theatre

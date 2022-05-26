@@ -42,7 +42,7 @@
     p {
       line-height: 2.5rem;
       font-size: 1.6rem;
-      margin: 0 10% 1rem;
+      margin: 0 15% 1rem;
     }
     .modal-link {
       text-decoration: underline;
@@ -122,7 +122,7 @@
   right: 1rem;
 }
 
-.leftright {
+.leftright, .rightleft {
   height: 4px;
   width: 20px;
   position: absolute;
@@ -134,17 +134,11 @@
 }
 
 .rightleft {
-  height: 4px;
-  width: 20px;
-  position: absolute;
-  margin-top: 24px;
-  background-color: #ff0011;
-  border-radius: 2px;
   transform: rotate(-45deg);
-  transition: all 0.3s ease-in;
 }
 
 // ================== LEFT / RIGHT CHEVRON
+
 .modal-container {
   .next-proj,
   .prev-proj {
@@ -183,6 +177,7 @@
     transform: rotate(-135deg);
   }
 }
+
 // ================== MEDIA QUERY
 
 @media screen and (max-width: 770px) {

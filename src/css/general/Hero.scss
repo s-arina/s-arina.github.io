@@ -170,21 +170,16 @@ $base: 0.6rem;
   .hero {
     padding: 10rem 5rem;
     .type-box {
-      width: 30rem;
       height: 6.5rem;
       h1 {
         font-size: 7rem;
       }
-    }
-    h2 {
-      width: 65%;
     }
     h2:first-of-type {
       font-size: 3rem;
     }
     h2:nth-of-type(2) {
       font-size: 2rem;
-      letter-spacing: 2px;
     }
   }
 }
@@ -198,8 +193,13 @@ $base: 0.6rem;
 @media screen and (max-device-width: 500px) {
   .hero {
     padding-top: 5rem;
+    text-align: center;
     .chevron-container {
       bottom: 15rem;
+    }
+    .type-box, h1, h2:first-of-type, h2:nth-of-type(2) {
+      width: 100%;
+      letter-spacing: 2px;
     }
   }
 }

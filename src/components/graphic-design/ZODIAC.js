@@ -16,35 +16,32 @@ function ZODIAC({
 
   return (
     <div className='modal-container'>
+      <div
+        className='close-container'
+        onClick={() => setDesignModalZODIAC(false)}
+      >
+        <div className='leftright'></div>
+        <div className='rightleft'></div>
+      </div>
+      <div className='prev-proj'>
+        <span
+          className='chevron left'
+          onClick={() => {
+            setDesignModalZODIAC(false);
+            setDesignModalLOUVRE(true);
+          }}
+        ></span>
+      </div>
+      <div className='next-proj'>
+        <span
+          className='chevron right'
+          onClick={() => {
+            setDesignModalZODIAC(false);
+            setDesignModalUI(true);
+          }}
+        ></span>
+      </div>
       <div className='design-info'>
-        <div className='close-container'>
-          <div
-            className='leftright'
-            onClick={() => setDesignModalZODIAC(false)}
-          ></div>
-          <div
-            className='rightleft'
-            onClick={() => setDesignModalZODIAC(false)}
-          ></div>
-        </div>
-        <div className='prev-proj'>
-          <span
-            className='chevron left'
-            onClick={() => {
-              setDesignModalZODIAC(false);
-              setDesignModalLOUVRE(true);
-            }}
-          ></span>
-        </div>
-        <div className='next-proj'>
-          <span
-            className='chevron right'
-            onClick={() => {
-              setDesignModalZODIAC(false);
-              setDesignModalUI(true);
-            }}
-          ></span>
-        </div>
         <h1>ZODIAC</h1>
         <p>
           Inspired by my love for the stars.

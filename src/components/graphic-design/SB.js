@@ -16,43 +16,35 @@ function SB({ setDesignModalSB, setDesignModalUBF, setDesignModalLOUVRE }) {
 
   return (
     <div className='modal-container'>
+      <div className='close-container' onClick={() => setDesignModalSB(false)}>
+        <div className='leftright'></div>
+        <div className='rightleft'></div>
+      </div>
+      <div className='prev-proj'>
+        <span
+          className='chevron left'
+          onClick={() => {
+            setDesignModalSB(false);
+            setDesignModalUBF(true);
+          }}
+        ></span>
+      </div>
+      <div className='next-proj'>
+        <span
+          className='chevron right'
+          onClick={() => {
+            setDesignModalSB(false);
+            setDesignModalLOUVRE(true);
+          }}
+        ></span>
+      </div>
       <div className='design-info'>
-        <div className='close-container'>
-          <div
-            className='leftright'
-            onClick={() => setDesignModalSB(false)}
-          ></div>
-          <div
-            className='rightleft'
-            onClick={() => setDesignModalSB(false)}
-          ></div>
-        </div>
-        <div className='prev-proj'>
-          <span
-            className='chevron left'
-            onClick={() => {
-              setDesignModalSB(false);
-              setDesignModalUBF(true);
-            }}
-          ></span>
-        </div>
-        <div className='next-proj'>
-          <span
-            className='chevron right'
-            onClick={() => {
-              setDesignModalSB(false);
-              setDesignModalLOUVRE(true);
-            }}
-          ></span>
-        </div>
         <h1>Starbucks Redesign</h1>
         <p>
           A redesign of the UI on Starbucks' website and mobile app. Seasonal
           colors were incorporated into the design to make the website more
           colorful and fun, while still keeping its minimalistic aesthetic.
         </p>
-        {/* {imgs
-          ? imgs.map((img) => ( */}
         <div className='sb-imgs'>
           <div className='sb-row-1'>
             <img src='/graphic-design/sb/sb-1.gif' alt='' />
@@ -72,8 +64,6 @@ function SB({ setDesignModalSB, setDesignModalUBF, setDesignModalLOUVRE }) {
           </div>
           <img src='/graphic-design/sb/sb-9.png' alt='' />
         </div>
-        {/* ))
-          : null} */}
       </div>
     </div>
   );

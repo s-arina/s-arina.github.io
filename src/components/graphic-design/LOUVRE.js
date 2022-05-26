@@ -16,35 +16,32 @@ function LOUVRE({
 
   return (
     <div className='modal-container'>
+      <div
+        className='close-container'
+        onClick={() => setDesignModalLOUVRE(false)}
+      >
+        <div className='leftright'></div>
+        <div className='rightleft'></div>
+      </div>
+      <div className='prev-proj'>
+        <span
+          className='chevron left'
+          onClick={() => {
+            setDesignModalLOUVRE(false);
+            setDesignModalSB(true);
+          }}
+        ></span>
+      </div>
+      <div className='next-proj'>
+        <span
+          className='chevron right'
+          onClick={() => {
+            setDesignModalLOUVRE(false);
+            setDesignModalZODIAC(true);
+          }}
+        ></span>
+      </div>
       <div className='design-info'>
-        <div className='close-container'>
-          <div
-            className='leftright'
-            onClick={() => setDesignModalLOUVRE(false)}
-          ></div>
-          <div
-            className='rightleft'
-            onClick={() => setDesignModalLOUVRE(false)}
-          ></div>
-        </div>
-        <div className='prev-proj'>
-          <span
-            className='chevron left'
-            onClick={() => {
-              setDesignModalLOUVRE(false);
-              setDesignModalSB(true);
-            }}
-          ></span>
-        </div>
-        <div className='next-proj'>
-          <span
-            className='chevron right'
-            onClick={() => {
-              setDesignModalLOUVRE(false);
-              setDesignModalZODIAC(true);
-            }}
-          ></span>
-        </div>
         <h1>LOUVRE</h1>
         <p>
           A mini zine and guide to some of the Louvre’s most famous sights and

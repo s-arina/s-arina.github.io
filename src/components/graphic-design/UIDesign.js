@@ -15,15 +15,9 @@ function UIDesign({
 
   return (
     <div className='modal-container'>
-      <div className='close-container'>
-        <div
-          className='leftright'
-          onClick={() => setDesignModalUI(false)}
-        ></div>
-        <div
-          className='rightleft'
-          onClick={() => setDesignModalUI(false)}
-        ></div>
+      <div className='close-container' onClick={() => setDesignModalUI(false)}>
+        <div className='leftright'></div>
+        <div className='rightleft'></div>
       </div>
       <div className='prev-proj'>
         <span

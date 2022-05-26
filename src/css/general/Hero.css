@@ -262,21 +262,16 @@
     padding: 10rem 5rem;
   }
   .hero .type-box {
-    width: 30rem;
     height: 6.5rem;
   }
   .hero .type-box h1 {
     font-size: 7rem;
-  }
-  .hero h2 {
-    width: 65%;
   }
   .hero h2:first-of-type {
     font-size: 3rem;
   }
   .hero h2:nth-of-type(2) {
     font-size: 2rem;
-    letter-spacing: 2px;
   }
 }
 
@@ -289,9 +284,14 @@
 @media screen and (max-device-width: 500px) {
   .hero {
     padding-top: 5rem;
+    text-align: center;
   }
   .hero .chevron-container {
     bottom: 15rem;
+  }
+  .hero .type-box, .hero h1, .hero h2:first-of-type, .hero h2:nth-of-type(2) {
+    width: 100%;
+    letter-spacing: 2px;
   }
 }
 /*# sourceMappingURL=Hero.css.map */
