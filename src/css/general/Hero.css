@@ -262,6 +262,7 @@
     padding: 10rem 5rem;
   }
   .hero .type-box {
+    width: 30rem;
     height: 6.5rem;
   }
   .hero .type-box h1 {
@@ -290,7 +291,7 @@
     bottom: 15rem;
   }
   .hero .type-box, .hero h1, .hero h2:first-of-type, .hero h2:nth-of-type(2) {
-    width: 100%;
+    width: 32.5rem;
     letter-spacing: 2px;
   }
 }

@@ -170,6 +170,7 @@ $base: 0.6rem;
   .hero {
     padding: 10rem 5rem;
     .type-box {
+      width: 30rem;
       height: 6.5rem;
       h1 {
         font-size: 7rem;
@@ -198,7 +199,7 @@ $base: 0.6rem;
       bottom: 15rem;
     }
     .type-box, h1, h2:first-of-type, h2:nth-of-type(2) {
-      width: 100%;
+      width: 32.5rem;
       letter-spacing: 2px;
     }
   }
