@@ -51,7 +51,7 @@ function Nav() {
       document.removeEventListener('scroll', navScroll);
 
       // blur the background, overflow to stop scroll
-      content.style.filter = 'blur(4px)';
+      // content.style.filter = 'blur(4px)';
       content.style.overflow = 'hidden';
 
       // overflow to stop scroll, padding to fix body jumping
