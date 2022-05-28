@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { GithubIcon, LinkedInIcon } from './Icons';
 import '../../css/general/Nav.css';
 import '../../css/index.css';
 
@@ -45,13 +46,13 @@ function Nav() {
     // wrap everything under Nav component in a div so the Nav doesn't get blurred (check App.js)
     const content = document.getElementsByClassName('content')[0];
 
-    // when ham menu is open, do all of this:
+    // when ham menu is open:
     if (hamMenu) {
       // disable scrolling when ham menu is open
       document.removeEventListener('scroll', navScroll);
 
       // blur the background, overflow to stop scroll
-      // content.style.filter = 'blur(4px)';
+      // content.style.filter = 'blur(4px)'; // blur causing lag?
       content.style.overflow = 'hidden';
 
       // overflow to stop scroll, padding to fix body jumping
@@ -66,6 +67,29 @@ function Nav() {
       document.body.style.padding = '0';
     }
   }, [hamMenu]);
+
+  const navLinks = [
+    {
+      id: 1,
+      sectionDiv: 'projects',
+      section: 'Projects',
+    },
+    {
+      id: 2,
+      sectionDiv: 'design',
+      section: 'Graphic Design',
+    },
+    {
+      id: 3,
+      sectionDiv: 'illustration',
+      section: 'Illustration',
+    },
+    {
+      id: 4,
+      sectionDiv: 'contact',
+      section: 'Contact',
+    },
+  ];
 
   return (
     // disappearing nav when scrolling
@@ -83,19 +107,16 @@ function Nav() {
             }}
           />
         </a>
+        {/* nav links */}
         <div className='nav-links'>
-          <a href='#projects'>
-            <p>Projects</p>
-          </a>
-          <a href='#design'>
-            <p>Graphic Design</p>
-          </a>
-          <a href='#illustration'>
-            <p>Illustration</p>
-          </a>
-          <a href='#contact'>
-            <p>Contact</p>
-          </a>
+          {navLinks
+            ? navLinks.map((link) => (
+                <a href={`#${link.sectionDiv}`} key={link.id}>
+                  <p>{link.section}</p>
+                </a>
+              ))
+            : null}
+
           {/* toggle ham menu/icon opening and closing */}
           <div
             className='ham-icon-wrapper'
@@ -104,7 +125,7 @@ function Nav() {
               setHamIconOpen(!hamIconOpen);
             }}
           >
-            {/* toggle ham menu icon style changing */}
+            {/* toggle ham menu/icon style changing */}
             <div className={`ham-icon${hamIconOpen ? '-open' : ''}`}>
               <span></span>
               <span></span>
@@ -122,42 +143,27 @@ function Nav() {
             setHamIconOpen(false);
           }}
         ></div>
-        {/* if menu is open, show links */}
+        {/* if menu is open, show mobile links */}
         <div className={`ham-menu${hamMenu ? '-visible' : ''}`}>
           <div className='ham-links'>
             {/* when a link is clicked, hide the menu and reset the icon again */}
-            <a
-              href='#projects'
-              onClick={() => {
-                setHamMenu(false);
-                setHamIconOpen(false);
-              }}
-            >
-              <p>Projects</p>
-            </a>
-            <hr />
-            <a
-              href='#design'
-              onClick={() => {
-                setHamMenu(false);
-                setHamIconOpen(false);
-              }}
-            >
-              <p>Graphic Design</p>
-            </a>
-            <hr />
-
-            <a
-              href='#illustration'
-              onClick={() => {
-                setHamMenu(false);
-                setHamIconOpen(false);
-              }}
-            >
-              <p>Illustration</p>
-            </a>
-            <hr />
-
+            {navLinks
+              ? navLinks.slice(0, 3).map((link) => (
+                  <>
+                    <a
+                      href={`#${link.sectionDiv}`}
+                      onClick={() => {
+                        setHamMenu(false);
+                        setHamIconOpen(false);
+                      }}
+                      key={link.id}
+                    >
+                      <p>{link.section}</p>
+                    </a>
+                    <hr />
+                  </>
+                ))
+              : null}
             <a
               href='#contact'
               onClick={() => {
@@ -168,48 +174,7 @@ function Nav() {
               <p>Contact</p>
             </a>
             <div className='ham-menu-social'>
-              <a
-                href={'https://github.com/s-arina'}
-                target='_blank'
-                rel='noreferrer'
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  role='img'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='red'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  className='feather feather-github'
-                >
-                  <title>GitHub</title>
-                  <path d='M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22'></path>
-                </svg>
-              </a>{' '}
-              <a
-                href={'https://linkedin.com/in/sarinachang'}
-                target='_blank'
-                rel='noreferrer'
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  role='img'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='red'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  className='feather feather-linkedin'
-                >
-                  <title>LinkedIn</title>
-                  <path d='M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z'></path>
-                  <rect x='2' y='9' width='4' height='12'></rect>
-                  <circle cx='4' cy='4' r='2'></circle>
-                </svg>
-              </a>
+              <GithubIcon link='https://github.com/s-arina' /> <LinkedInIcon />
             </div>
           </div>
         </div>

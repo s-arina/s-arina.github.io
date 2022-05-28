@@ -12,41 +12,42 @@ function DesignDesc() {
   const row1 = [
     {
       id: 1,
-      url: '/graphic-design/adobe-icons/InDesign.png',
+      url: 'InDesign.png',
       name: ind,
-      boxShadow: '0px 0px 40px 0px rgba(255, 48, 102, 0.8)',
+      boxShadow: '255, 48, 102, 0.8',
     },
     {
       id: 2,
-      url: '/graphic-design/adobe-icons/Photoshop.png',
+      url: 'Photoshop.png',
       name: ps,
-      boxShadow: '0px 0px 40px 0px rgba(48, 168, 255, 0.8)',
+      boxShadow: '48, 168, 255, 0.8',
     },
     {
       id: 3,
-      url: '/graphic-design/adobe-icons/Illustrator.png',
+      url: 'Illustrator.png',
       name: ai,
-      boxShadow: '0px 0px 40px 0px rgba(255, 48, 102, 0.8)',
+      boxShadow: '255, 48, 102, 0.8',
     },
   ];
+
   const row2 = [
     {
       id: 1,
-      url: '/graphic-design/adobe-icons/XD.png',
+      url: 'XD.png',
       name: xd,
-      boxShadow: '0px 0px 40px 0px rgba(255, 97, 247, 0.8)',
+      boxShadow: '255, 97, 247, 0.8',
     },
     {
       id: 2,
-      url: '/graphic-design/adobe-icons/PremierePro.png',
+      url: 'PremierePro.png',
       name: pp,
-      boxShadow: '0px 0px 40px 0px rgba(153, 153, 255, 0.8)',
+      boxShadow: '153, 153, 255, 0.8',
     },
     {
       id: 3,
-      url: '/graphic-design/adobe-icons/AfterEffects.png',
+      url: 'AfterEffects.png',
       name: ae,
-      boxShadow: '0px 0px 40px 0px rgba(153, 153, 255, 0.8)',
+      boxShadow: '153, 153, 255, 0.8',
     },
   ];
 
@@ -113,63 +114,37 @@ function DesignDesc() {
         </div>
         <div className='adobe-icons'>
           <div className='icon-row-1'>
-            <img
-              src='/graphic-design/adobe-icons/InDesign.png'
-              alt=''
-              style={{
-                boxShadow: ind
-                  ? '0px 0px 40px 0px rgba(255, 48, 102, 0.8)'
-                  : 'none',
-              }}
-            />
-            <img
-              src='/graphic-design/adobe-icons/Photoshop.png'
-              alt=''
-              style={{
-                boxShadow: ps
-                  ? '0px 0px 40px 0px rgba(48, 168, 255, 0.8)'
-                  : 'none',
-              }}
-            />
-            <img
-              src='/graphic-design/adobe-icons/Illustrator.png'
-              alt=''
-              style={{
-                boxShadow: ai
-                  ? '0px 0px 40px 0px rgba(255, 154, 0, 0.8)'
-                  : 'none',
-              }}
-            />
+            {row1
+              ? row1.map((icon) => (
+                  <img
+                    src={`/graphic-design/adobe-icons/${icon.url}`}
+                    alt=''
+                    style={{
+                      boxShadow: icon.name
+                        ? `0px 0px 40px 0px rgba(${icon.boxShadow})`
+                        : 'none',
+                    }}
+                    key={icon.id}
+                  />
+                ))
+              : null}
           </div>
-          <div className='icon-row-2'>
-            <img
-              src='/graphic-design/adobe-icons/XD.png'
-              alt=''
-              style={{
-                boxShadow: xd
-                  ? '0px 0px 40px 0px rgba(255, 97, 247, 0.8)'
-                  : 'none',
-              }}
-            />
 
-            <img
-              src='/graphic-design/adobe-icons/PremierePro.png'
-              alt=''
-              style={{
-                boxShadow: pp
-                  ? '0px 0px 40px 0px rgba(153, 153, 255, 0.8)'
-                  : 'none',
-              }}
-            />
-            <img
-              src='/graphic-design/adobe-icons/AfterEffects.png'
-              alt=''
-              style={{
-                boxShadow: ae
-                  ? '0px 0px 40px 0px rgba(153, 153, 255, 0.8)'
-                  : 'none',
-              }}
-            />
+          <div className='icon-row-2'>
+            {row1
+              ? row2.map((icon) => (
+                  <img
+                    src={`/graphic-design/adobe-icons/${icon.url}`}
+                    alt=''
+                    style={{
+                      boxShadow: icon.name
+                        ? `0px 0px 40px 0px rgba(${icon.boxShadow})`
+                        : 'none',
+                    }}
+                    key={icon.id}
+                  />
+                ))
+              : null}
           </div>
         </div>
       </div>
