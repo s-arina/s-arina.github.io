@@ -149,19 +149,18 @@ function Nav() {
             {/* when a link is clicked, hide the menu and reset the icon again */}
             {navLinks
               ? navLinks.slice(0, 3).map((link) => (
-                  <>
+                  <React.Fragment key={link.id}>
                     <a
                       href={`#${link.sectionDiv}`}
                       onClick={() => {
                         setHamMenu(false);
                         setHamIconOpen(false);
                       }}
-                      key={link.id}
                     >
                       <p>{link.section}</p>
                     </a>
                     <hr />
-                  </>
+                  </React.Fragment>
                 ))
               : null}
             <a
