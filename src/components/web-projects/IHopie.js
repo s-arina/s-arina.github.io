@@ -11,11 +11,7 @@ function IHopie() {
       <div className='project-info'>
         <div className='project-header'>
           <p>
-            <a
-              href={'https://ihopie.herokuapp.com'}
-              target='_blank'
-              rel='noreferrer'
-            >
+            <a href={'https://ihopie.cf'} target='_blank' rel='noreferrer'>
               iHopie
             </a>
           </p>
