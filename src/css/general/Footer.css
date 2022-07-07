@@ -24,7 +24,7 @@ footer hr {
   width: 1px;
   height: 9rem;
   border: none;
-  background-color: red;
+  background-color: var(--red);
 }
 
 footer a {

@@ -1,12 +1,10 @@
 .nav {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   position: fixed;
   top: 0;
   padding: 3rem;
   width: 100%;
   z-index: 1;
-  background-color: #1a1a1a;
+  background-color: var(--darkgrey);
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: all 0.3s;
@@ -53,7 +51,7 @@
 }
 
 .nav-content .nav-links p {
-  color: white;
+  color: var(--white);
   letter-spacing: 0.1rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -64,7 +62,7 @@
 }
 
 .nav-content .nav-links a :hover {
-  color: red;
+  color: var(--red);
 }
 
 .ham-icon-wrapper {
@@ -97,7 +95,7 @@
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #e70000;
+  background: var(--darkred);
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -151,7 +149,7 @@
   right: 0px;
   height: 100vh;
   opacity: 0.6;
-  background-color: black;
+  background-color: var(--black);
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   visibility: hidden;
@@ -180,8 +178,8 @@
   width: calc(min(75vw, 400px));
   min-height: 100vh;
   outline: 0px;
-  color: white;
-  background-color: #1a1a1a;
+  color: var(--white);
+  background-color: var(--darkgrey);
   z-index: 3;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -195,11 +193,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   text-align: center;
   font-size: 2.2rem;
   gap: 4rem;
@@ -210,13 +208,13 @@
   margin: auto;
   width: 10%;
   border: none;
-  background-color: grey;
+  background-color: var(--grey);
   height: 1px;
 }
 
 .ham-menu .ham-links p,
 .ham-menu-visible .ham-links p {
-  color: white;
+  color: var(--white);
   letter-spacing: 0.1rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -229,7 +227,7 @@
 
 .ham-menu .ham-links a :hover,
 .ham-menu-visible .ham-links a :hover {
-  color: red;
+  color: var(--red);
 }
 
 .ham-menu .ham-menu-social,

@@ -7,8 +7,8 @@
   text-align: center;
   min-height: 100vh;
 
-  background-color: #f2f2f2;
-  color: black;
+  background-color: var(--offwhite);
+  color: var(--black);
 
   .about {
     display: flex;
@@ -29,7 +29,7 @@
   }
 
   span {
-    color: red;
+    color: var(--red);
   }
 
   h1 {
@@ -40,7 +40,7 @@
 
   h2 {
     font-size: 2.2rem;
-    color: grey;
+    color: var(--grey);
     letter-spacing: 1px;
     margin-bottom: 2rem;
   }
@@ -55,9 +55,9 @@
     margin-top: 5rem;
     gap: 2.5rem;
     a {
-      color: white;
-      background-color: red;
-      border: 1px solid red;
+      color: var(--white);
+      background-color: var(--red);
+      border: 1px solid var(--red);
       border-radius: 5px;
       padding: 1.5rem 2.5rem 1rem 2.5rem;
       font-size: 1.8rem;
@@ -66,8 +66,8 @@
       transition: all 0.2s ease;
       cursor: pointer;
       &:hover {
-        background-color: #1a1a1a;
-        border: 1px solid #1a1a1a;
+        background-color: var(--darkgrey);
+        border: 1px solid var(--darkgrey);
       }
     }
   }
@@ -98,7 +98,7 @@
   width: 20.5rem;
 
   border-radius: 100%;
-  background-color: #1a1a1a;
+  background-color: var(--darkgrey);
   // @include border-gradient(red, red);
   transition: all 0.3s ease;
 }

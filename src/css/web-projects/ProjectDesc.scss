@@ -3,8 +3,8 @@
   display: flex;
   min-height: 100vh;
 
-  background-color: #f2f2f2;
-  color: black;
+  background-color: var(--offwhite);
+  color: var(--black);
 }
 
 .projects-desc {
@@ -36,10 +36,10 @@
     transition: all 0.3s ease;
   }
   .gh {
-    color: green;
+    color: var(--green);
   }
   .fsa {
-    color: red;
+    color: var(--red);
   }
   span:hover {
     text-underline-offset: 0.4rem;
@@ -64,7 +64,7 @@
       line-height: 1.2rem;
       left: 0px;
       top: 3px;
-      color: red;
+      color: var(--red);
     }
   }
 }

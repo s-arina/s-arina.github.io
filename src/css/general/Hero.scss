@@ -1,5 +1,5 @@
 .hero {
-  color: #fff;
+  color: var(--white);
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -19,13 +19,13 @@
   gap: 9rem;
   h2:first-of-type {
     font-size: 3.6rem;
-    color: red;
+    color: var(--red);
     letter-spacing: 0.1rem;
     transition: all 0.3s ease;
   }
   h2:nth-of-type(2) {
     font-size: 2.2rem;
-    color: grey;
+    color: var(--grey);
     letter-spacing: 0.4rem;
     margin-top: 2rem;
     transition: all 0.3s ease;
@@ -64,7 +64,7 @@
   }
   height: 100%;
   overflow: hidden;
-  border-right: 0.6em solid grey;
+  border-right: 0.6em solid var(--grey);
   white-space: nowrap;
   animation: typing 6s steps(18, end) forwards infinite, blink 1.2s infinite;
 }
@@ -92,7 +92,7 @@
     border-color: transparent;
   }
   to {
-    border-color: grey;
+    border-color: var(--grey);
   }
 }
 
@@ -130,7 +130,7 @@ $base: 0.6rem;
       top: 0;
       height: 100%;
       width: 50%;
-      background: red;
+      background: var(--red);
     }
 
     .chevron:before {
@@ -198,7 +198,10 @@ $base: 0.6rem;
     .chevron-container {
       bottom: 15rem;
     }
-    .type-box, h1, h2:first-of-type, h2:nth-of-type(2) {
+    .type-box,
+    h1,
+    h2:first-of-type,
+    h2:nth-of-type(2) {
       width: 32.5rem;
       letter-spacing: 2px;
     }

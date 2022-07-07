@@ -53,7 +53,7 @@
 }
 
 .project-name .project-header a {
-  color: black;
+  color: var(--black);
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -61,11 +61,11 @@
 
 .project-name .project-header p {
   font-size: 3.2rem;
-  color: black;
+  color: var(--black);
 }
 
 .project-name .project-header p :hover {
-  color: red;
+  color: var(--red);
 }
 
 .project-name .project-header p:nth-of-type(2) {
@@ -109,7 +109,7 @@
 }
 
 .project-name .project-details .tech-stack li {
-  color: grey;
+  color: var(--grey);
   list-style: none;
   font-size: 1.6rem;
   margin-right: 1rem;

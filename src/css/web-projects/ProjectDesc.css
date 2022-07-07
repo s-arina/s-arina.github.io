@@ -5,8 +5,8 @@
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  background-color: #f2f2f2;
-  color: black;
+  background-color: var(--offwhite);
+  color: var(--black);
 }
 
 .projects-desc {
@@ -56,11 +56,11 @@
 }
 
 .projects-title-desc .gh {
-  color: green;
+  color: var(--green);
 }
 
 .projects-title-desc .fsa {
-  color: red;
+  color: var(--red);
 }
 
 .projects-title-desc span:hover {
@@ -93,7 +93,7 @@
   line-height: 1.2rem;
   left: 0px;
   top: 3px;
-  color: red;
+  color: var(--red);
 }
 
 @media screen and (max-width: 970px) {

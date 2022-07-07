@@ -9,6 +9,7 @@ import Contact from './components/general/Contact';
 import Footer from './components/general/Footer';
 import FadeInSection from './FadeInSection';
 import './css/index.css';
+import './css/root.css';
 
 function App() {
   return (

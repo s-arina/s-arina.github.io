@@ -37,13 +37,13 @@
 }
 
 .projects-container::-webkit-scrollbar {
-  background-color: lightgrey;
+  background-color: var(--lightgrey);
 }
 
 .projects-container::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: #8d8d8d;
+  background-color: var(--slategrey);
 }
 
 @media screen and (max-width: 970px) {

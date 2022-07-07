@@ -1,5 +1,5 @@
 .hero {
-  color: #fff;
+  color: var(--white);
   position: relative;
   min-height: 100vh;
   display: -webkit-box;
@@ -22,13 +22,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0rem 1rem;
@@ -37,7 +37,7 @@
 
 .container h2:first-of-type {
   font-size: 3.6rem;
-  color: red;
+  color: var(--red);
   letter-spacing: 0.1rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -45,7 +45,7 @@
 
 .container h2:nth-of-type(2) {
   font-size: 2.2rem;
-  color: grey;
+  color: var(--grey);
   letter-spacing: 0.4rem;
   margin-top: 2rem;
   -webkit-transition: all 0.3s ease;
@@ -98,7 +98,7 @@
 .typed {
   height: 100%;
   overflow: hidden;
-  border-right: 0.6em solid grey;
+  border-right: 0.6em solid var(--grey);
   white-space: nowrap;
   -webkit-animation: typing 6s steps(18, end) forwards infinite, blink 1.2s infinite;
           animation: typing 6s steps(18, end) forwards infinite, blink 1.2s infinite;
@@ -152,7 +152,7 @@
     border-color: transparent;
   }
   to {
-    border-color: grey;
+    border-color: var(--grey);
   }
 }
 
@@ -161,7 +161,7 @@
     border-color: transparent;
   }
   to {
-    border-color: grey;
+    border-color: var(--grey);
   }
 }
 
@@ -199,7 +199,7 @@
   top: 0;
   height: 100%;
   width: 50%;
-  background: red;
+  background: var(--red);
 }
 
 .hero .chevron-container .chevron:before {
@@ -290,7 +290,10 @@
   .hero .chevron-container {
     bottom: 15rem;
   }
-  .hero .type-box, .hero h1, .hero h2:first-of-type, .hero h2:nth-of-type(2) {
+  .hero .type-box,
+  .hero h1,
+  .hero h2:first-of-type,
+  .hero h2:nth-of-type(2) {
     width: 32.5rem;
     letter-spacing: 2px;
   }

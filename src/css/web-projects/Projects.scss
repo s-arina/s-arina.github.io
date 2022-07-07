@@ -20,12 +20,12 @@
   transition: all 0.5s ease;
 
   &::-webkit-scrollbar {
-    background-color: lightgrey;
+    background-color: var(--lightgrey);
   }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
     border-radius: 20px;
-    background-color: #8d8d8d;
+    background-color: var(--slategrey);
   }
 }
 
@@ -34,7 +34,7 @@
 @media screen and (max-width: 970px) {
   .projects-scroller {
     margin-top: 5rem;
-  max-height: 85vh;
+    max-height: 85vh;
     .projects-container {
       flex-direction: row;
       overflow-x: auto;

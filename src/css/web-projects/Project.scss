@@ -26,15 +26,15 @@
     justify-content: space-between;
     align-items: center;
     a {
-      color: black;
+      color: var(--black);
       text-decoration: none;
       transition: all 0.2s ease;
     }
     p {
       font-size: 3.2rem;
-      color: black;
+      color: var(--black);
       :hover {
-        color: red;
+        color: var(--red);
       }
     }
     p:nth-of-type(2) {
@@ -45,7 +45,7 @@
       display: flex;
       gap: 1rem;
     }
-    
+
     svg {
       margin: 0;
     }
@@ -66,7 +66,7 @@
       flex-wrap: wrap;
       margin: 1.5rem 0 1rem 0;
       li {
-        color: grey;
+        color: var(--grey);
         list-style: none;
         font-size: 1.6rem;
         margin-right: 1rem;

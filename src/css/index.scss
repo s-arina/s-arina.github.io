@@ -1,3 +1,5 @@
+// ================== FONTS
+
 @font-face {
   font-family: 'Calibre-SB';
   src: url('/public/fonts/CalibreSemibold.otf');
@@ -7,6 +9,8 @@
   font-family: 'Calibre';
   src: url('/public/fonts/CalibreRegular.otf');
 }
+
+// ================== GENERAL
 
 * {
   margin: 0;
@@ -28,8 +32,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1a1a;
-  color: white;
+  background-color: var(--darkgrey);
+  color: var(--white);
 }
 
 code {
@@ -55,7 +59,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: #494949;
+  background-color: var(--darkgrey);
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -65,7 +69,7 @@ a {
 ::-webkit-scrollbar-thumb:horizontal {
   background-clip: padding-box;
   border-radius: 20px;
-  background-color: lightgrey;
+  background-color: var(--lightgrey);
 }
 
 // ================== FADE IN / OUT
@@ -74,8 +78,8 @@ a {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity .5s ease-out, transform .5s ease-out,
-    visibility .5s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out,
+    visibility 0.5s ease-out;
   will-change: opacity, transform, visibility;
 }
 
