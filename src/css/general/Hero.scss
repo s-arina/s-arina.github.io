@@ -11,11 +11,10 @@
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: relative;
-  flex-wrap: wrap;
-  margin: 0rem 1rem;
+  margin: 1rem;
   gap: 9rem;
   h2:first-of-type {
     font-size: 3.6rem;
