@@ -34,7 +34,7 @@ function ProjectDesc() {
             <li>CSS / SCSS</li>
             <li>HTML</li>
             <li>Node.js</li>
-            <li>React</li>
+            <li>React / React Native</li>
             <li>Redux</li>
             <li>Express</li>
             <li>Sequelize</li>

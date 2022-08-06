@@ -96,6 +96,13 @@
   margin-top: 0rem;
 }
 
+.design-modal .design-info::-webkit-scrollbar-thumb,
+.design-modal-invisible .design-info::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-radius: 20px;
+  background-color: var(--grey);
+}
+
 .design-modal-invisible {
   opacity: 0;
   pointer-events: none;
