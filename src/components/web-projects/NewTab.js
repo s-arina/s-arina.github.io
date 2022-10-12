@@ -35,9 +35,10 @@ function NewTab() {
               <p>
                 This extension replaces Chrome's new tab page with a simple, yet
                 charming layout with a notepad. Users are shown the current
-                weather based on their location, and have different background
-                options available. Notes are saved locally so users have access
-                to them across tabs and windows.
+                weather based on their location, and have multiple preset
+                background options available. A custom background can also be
+                added via hyperlink. Notes are saved locally so users have
+                access to them across tabs and windows.
               </p>
             </div>
           </div>
