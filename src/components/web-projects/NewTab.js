@@ -22,7 +22,7 @@ function NewTab() {
             <div className='project-details'>
               <ul className='tech-stack'>
                 <li>JavaScript</li>
-                <li>React.js</li>
+                <li>React</li>
                 <li>Chrome Extensions</li>
                 <li>Geolocation API</li>
                 <li>WeatherAPI</li>

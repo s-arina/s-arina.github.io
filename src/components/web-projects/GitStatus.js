@@ -29,7 +29,7 @@ function GitStatus() {
             <div className='project-details'>
               <ul className='tech-stack'>
                 <li>JavaScript</li>
-                <li>React.js</li>
+                <li>React</li>
                 <li>Firebase</li>
                 <li>Chart.js</li>
                 <li>Bootstrap</li>

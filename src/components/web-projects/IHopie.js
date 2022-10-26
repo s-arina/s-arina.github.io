@@ -22,8 +22,9 @@ function IHopie() {
             <div className='project-details'>
               <ul className='tech-stack'>
                 <li>JavaScript</li>
-                <li>React.js</li>
+                <li>React</li>
                 <li>Redux</li>
+                <li>Node.js</li>
                 <li>Express</li>
                 <li>Sequelize</li>
               </ul>

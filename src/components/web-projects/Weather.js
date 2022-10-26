@@ -12,21 +12,23 @@ function Weather() {
         <div className='project-header'>
           <p>
             <a
-              href={'https://weather-sc.netlify.app'}
+              href={'https://weather-sc.onrender.com'}
               target='_blank'
               rel='noreferrer'
             >
               weather - s.c.
             </a>
           </p>
-          <GithubIcon link='https://github.com/s-arina/Weather_App' />
+          <GithubIcon link='https://github.com/s-arina/Weather_App_V2' />
         </div>
         <div className='project-body'>
           <div className='project-details-container'>
             <div className='project-details'>
               <ul className='tech-stack'>
                 <li>JavaScript</li>
-                <li>React.js</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
                 <li>Geolocation API</li>
                 <li>Permissions API</li>
                 <li>WeatherAPI</li>
