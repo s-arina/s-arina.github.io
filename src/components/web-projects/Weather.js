@@ -6,7 +6,12 @@ function Weather() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/weather.png' alt='' />
+        <img
+          srcSet='/web-projects/web-projects-small/weather_s.png 500w, /web-projects/weather.png 1500w'
+          sizes='(max-width: 500px) 500px, 1500px'
+          src='/web-projects/weather.png'
+          alt=''
+        />
       </div>
       <div className='project-info'>
         <div className='project-header'>
@@ -30,8 +35,7 @@ function Weather() {
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>Geolocation API</li>
-                <li>Permissions API</li>
-                <li>WeatherAPI</li>
+                <li>OpenWeatherAPI</li>
               </ul>
             </div>
             <div className='project-desc'>

@@ -16,7 +16,7 @@ function Designs() {
   const [designModalLOUVRE, setDesignModalLOUVRE] = useState(false);
   const [designModalZODIAC, setDesignModalZODIAC] = useState(false);
 
-  const [mobileView, setMobileView] = useState(false);
+  const [sView, setsView] = useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
 
   const updateWidth = () => {
@@ -30,9 +30,9 @@ function Designs() {
 
   useEffect(() => {
     if (width < 500) {
-      setMobileView(true);
+      setsView(true);
     } else {
-      setMobileView(false);
+      setsView(false);
     }
   }, [width]);
 
@@ -192,11 +192,11 @@ function Designs() {
                   <div className='thumbnail'>
                     <img
                       className='thumbnail-img'
-                      srcSet={`/graphic-design/thumbnails-mobile/${img.url}_mobile.png 300w,
+                      srcSet={`/graphic-design/thumbnails/thumbnails-small/${img.url}_s.png 300w,
                       /graphic-design/thumbnails/${img.url}.png 1000w`}
                       sizes='(max-width: 500px) 300px, 1000px'
                       src={`/graphic-design/thumbnails/${img.url}.png`}
-                      alt='design work thumbnails'
+                      alt=''
                     />
                   </div>
                   <div

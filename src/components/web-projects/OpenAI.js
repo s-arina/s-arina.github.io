@@ -6,7 +6,12 @@ function OpenAI() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/openai.png' alt='' />
+        <img
+          srcSet='/web-projects/web-projects-small/openai_s.png 500w, /web-projects/openai.png 1500w'
+          sizes='(max-width: 500px) 500px, 1500px'
+          src='/web-projects/openai.png'
+          alt=''
+        />
       </div>
       <div className='project-info'>
         <div className='project-header'>

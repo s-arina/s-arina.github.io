@@ -6,7 +6,12 @@ function IHopie() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/ihopie.png' alt='' />
+        <img
+          srcSet='/web-projects/web-projects-small/ihopie_s.png 500w, /web-projects/ihopie.png 1500w'
+          sizes='(max-width: 500px) 500px, 1500px'
+          src='/web-projects/ihopie.png'
+          alt=''
+        />
       </div>
       <div className='project-info'>
         <div className='project-header'>

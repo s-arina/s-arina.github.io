@@ -125,21 +125,6 @@
   line-height: 2rem;
 }
 
-.project-name .project-team {
-  margin: 1rem 2rem 0 0;
-  min-height: 8.8rem;
-}
-
-.project-name .project-team h2 {
-  margin-bottom: 1rem;
-}
-
-.project-name .project-team img {
-  width: 5rem;
-  border-radius: 50px;
-  margin-right: 2rem;
-}
-
 @media screen and (max-width: 970px) {
   .project-name {
     -webkit-box-pack: start;

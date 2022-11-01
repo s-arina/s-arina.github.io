@@ -6,7 +6,12 @@ function NewTab() {
   return (
     <div className='project-name'>
       <div className='project-banner'>
-        <img src='/web-projects/newTab.png' alt='' />
+        <img
+          srcSet='/web-projects/web-projects-small/newTab_s.png 500w, /web-projects/newTab.png 1500w'
+          sizes='(max-width: 500px) 500px, 1500px'
+          src='/web-projects/newTab.png'
+          alt=''
+        />
       </div>
       <div className='project-info'>
         <div className='project-header'>
@@ -25,7 +30,7 @@ function NewTab() {
                 <li>React</li>
                 <li>Chrome Extensions</li>
                 <li>Geolocation API</li>
-                <li>WeatherAPI</li>
+                <li>OpenWeatherAPI</li>
                 <li>Material UI</li>
               </ul>
             </div>
