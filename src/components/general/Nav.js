@@ -96,11 +96,11 @@ function Nav() {
     <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
         {/* pressing logo resets ham menu */}
-        <a href='/'>
+        <a href='https://sarinachang.com'>
           <img
             className='nav-logo'
             src='/imgs/logo.png'
-            alt=''
+            alt='logo'
             onClick={() => {
               setHamMenu(false);
               setHamIconOpen(false);

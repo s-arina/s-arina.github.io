@@ -6,7 +6,7 @@ function Hero() {
     <div className='hero'>
       <div className='container'>
         <div className='logo'>
-          <img src='/imgs/logo.gif' alt='' />
+          <img src='/imgs/logo.gif' alt='logo' />
         </div>
         <div className='intro'>
           <h2>Hi,</h2>

@@ -189,14 +189,16 @@ function Designs() {
           {imgs
             ? imgs.map((img) => (
                 <li key={img.id}>
-                  <div
-                    className='thumbnail'
-                    style={{
-                      backgroundImage: mobileView
-                        ? `url(/graphic-design/thumbnails-mobile/${img.url}_mobile.png)`
-                        : `url(/graphic-design/thumbnails/${img.url}.png)`,
-                    }}
-                  ></div>
+                  <div className='thumbnail'>
+                    <img
+                      className='thumbnail-img'
+                      srcSet={`/graphic-design/thumbnails-mobile/${img.url}_mobile.png 300w,
+                      /graphic-design/thumbnails/${img.url}.png 1000w`}
+                      sizes='(max-width: 500px) 300px, 1000px'
+                      src={`/graphic-design/thumbnails/${img.url}.png`}
+                      alt='design work thumbnails'
+                    />
+                  </div>
                   <div
                     className='thumbnail-hover'
                     onClick={() => {
