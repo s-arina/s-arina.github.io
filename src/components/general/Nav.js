@@ -100,7 +100,7 @@ function Nav() {
           <img
             className='nav-logo'
             src='/imgs/logo.png'
-            alt='logo'
+            alt=''
             onClick={() => {
               setHamMenu(false);
               setHamIconOpen(false);

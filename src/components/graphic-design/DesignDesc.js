@@ -12,19 +12,19 @@ function DesignDesc() {
   const row1 = [
     {
       id: 1,
-      url: 'InDesign.png',
+      url: 'InDesign',
       name: ind,
       boxShadow: '255, 48, 102, 0.8',
     },
     {
       id: 2,
-      url: 'Photoshop.png',
+      url: 'Photoshop',
       name: ps,
       boxShadow: '48, 168, 255, 0.8',
     },
     {
       id: 3,
-      url: 'Illustrator.png',
+      url: 'Illustrator',
       name: ai,
       boxShadow: '255, 48, 102, 0.8',
     },
@@ -33,19 +33,19 @@ function DesignDesc() {
   const row2 = [
     {
       id: 1,
-      url: 'XD.png',
+      url: 'XD',
       name: xd,
       boxShadow: '255, 97, 247, 0.8',
     },
     {
       id: 2,
-      url: 'PremierePro.png',
+      url: 'PremierePro',
       name: pp,
       boxShadow: '153, 153, 255, 0.8',
     },
     {
       id: 3,
-      url: 'AfterEffects.png',
+      url: 'AfterEffects',
       name: ae,
       boxShadow: '153, 153, 255, 0.8',
     },
@@ -114,37 +114,39 @@ function DesignDesc() {
         </div>
         <div className='adobe-icons'>
           <div className='icon-row-1'>
-            {row1
-              ? row1.map((icon) => (
-                  <img
-                    src={`/graphic-design/adobe-icons/${icon.url}`}
-                    alt=''
-                    style={{
-                      boxShadow: icon.name
-                        ? `0px 0px 40px 0px rgba(${icon.boxShadow})`
-                        : 'none',
-                    }}
-                    key={icon.id}
-                  />
-                ))
-              : null}
+            {row1?.map((icon) => (
+              <img
+                srcSet={`/graphic-design/adobe-icons/${icon.url}_s.png 60w,
+                  /graphic-design/adobe-icons/${icon.url}.png 200w`}
+                sizes='(max-width: 500px) 60px, 200px'
+                src={`/graphic-design/adobe-icons/${icon.url}.png`}
+                alt=''
+                style={{
+                  boxShadow: icon.name
+                    ? `0px 0px 40px 0px rgba(${icon.boxShadow})`
+                    : 'none',
+                }}
+                key={icon.id}
+              />
+            ))}
           </div>
 
           <div className='icon-row-2'>
-            {row1
-              ? row2.map((icon) => (
-                  <img
-                    src={`/graphic-design/adobe-icons/${icon.url}`}
-                    alt=''
-                    style={{
-                      boxShadow: icon.name
-                        ? `0px 0px 40px 0px rgba(${icon.boxShadow})`
-                        : 'none',
-                    }}
-                    key={icon.id}
-                  />
-                ))
-              : null}
+            {row2?.map((icon) => (
+              <img
+                srcSet={`/graphic-design/adobe-icons/${icon.url}_s.png 60w,
+                      /graphic-design/adobe-icons/${icon.url}.png 200w`}
+                sizes='(max-width: 500px) 60px, 200px'
+                src={`/graphic-design/adobe-icons/${icon.url}.png`}
+                alt=''
+                style={{
+                  boxShadow: icon.name
+                    ? `0px 0px 40px 0px rgba(${icon.boxShadow})`
+                    : 'none',
+                }}
+                key={icon.id}
+              />
+            ))}
           </div>
         </div>
       </div>
