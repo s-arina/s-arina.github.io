@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import '../../css/graphic-design/Designs.css';
 import '../../css/graphic-design/DesignModal.css';
-import UIDesign from './UIDesign';
-import PTP from './PTP';
-import UBF from './UBF';
-import SB from './SB';
-import LOUVRE from './LOUVRE';
-import ZODIAC from './ZODIAC';
+
+const UIDesignLazy = React.lazy(() => import('./UIDesign'));
+const PTPLazy = React.lazy(() => import('./PTP'));
+const UBFLazy = React.lazy(() => import('./UBF'));
+const SBLazy = React.lazy(() => import('./SB'));
+const LOUVRELazy = React.lazy(() => import('./LOUVRE'));
+const ZODIACLazy = React.lazy(() => import('./ZODIAC'));
 
 function Designs() {
   const [designModalUI, setDesignModalUI] = useState(false);
@@ -15,26 +16,6 @@ function Designs() {
   const [designModalSB, setDesignModalSB] = useState(false);
   const [designModalLOUVRE, setDesignModalLOUVRE] = useState(false);
   const [designModalZODIAC, setDesignModalZODIAC] = useState(false);
-
-  const [sView, setsView] = useState(false);
-  const [width, setWidth] = React.useState(window.innerWidth);
-
-  const updateWidth = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
-  }, []);
-
-  useEffect(() => {
-    if (width < 500) {
-      setsView(true);
-    } else {
-      setsView(false);
-    }
-  }, [width]);
 
   const imgs = [
     {
@@ -118,45 +99,55 @@ function Designs() {
         onClick={closeModal}
         id='bg'
       >
-        <UIDesign
-          setDesignModalUI={setDesignModalUI}
-          setDesignModalPTP={setDesignModalPTP}
-          setDesignModalZODIAC={setDesignModalZODIAC}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <UIDesignLazy
+            setDesignModalUI={setDesignModalUI}
+            setDesignModalPTP={setDesignModalPTP}
+            setDesignModalZODIAC={setDesignModalZODIAC}
+          />
+        </Suspense>
       </div>
       <div
         className={designModalPTP ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
-        <PTP
-          setDesignModalPTP={setDesignModalPTP}
-          setDesignModalUI={setDesignModalUI}
-          setDesignModalUBF={setDesignModalUBF}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <PTPLazy
+            setDesignModalPTP={setDesignModalPTP}
+            setDesignModalUI={setDesignModalUI}
+            setDesignModalUBF={setDesignModalUBF}
+          />
+        </Suspense>
       </div>
       <div
         className={designModalUBF ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
-        <UBF
-          setDesignModalUBF={setDesignModalUBF}
-          setDesignModalPTP={setDesignModalPTP}
-          setDesignModalSB={setDesignModalSB}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <UBFLazy
+            setDesignModalUBF={setDesignModalUBF}
+            setDesignModalPTP={setDesignModalPTP}
+            setDesignModalSB={setDesignModalSB}
+          />
+        </Suspense>
       </div>
+
       <div
         className={designModalSB ? 'design-modal' : 'design-modal-invisible'}
         onClick={closeModal}
         id='bg'
       >
-        <SB
-          setDesignModalSB={setDesignModalSB}
-          setDesignModalUBF={setDesignModalUBF}
-          setDesignModalLOUVRE={setDesignModalLOUVRE}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SBLazy
+            setDesignModalSB={setDesignModalSB}
+            setDesignModalUBF={setDesignModalUBF}
+            setDesignModalLOUVRE={setDesignModalLOUVRE}
+          />
+        </Suspense>
       </div>
+
       <div
         className={
           designModalLOUVRE ? 'design-modal' : 'design-modal-invisible'
@@ -164,12 +155,15 @@ function Designs() {
         onClick={closeModal}
         id='bg'
       >
-        <LOUVRE
-          setDesignModalLOUVRE={setDesignModalLOUVRE}
-          setDesignModalSB={setDesignModalSB}
-          setDesignModalZODIAC={setDesignModalZODIAC}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LOUVRELazy
+            setDesignModalLOUVRE={setDesignModalLOUVRE}
+            setDesignModalSB={setDesignModalSB}
+            setDesignModalZODIAC={setDesignModalZODIAC}
+          />
+        </Suspense>
       </div>
+
       <div
         className={
           designModalZODIAC ? 'design-modal' : 'design-modal-invisible'
@@ -177,11 +171,13 @@ function Designs() {
         onClick={closeModal}
         id='bg'
       >
-        <ZODIAC
-          setDesignModalZODIAC={setDesignModalZODIAC}
-          setDesignModalLOUVRE={setDesignModalLOUVRE}
-          setDesignModalUI={setDesignModalUI}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ZODIACLazy
+            setDesignModalZODIAC={setDesignModalZODIAC}
+            setDesignModalLOUVRE={setDesignModalLOUVRE}
+            setDesignModalUI={setDesignModalUI}
+          />
+        </Suspense>
       </div>
 
       <div className='design-thumbnails'>
