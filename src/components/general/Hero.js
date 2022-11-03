@@ -18,7 +18,7 @@ function Hero() {
           <h2>Web Developer &#183; Graphic Designer &#183; Illustrator</h2>
         </div>
       </div>
-      <a href='#projects'>
+      <a href='#projects' aria-label='chevron'>
         <div className='chevron-container'>
           <div className='chevron'></div>
           <div className='chevron'></div>

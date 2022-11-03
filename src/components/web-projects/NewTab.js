@@ -16,7 +16,12 @@ function NewTab() {
       <div className='project-info'>
         <div className='project-header'>
           <p>
-            <a href='/web-projects/newTab.gif' target='_blank' rel='noreferrer'>
+            <a
+              href='/web-projects/newTab.gif'
+              aria-label='new-tab'
+              target='_blank'
+              rel='noreferrer'
+            >
               New Tab Page
             </a>
           </p>

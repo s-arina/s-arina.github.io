@@ -96,7 +96,7 @@ function Nav() {
     <div className={`nav ${!show && 'show'}`}>
       <div className='nav-content'>
         {/* pressing logo resets ham menu */}
-        <a href='https://sarinachang.com'>
+        <a href='https://sarinachang.com' aria-label='Portfolio'>
           <img
             className='nav-logo'
             src='/imgs/logo.png'
@@ -111,7 +111,11 @@ function Nav() {
         <div className='nav-links'>
           {navLinks
             ? navLinks.map((link) => (
-                <a href={`#${link.sectionDiv}`} key={link.id}>
+                <a
+                  href={`#${link.sectionDiv}`}
+                  key={link.id}
+                  aria-label='nav-links'
+                >
                   <p>{link.section}</p>
                 </a>
               ))

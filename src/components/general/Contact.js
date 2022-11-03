@@ -32,7 +32,12 @@ function Contact() {
           >
             Email
           </a>
-          <a href='/imgs/Resume.pdf' rel='noopener noreferrer' target='_blank'>
+          <a
+            href='/imgs/Resume.pdf'
+            aria-label='resume'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
             Resume
           </a>
         </div>

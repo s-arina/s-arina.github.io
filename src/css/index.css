@@ -1,11 +1,13 @@
 @font-face {
   font-family: 'Calibre-SB';
   src: url("/public/fonts/CalibreSemibold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Calibre';
   src: url("/public/fonts/CalibreRegular.otf");
+  font-display: swap;
 }
 
 * {
