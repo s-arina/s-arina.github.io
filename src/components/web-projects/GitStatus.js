@@ -17,7 +17,7 @@ function GitStatus() {
         <div className='project-header'>
           <p>
             <a
-              href={'https://my-git-status.herokuapp.com'}
+              href={'https://my-git-status.netlify.app'}
               target='_blank'
               rel='noreferrer'
             >
