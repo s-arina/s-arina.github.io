@@ -17,7 +17,7 @@ function SpotTheDiff() {
         <div className='project-header'>
           <p>
             <a
-              href={'https://cat-fe.herokuapp.com/'}
+              href={'https://cat-fe.netlify.com/'}
               target='_blank'
               rel='noreferrer'
             >

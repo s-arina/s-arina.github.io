@@ -17,7 +17,7 @@ function NewTab() {
         <div className='project-header'>
           <p>
             <a
-              href='/web-projects/newTab.gif'
+              href='https://chrome.google.com/webstore/detail/new-tab-extension/nlapppjpklcmfllfmagbecmjfcnfhegg?hl=en&authuser=0'
               aria-label='new-tab'
               target='_blank'
               rel='noreferrer'

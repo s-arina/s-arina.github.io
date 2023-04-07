@@ -17,14 +17,11 @@
     margin: 0 10%;
 
     img {
-      width: 20rem;
+      width: 15rem;
       border-radius: 100%;
       position: relative;
       transition: all 0.3s ease;
-      &:hover {
-        filter: grayscale(0) brightness(80%) sepia(100%) hue-rotate(-50deg)
-          saturate(350%) contrast(0.8);
-      }
+      animation: pulse 2s infinite;
     }
   }
 
@@ -73,34 +70,18 @@
   }
 }
 
-// =============================== CIRCLE
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.3);
+  }
 
-// @mixin border-gradient($from, $to, $weight: 0) {
-//   $mix-main: mix($from, $to);
-//   $mix-sub-from: mix($mix-main, $from);
-//   $mix-sub-to: mix($mix-main, $to);
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 0, 0, 0);
+  }
 
-//   box-shadow: 0 1px 0 $weight rgba($mix-sub-to, 0.25),
-//     0 -1px 0 $weight rgba($mix-sub-from, 0.25),
-//     1px 0 0 $weight rgba($mix-sub-to, 0.25),
-//     -1px 0 0 $weight rgba($mix-sub-from, 0.25),
-//     1px -1px 0 $weight rgba($mix-main, 0.5),
-//     -1px 1px 0 $weight rgba($mix-main, 0.5), 1px 1px 0 $weight rgba($to, 0.75),
-//     -1px -1px 0 $weight rgba($from, 0.75);
-// }
-
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 20.5rem;
-  width: 20.5rem;
-
-  border-radius: 100%;
-  background-color: var(--darkgrey);
-  // @include border-gradient(red, red);
-  transition: all 0.3s ease;
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
 }
 
 // =============================== FOOTER

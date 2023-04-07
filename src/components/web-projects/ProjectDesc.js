@@ -9,7 +9,7 @@ function ProjectDesc() {
         <div className='projects-title-desc'>
           <h1>Web Projects.</h1>
           <p>
-            As a recent graduate of{' '}
+            As an alumni of{' '}
             <a
               href={'https://gracehopper.com'}
               target='_blank'
@@ -25,12 +25,13 @@ function ProjectDesc() {
             >
               <span className='fsa'>Fullstack Academy</span>
             </a>
-            , I had the opportunity to learn and experiment with a diverse tech
-            stack to create fun and innovative web applications with team
+            , I had the opportunity to experiment with a diverse tech stack to
+            learn how to create fun and innovative web applications with team
             members and on my own.
           </p>
           <div className='skills'>
             <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>CSS / SCSS</li>
             <li>HTML</li>
             <li>Node.js</li>
@@ -40,6 +41,7 @@ function ProjectDesc() {
             <li>Sequelize</li>
             <li>PostgreSQL</li>
             <li>git</li>
+            <li>Azure DevOps</li>
           </div>
         </div>
         <Projects />
